@@ -7,14 +7,6 @@
 Open Logos
 ============
 
-.. raw:: html
-
-    <div align="left">
-        <a href="/LICENSE"><img alt="Creative Commons Attribute, Share Alike License" src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/by-sa.svg"</a><
-        <p>
-    </div>
-
-
 
 .. toctree::
    :maxdepth: 1
@@ -22,4 +14,12 @@ Open Logos
    getting_started 
    SAL_tutorial
    thanks
+
+
+.. raw:: html
+
+    <div align="left">
+        <a href="/LICENSE"><img alt="Creative Commons Attribute, Share Alike License" src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/by-sa.svg"</a>
+        <p>
+    </div>
 
