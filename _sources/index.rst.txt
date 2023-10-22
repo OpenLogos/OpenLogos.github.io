@@ -27,10 +27,4 @@ Languages
 =========
 Currently, OpenLogos translates from German and English into French, Italian, Spanish and Portuguese. In the long term, the goal of OpenLogos developers is to support bidirectional translation among these languages. 
 
-.. raw:: html
-
-    <div align="left">
-        <a href="/LICENSE"><img alt="Creative Commons Attribute, Share Alike License" src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/by-sa.svg"</a>
-        <p>
-    </div>
 
