@@ -32,7 +32,7 @@ release = '1.0.2'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx_rtd_theme',
+    # 'sphinx_rtd_theme',
     'sphinx.ext.githubpages',
 ]
 
@@ -51,12 +51,29 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+html_theme_path = ['_themes',]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 # html_static_path = ['_static']
+
+# html_logo = "https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/OpenLogos_logo.svg"
+html_logo = "images/OpenLogos_logo.png"
+html_favicon = "images/OpenLogos_logo.ico"
+
 html_theme_options = {
-    "html_logo": r"https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/OpenLogos_logo.svg",
+    # 'analytics_anonymize_ip': False,
     "logo_only": False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    'vcs_pageview_mode': '',
+    # 'style_nav_header_background': 'white',
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
     }
