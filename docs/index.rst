@@ -1,7 +1,7 @@
 .. raw:: html
 
     <div align="center">
-        <img alt="OpenLogos logo" src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/OpenLogos_logo.jpg " width="250" />
+        <img alt="OpenLogos logo" src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/OpenLogos_logo.svg " width="250" />
     </div>
 
 Open Logos
