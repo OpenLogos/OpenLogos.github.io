@@ -33,6 +33,3 @@ Languages
 =========
 Currently, OpenLogos translates from German and English into French, Italian, Spanish and Portuguese. In the long term, the goal of OpenLogos developers is to support bidirectional translation among these languages. 
 
-Links
-=====
-

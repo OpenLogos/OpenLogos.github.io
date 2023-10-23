@@ -4,9 +4,9 @@ SAL Noun Code Taxonomy
 General Explanation of the SAL Noun Code Taxonomy
 -------------------------------------------------
 
-Nouns are organized in a taxonomy of :maroon:`supersets`, :red:`sets`, and :blue:`subsets`.
+Nouns are organized in a taxonomy of :maroon:`Supersets`, :red:`sets`, and :blue:`subsets`.
 
-Nouns have twelve :maroon:`supersets`:
+Nouns have twelve :maroon:`Supersets`:
 
 * concrete
 * mass
@@ -21,13 +21,13 @@ Nouns have twelve :maroon:`supersets`:
 * aspective
 * unknown     
 
-All noun :maroon:`supersets` have :red:`sets`, but only some :red:`sets` have :blue:`subsets`.
+All noun :maroon:`Supersets` have :red:`sets`, but only some :red:`sets` have :blue:`subsets`.
 
-In the following, :maroon:`maroon` denotes noun :maroon:`superset`, red denotes noun :red:`set`, and blue denotes noun :blue:`subset`.  
+In the following, :maroon:`maroon` denotes noun :maroon:`Superset`, red denotes noun :red:`set`, and blue denotes noun :blue:`subset`.  
 
 Mnemonics for each SAL element are provided for coders and rulewriters. Internal to the system, however, SAL codes are represented numerically.  For Nouns, the numeric range signifies place on the taxonomy, as follows:
 
-:maroon:`1-12 = supersets`
+:maroon:`1-12 = Supersets`
 
 :red:`17-99 = sets`
 
