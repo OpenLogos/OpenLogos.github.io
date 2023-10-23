@@ -53,7 +53,10 @@
 <li class="toctree-l1"><a class="reference internal" href="SAL_00_tutorial.html">SAL Tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SAL_01_getting_started.html">Getting Started with SAL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SAL_02_basic_concepts.html">Basic Concepts Regarding SAL</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">SAL Elements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SAL Elements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sal-taxonomy-for-rulewriters-and-coders">SAL Taxonomy for Rulewriters and Coders</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="SAL_03a_nouns.html">SAL Noun Code Taxonomy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SAL_03b_noun_sets.html">SAL Noun Supersets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
@@ -88,6 +91,32 @@
 <p>There are 12 parts of speech in SAL, divided into open and closed word classes.</p>
 <p>Open word classes are:  nouns, adjectives, adverbs and verbs.  As a user you are able to add or modify open word classes (except for verbs).</p>
 <p>Closed word classes are:  articles, prepositions, auxiliary verbs, pronouns, interrogatives, negative particles, conjunctions and punctuation.  These classes are privileged and only users with the appropriate profile can modify them.</p>
+<section id="sal-taxonomy-for-rulewriters-and-coders">
+<h2>SAL Taxonomy for Rulewriters and Coders<a class="headerlink" href="#sal-taxonomy-for-rulewriters-and-coders" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>NOUNS   -   [N]   [WC 01]</p></li>
+<li><p>ADJECTIVES   -  [ADJ]  [WC 04]</p></li>
+<li><p>DETERMINERS  -   [DET]  [WC 14 &amp; 15]</p></li>
+<li><p>ARITHMATES   -   [AR]  [WC 16]    (See also WC 04, 14)</p></li>
+<li><p>PRONOUNS   -   [PRO] [WC 05]</p></li>
+<li><p>RELATIVES/INTERROGATIVES  -  [INTREL]  [WC 18]</p></li>
+<li><p>VERBS   -  [VT / VI] [WC 02]</p></li>
+<li><p>AUXILIARY VERBS   -   [AUXMO]  [WC 12]</p></li>
+<li><p>ADVERBS   -   [ADV]  [WC 03 &amp; 06]</p></li>
+<li><p>PREPOSITIONS   -   [PREP]  [WC 11 &amp; 13]</p></li>
+<li><p>NEGATIVES  -    [NEG]  [WC 17]</p></li>
+<li><p>CONJUNCTIONS   -   [CONJ]  [WC 19]</p></li>
+<li><p>PUNCTUATION   -    [PUNC]  [WC 20]</p></li>
+<li><p>REMOTE AGENTIVE SUBSET</p></li>
+<li><p>REMOTE MASS SUBSET</p></li>
+<li><p>APPOSITION-INVITING SUBSET</p></li>
+<li><p>UNKNOWN WORDS</p></li>
+<li><p>SPECIAL CHARACTERS</p></li>
+</ul>
+<p>In these SAL Taxonomy Tables, the <span class="navy">navy</span> color denotes <span class="navy">Word Class</span>, <span class="maroon">maroon</span> denotes <span class="maroon">Superset</span>, <span class="red">red</span> denotes <span class="red">set</span>, and <strong>black</strong> denotes <strong>subset</strong> (in other contexts, <span class="blue">blue</span> is used to denote <span class="blue">subset</span>).</p>
+<p>The SAL Taxonomy Tables provided here include word-specific codes for the closed Word Classes and also for Adverbs, but only give generic codes for Nouns, Adjectives, and Verbs.  To access word-specific codes for Nouns, Adjectives, Verbs and closed Word Classes, use the TermBuilder View Function.</p>
+<p>Numeric Codes denote Taxonomy position (<span class="maroon">Superset</span>, <span class="red">set</span> and <span class="blue">subset</span>) by their range:  Numbers 1-16 denote <span class="maroon">Superset</span>, 17-99 denote <span class="red">set</span>, and 100-998 denote <span class="blue">subset</span>.  Note, however, that there are exceptions to this arrangement in the case of <span class="navy">Adverbs</span> (Non-Locatives), where <span class="maroon">Superset</span> codes range from 1-26 and there are no <span class="red">set</span> codes.</p>
+</section>
 </section>
 
 
