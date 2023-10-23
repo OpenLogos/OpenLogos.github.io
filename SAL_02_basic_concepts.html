@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <!-- don't use caching -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Concepts Regarding SAL &mdash; OpenLogos 1.0.2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/hacks.css" />
+    <link rel="shortcut icon" href="_static/OpenLogos_logo.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="SAL Elements" href="SAL_03_elements.html" />
+    <link rel="prev" title="Getting Started with SAL" href="SAL_01_getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            OpenLogos
+              <img src="_static/OpenLogos_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="SAL_00_tutorial.html">SAL Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_01_getting_started.html">Getting Started with SAL</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Concepts Regarding SAL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-sal">What is SAL?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why-is-sal-called-an-abstraction-language">Why is SAL called an abstraction language?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sal-is-an-intermediary-language">SAL is an Intermediary Language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sal-is-a-taxonomy">SAL is a Taxonomy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-motivated-sal">What motivated SAL?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sal-addresses-the-complexity-of-natural-language">SAL addresses the Complexity of Natural Language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#there-are-different-sal-dialects">There are different SAL dialects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-sal-taxonomy">The SAL Taxonomy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03_elements.html">SAL Elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03a_nouns.html">SAL Noun Code Taxonomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03b_noun_sets.html">SAL Noun Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenLogos</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Basic Concepts Regarding SAL</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/SAL_02_basic_concepts.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="basic-concepts-regarding-sal">
+<h1>Basic Concepts Regarding SAL<a class="headerlink" href="#basic-concepts-regarding-sal" title="Permalink to this headline">¶</a></h1>
+<section id="what-is-sal">
+<h2>What is SAL?<a class="headerlink" href="#what-is-sal" title="Permalink to this headline">¶</a></h2>
+<p>SAL is the internal representation language of the Logos System. SAL is an acronym for semantico-syntactic abstraction language.</p>
+<p>The semantico-syntactic property of SAL means that it represents both the meaning and structure of natural language.</p>
+<p>SAL is a language in its own right, not merely a set of so-called syntactic and semantic “primitives.”</p>
+</section>
+<section id="why-is-sal-called-an-abstraction-language">
+<h2>Why is SAL called an abstraction language?<a class="headerlink" href="#why-is-sal-called-an-abstraction-language" title="Permalink to this headline">¶</a></h2>
+<p>Because natural language (NL) is far too rich and complex to be dealt with on its own terms in a computer, it must be simplified.  SAL achieves this simplification through abstraction.</p>
+<p>If NL can be thought of as a first-order abstraction language, SAL is a second-order language.  The simplification achieved through abstraction is fundamental to the processes of the Logos System.</p>
+<p>The Logos System exploits simplification afforded by SAL by first translating the NL sentence into an SAL sentence.  What the system actually processes is a SAL sentence that represents the NL sentence at a higher level of semantico-syntactic abstraction.</p>
+</section>
+<section id="sal-is-an-intermediary-language">
+<h2>SAL is an Intermediary Language<a class="headerlink" href="#sal-is-an-intermediary-language" title="Permalink to this headline">¶</a></h2>
+<p>In processing a sentence through the Logos System, the source language is re-expressed as SAL and from this SAL representation the target language is generated.</p>
+<p>SAL thus is a kind of intermediate language standing between source NL on the input side and the target NL on the output side.</p>
+<p>In principle, from a single SAL representation of a sentence, any number of different target languages can be generated.  This is why the Logos Model is called a multi-target model.</p>
+<p>One can map easily from NL to SAL.  In effect such mapping is precisely what a user does when he or she assigns a SAL code to a new entry in a TermBuilder session.</p>
+<p>TermBuilder assists the user in this coding/mapping with a variety of options. See the SAL Coding Tips section below. TODO</p>
+</section>
+<section id="sal-is-a-taxonomy">
+<h2>SAL is a Taxonomy<a class="headerlink" href="#sal-is-a-taxonomy" title="Permalink to this headline">¶</a></h2>
+<p><strong>SAL is a hierarchical taxonomy.</strong>  As such, it constitutes a representational continuum from syntax (part of speech) to semantics (meaning).</p>
+<p>For example, the word highchair can be represented on a semantico-syntactic continuum in SAL as follows:</p>
+<ul class="simple">
+<li><p>highchair – literal word</p></li>
+<li><p>chair – head morpheme</p></li>
+<li><p>supporting surface – subset within SAL taxonomy</p></li>
+<li><p>functional thing – set within SAL taxonomy</p></li>
+<li><p>concrete noun – superset within SAL taxonomy</p></li>
+<li><p>noun – part-of-speech within SAL taxonomy</p></li>
+</ul>
+<p><strong>SAL is an ontology.</strong>  This means that reality can be accounted for in SAL classifications.  In the case of nouns, the number of these classifications is roughly 100, which properly suggests that as a representation of reality, SAL is coarse-grained.</p>
+<p>SAL attempts to implement certain assumptions about human language processing, chiefly with regard to the use of abstraction. Note that SAL is termed a semantico-syntactic abstraction language.  (more) TODO</p>
+</section>
+<section id="what-motivated-sal">
+<h2>What motivated SAL?<a class="headerlink" href="#what-motivated-sal" title="Permalink to this headline">¶</a></h2>
+<p>First of all, SAL was motivated by the belief that the semantics of a word often affects the surrounding syntax. For example, all verbs that call for indirect objects (so-called “di-transitive” verbs) would appear to be semantically related, e.g. send, communicate, convey, give, transmit, provide, supply, etc. Thus one can relate the syntactic effect of di-transitive verbs to their semantics.</p>
+<p>SAL was designed to subcategorize words according to these property/effect relationships.</p>
+<p>Thus, SAL seeks to capture the semantic properties of words having syntactic effect. For example, the nouns resistance, relationship, marriage, accommodation, all share a common SAL code reflecting their governance of the preposition “to”  (e.g resistance to change).</p>
+<p>The adjectives easy, fun, pleasant have SAL codes quite different from the codes for eager, anxious, determined, to reflect the pronounced differences in the syntactic effect of these groups.</p>
+<ol class="arabic simple">
+<li><p>John is easy/fun/simple to please. –&gt; Pleasing John is easy/fun/simple.</p></li>
+<li><p>John is eager/reluctant/determined to please. –&gt; *Pleasing John is eager/reluctant/determined.</p></li>
+</ol>
+<p>(Notice the loose semantic kinship shared by members of each adjectival group.)</p>
+</section>
+<section id="sal-addresses-the-complexity-of-natural-language">
+<h2>SAL addresses the Complexity of Natural Language<a class="headerlink" href="#sal-addresses-the-complexity-of-natural-language" title="Permalink to this headline">¶</a></h2>
+<p>The second motivation for SAL concerned the complexity of natural language.</p>
+<p>The complexity of language is probably the single most difficult property of language for a computer to handle.</p>
+<p>SAL was conceived as an abstraction language, abstraction being the principal device used by the Logos System to keep things simple.</p>
+<p>The words shelf, table, chair, ledge, bench, sofa would be encoded in SAL as a “support surface”.   If the common nouns self, table, etc. are first-order abstractions, then the SAL element “support surface” can be seen as a second-order abstraction.</p>
+<p>In total, SAL has about 1000 entities encompassing all parts of speech.  SAL reduces the richness of natural language by several orders of magnitude, while still preserving critical semantic information.</p>
+<p>Finally, SAL was conceived of as a “semantico-syntactic abstraction language” so that patterns of natural language could be mapped to abstract semantico-syntactic patterns.</p>
+<p>Being semantico-syntactic, these SAL patterns would allow simultaneous processing of both syntax and semantics.</p>
+<p>Being abstract, these SAL patterns would be less complex and thus more manageable in a digital environment.</p>
+<p>Semantico-syntactic abstraction SAL patterns are powerful and efficient, precisely because one abstract SAL pattern can cover a multitude of NL instantiations of that pattern.</p>
+<p>Analysis and synthesis rules based on SAL patterns have thus proved to be an extremely effective means for effecting digital translation.</p>
+</section>
+<section id="there-are-different-sal-dialects">
+<h2>There are different SAL dialects<a class="headerlink" href="#there-are-different-sal-dialects" title="Permalink to this headline">¶</a></h2>
+<p>SAL is not a pure interlingua.  Each source language requires its own dialect of SAL to represent it.  This is so in order to capture the idiosyncrasies of each natural language.  Nevertheless, there is a great deal of commonality among the dialects of SAL, reflecting the underlying commonality among languages universally.  (In the case of nouns, this commonality is 100%.)</p>
+</section>
+<section id="the-sal-taxonomy">
+<h2>The SAL Taxonomy<a class="headerlink" href="#the-sal-taxonomy" title="Permalink to this headline">¶</a></h2>
+<p>For a detailed presentation of the SAL taxonomy, see SAL Elements.  TODO</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="SAL_01_getting_started.html" class="btn btn-neutral float-left" title="Getting Started with SAL" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SAL_03_elements.html" class="btn btn-neutral float-right" title="SAL Elements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OpenLogos.</p>
+  </div>
+
+  <div>
+      <span class="creativecommons">
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" >
+              <img src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/by-sa.svg"
+                   border="0" alt="Creative Commons License"/>
+          </a>
+              OpenLogos web materials are licensed under a
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                  CC BY-SA 4.0.
+              </a>
+      </span>
+  </div>
+
+  
+  <br>Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <!-- don't use caching -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAL Noun Code Taxonomy &mdash; OpenLogos 1.0.2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/hacks.css" />
+    <link rel="shortcut icon" href="_static/OpenLogos_logo.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="SAL Noun Supersets" href="SAL_03b_noun_sets.html" />
+    <link rel="prev" title="SAL Elements" href="SAL_03_elements.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            OpenLogos
+              <img src="_static/OpenLogos_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="SAL_00_tutorial.html">SAL Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_01_getting_started.html">Getting Started with SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_02_basic_concepts.html">Basic Concepts Regarding SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03_elements.html">SAL Elements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SAL Noun Code Taxonomy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-explanation-of-the-sal-noun-code-taxonomy">General Explanation of the SAL Noun Code Taxonomy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#guidelines-to-sal-coders">Guidelines to SAL Coders</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nouns-with-multiple-meanings">Nouns with Multiple Meanings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#noun-coding-priorities">Noun Coding Priorities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sal-noun-code-hierarchy">SAL Noun Code Hierarchy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#a-caveat-to-sal-coders">A Caveat to SAL Coders</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03b_noun_sets.html">SAL Noun Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenLogos</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">SAL Noun Code Taxonomy</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/SAL_03a_nouns.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sal-noun-code-taxonomy">
+<h1>SAL Noun Code Taxonomy<a class="headerlink" href="#sal-noun-code-taxonomy" title="Permalink to this headline">¶</a></h1>
+<section id="general-explanation-of-the-sal-noun-code-taxonomy">
+<h2>General Explanation of the SAL Noun Code Taxonomy<a class="headerlink" href="#general-explanation-of-the-sal-noun-code-taxonomy" title="Permalink to this headline">¶</a></h2>
+<p>Nouns are organized in a taxonomy of <span class="maroon">supersets</span>, <span class="red">sets</span>, and <span class="blue">subsets</span>.</p>
+<p>Nouns have twelve <span class="maroon">supersets</span>:</p>
+<ul class="simple">
+<li><p>concrete</p></li>
+<li><p>mass</p></li>
+<li><p>animate</p></li>
+<li><p>place</p></li>
+<li><p>information</p></li>
+<li><p>abstract</p></li>
+<li><p>process (intr)</p></li>
+<li><p>process (tr)</p></li>
+<li><p>measure</p></li>
+<li><p>time</p></li>
+<li><p>aspective</p></li>
+<li><p>unknown</p></li>
+</ul>
+<p>All noun <span class="maroon">supersets</span> have <span class="red">sets</span>, but only some <span class="red">sets</span> have <span class="blue">subsets</span>.</p>
+<p>In the following, <span class="maroon">maroon</span> denotes noun <span class="maroon">superset</span>, red denotes noun <span class="red">set</span>, and blue denotes noun <span class="blue">subset</span>.</p>
+<p>Mnemonics for each SAL element are provided for coders and rulewriters. Internal to the system, however, SAL codes are represented numerically.  For Nouns, the numeric range signifies place on the taxonomy, as follows:</p>
+<p><span class="maroon">1-12 = supersets</span></p>
+<p><span class="red">17-99 = sets</span></p>
+<p><span class="blue">100-998 = subsets</span></p>
+</section>
+<section id="guidelines-to-sal-coders">
+<h2>Guidelines to SAL Coders<a class="headerlink" href="#guidelines-to-sal-coders" title="Permalink to this headline">¶</a></h2>
+<section id="nouns-with-multiple-meanings">
+<h3>Nouns with Multiple Meanings<a class="headerlink" href="#nouns-with-multiple-meanings" title="Permalink to this headline">¶</a></h3>
+<p>Many nouns fall into more than one SAL category.  For example, passage can be both a conduit under <span class="maroon">Concrete</span>, and a path under Place.   It can also be a piece of writing or musical composition under <span class="maroon">Information</span>.</p>
+<p>Selection among the multiple meanings of a given noun can often be effected by the use of Subject Matter Codes (SMC) when entering the term in TermBuilder.</p>
+<p>In some cases, however, Subject Matter Codes are not helpful.  In such cases, the user must make an arbitrary choice among SAL codes at the time the word is entered.  (Later development plans include giving the system the ability to resolve among the multiple meanings of a common noun on the basis of extra-sentential context.  This capability does not presently exist in the Logos System.)</p>
+<p>When making coding decisions, users should observe the coding priorities listed below.</p>
+</section>
+<section id="noun-coding-priorities">
+<h3>Noun Coding Priorities<a class="headerlink" href="#noun-coding-priorities" title="Permalink to this headline">¶</a></h3>
+<p>There is a critical set of priorities governing coding choices for nouns that should be observed, if translation degradation is to be avoided.  The following represents the coding hierarchy in order of importance:</p>
+<ul>
+<li><p>Verb-biased Nouns (See <span class="red">verbal abstracts set</span> under <span class="maroon">Abstract Superset</span>). Nouns coded for verb bias tell the system to expect a verb complement.</p>
+<blockquote>
+<div><p>Verb-biased codes are critical for parsing.  For example:</p>
+<ol class="arabic simple">
+<li><p>ways of cooking lentils</p></li>
+<li><p>types of cooking utensils.</p></li>
+</ol>
+<p>The <span class="red">verbal abstracts</span> code given to ways in (1) biases the parser to expect a verb and therefore allows the parser to resolve cooking correctly to a verb.  In (2) cooking is an adjective.</p>
+</div></blockquote>
+</li>
+<li><p>Nouns taking prepositional complementation.  (See <span class="red">strong verbals</span> under <span class="maroon">Abstract Superset</span>.)   For example:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>attitude towards</p></li>
+<li><p>interest in</p></li>
+<li><p>anxiety about</p></li>
+<li><p>phone connection to</p></li>
+<li><p>attention to</p></li>
+</ul>
+<p>Prep governance codes are critical for parsing decisions regarding prepositional attachement.</p>
+</div></blockquote>
+</li>
+<li><p><span class="maroon">Mass</span> Nouns.  Unlike count nouns, mass nouns can occur in the singular without an article or quantifier; e.g., Gold is expensive.</p>
+<blockquote>
+<div><p><span class="maroon">Mass</span> codes are critical to parsing.  For example:</p>
+<ol class="arabic simple">
+<li><p>Test gold for …</p></li>
+<li><p>… test tube for… .</p></li>
+</ol>
+<p>In (1), gold as a <span class="maroon">Mass</span> noun helps the parser to see test as a verb.  (Unlike count nouns, singular mass nouns without an article can be the object of a verb.)
+In (2), test must be a noun because tube is a singular count noun.</p>
+<p><span class="maroon">Mass</span>-like codes occur in various places in the SAL noun taxonomy.   These include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="maroon">Mass Superset</span>, which is mass by definition</p></li>
+<li><p><span class="blue">trees/wood subset</span> (e.g. oak) under <span class="maroon">Concrete Superset</span></p></li>
+<li><p><span class="blue">edibles/color subset</span> (e.g. orange) under <span class="maroon">Concrete Superset</span></p></li>
+<li><p><span class="blue">mammals/food/fur subset</span> (e.g. fox) under <span class="maroon">Animate Superset</span></p></li>
+<li><p><span class="blue">fowl/food subset</span> (e.g. duck) under <span class="maroon">Animate Superset</span></p></li>
+<li><p><span class="blue">remote mass subset</span></p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p>Nouns denoting agents.  Agentive type nouns occur in various places in the SAL noun taxonomy.  These include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="maroon">Animate Superset</span>, which is agentive by definition</p></li>
+<li><p><span class="red">agentive set</span> under <span class="maroon">Concrete Superset</span></p></li>
+<li><p><span class="blue">functional location (agentive) subset</span> under <span class="maroon">Place Superset</span></p></li>
+<li><p><span class="blue">geographical entities (agentive) subset</span> under <span class="maroon">Place Superset</span></p></li>
+<li><p><span class="blue">remote agentive subset</span> (an optional subset code under any set or superset)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="sal-noun-code-hierarchy">
+<h3>SAL Noun Code Hierarchy<a class="headerlink" href="#sal-noun-code-hierarchy" title="Permalink to this headline">¶</a></h3>
+<p>For nouns and noun phrases that are able to take more than one code, assign that code which is highest in the following hierarchy.</p>
+<p>Note that Process Nouns (WC 4 and 7) are not included here.  Process Noun codes are derived automatically from their verbs.  (Process Noun codes are preemptive.)</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Characteristic</p></th>
+<th class="head"><p>Applicable SAL Type</p></th>
+<th class="head"><p>Mnemonic</p></th>
+<th class="head"><p>Numeric (<span class="maroon">SS</span> <span class="red">Set</span> <span class="blue">Subset</span>)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Takes Verbal Complementation</p></td>
+<td><p>purpose subset of ABSTRACT</p></td>
+<td><p>ABpur</p></td>
+<td><p><span class="maroon">6</span>      <span class="red">41</span>      <span class="blue">748</span></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>method/process/procedure subset of ABSTRACT</p></td>
+<td><p>ABmeth</p></td>
+<td><p><span class="maroon">6</span>      <span class="red">41</span>      <span class="blue">733</span></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>cause/potential/disposition subset of ABSTRACT</p></td>
+<td><p>ABcause</p></td>
+<td><p><span class="maroon">6</span>      <span class="red">41</span>      <span class="blue">602</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Mass (non-count) Noun</p></td>
+<td><p>entire MASS noun Superset</p></td>
+<td><p>MASS</p></td>
+<td><p><span class="maroon">11</span></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>trees/wood subset of CONCRETE Superset</p></td>
+<td><p>COtrwd</p></td>
+<td><p><span class="maroon">3</span>      <span class="red">32</span>      <span class="blue">855</span></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>edibles/color subset of CONCRETE Superset</p></td>
+<td><p>COedcol</p></td>
+<td><p><span class="maroon">3</span>      <span class="red">18</span>      <span class="blue">855</span></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>remote MASS (floating subset)</p></td>
+<td><p>(variable)</p></td>
+<td><p><span class="blue">855</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Takes Prepositional Complementation</p></td>
+<td><p>strong verbals subset of ABSTRACT  (code is specific for each prep governance)</p></td>
+<td><p>ABxxx</p></td>
+<td><p><span class="maroon">6</span>      <span class="red">nn</span>      <span class="blue">749</span></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>recorded data subset of INFORMATION</p></td>
+<td><p>INdata</p></td>
+<td><p><span class="maroon">12</span>     <span class="red">76</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Denotes Agent</p></td>
+<td><p>entire ANIMATE Superset</p></td>
+<td><p>AN</p></td>
+<td><p><span class="maroon">5</span></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>entire agentive set of CONCRETE Superset</p></td>
+<td><p>COagen</p></td>
+<td><p><span class="maroon">3</span>      <span class="red">35</span></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>agentive geographical entity set  of PLACE Superset</p></td>
+<td><p>PLaggeo</p></td>
+<td><p><span class="maroon">9</span>      <span class="red">94</span></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>instructional data set of INFORMATION</p></td>
+<td></td>
+<td><p><span class="maroon">12</span>     <span class="red">74</span></p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>agentive functional location of PLACE Superset</p></td>
+<td><p>PLagfunc</p></td>
+<td><p><span class="maroon">9</span>      <span class="red">26</span>      <span class="blue">228</span></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>remote agentive  (floating subset)</p></td>
+<td><p>(variable)</p></td>
+<td><p><span class="blue">228</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>All other SAL noun codes are more or less of equal weight.</p>
+</section>
+</section>
+<section id="a-caveat-to-sal-coders">
+<h2>A Caveat to SAL Coders<a class="headerlink" href="#a-caveat-to-sal-coders" title="Permalink to this headline">¶</a></h2>
+<p>The organization of nouns into a small number of sub-classifications is inevitably going to be arbitrary and even seem unprincipled at times.</p>
+<p>For example, the LOGOS system codes <em>table</em> as a supporting surface under <span class="maroon">Concrete Superset</span> and <em>platform</em> as a <span class="maroon">Place</span> noun, this on the grounds that the latter has human scale.  But, by the same token, words like <em>wall</em> and <em>fence</em> are coded <span class="maroon">Concrete</span> rather than <span class="maroon">Place</span> despite their human scale.</p>
+<p>There is no real defense of this except to repeat that any taxonomy that reduces 100,000 nouns to 100 categories is bound to incur these inconsistencies.</p>
+<p>As one becomes familiar with SAL, idiosyncrasies such as this  become less troublesome.  It is only fair to say that natural language itself is riddled with unprincipled inconsistencies.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="SAL_03_elements.html" class="btn btn-neutral float-left" title="SAL Elements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SAL_03b_noun_sets.html" class="btn btn-neutral float-right" title="SAL Noun Supersets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, OpenLogos.</p>
+  </div>
+
+  <div>
+      <span class="creativecommons">
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" >
+              <img src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/by-sa.svg"
+                   border="0" alt="Creative Commons License"/>
+          </a>
+              OpenLogos web materials are licensed under a
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                  CC BY-SA 4.0.
+              </a>
+      </span>
+  </div>
+
+  
+  <br>Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>
