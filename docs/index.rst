@@ -4,7 +4,7 @@
         <img alt="OpenLogos logo" src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/OpenLogos_logo.svg " width="250" />
     </div>
 
-Open Logos
+OpenLogos
 ============
 
 OpenLogos is an open source program that translates from English and German into French, Italian, Spanish and Portuguese. It accepts various document formats and maintains the format of the original document in translation. OpenLogos does not claim to replace human translators; rather, it aims to enhance the human translator's work environment.
@@ -14,6 +14,7 @@ The OpenLogos program is based on the Logos Machine Translation System, one of t
 .. toctree::
    :maxdepth: 1
 
+   installing
    SAL_00_tutorial
    SAL_01_getting_started
    SAL_02_basic_concepts
