@@ -97,6 +97,9 @@ There is a critical set of priorities governing coding choices for nouns that sh
     * :blue:`geographical entities (agentive) subset` under :maroon:`Place Superset`
     * :blue:`remote agentive subset` (an optional subset code under any set or superset)
 
+
+.. _sal-noun-code-hierarchy:
+
 SAL Noun Code Hierarchy
 ^^^^^^^^^^^^^^^^^^^^^^^
 

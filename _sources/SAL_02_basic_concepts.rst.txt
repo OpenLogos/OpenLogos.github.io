@@ -1,3 +1,5 @@
+.. _basic-concepts-regarding-sal:
+
 Basic Concepts Regarding SAL
 ============================
 

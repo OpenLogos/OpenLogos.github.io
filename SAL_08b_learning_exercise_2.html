@@ -1,0 +1,2303 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <!-- don't use caching -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Exercise 2 &mdash; OpenLogos 1.0.2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/hacks.css" />
+    <link rel="shortcut icon" href="_static/OpenLogos_logo.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Learning Exercise 3" href="SAL_08c_learning_exercise_3.html" />
+    <link rel="prev" title="Learning Exercise 1" href="SAL_08a_learning_exercise_1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            OpenLogos
+              <img src="_static/OpenLogos_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing OpenLogos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_00_tutorial.html">SAL Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_01_getting_started.html">Getting Started with SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_02_basic_concepts.html">Basic Concepts Regarding SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03_elements.html">SAL Elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03a_nouns.html">SAL Noun Code Taxonomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03b_noun_sets.html">SAL Noun Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03c_adjective_sets.html">SAL Adjective Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_04_how_is_used.html">How is SAL used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_05_coding_tips.html">SAL Coding Tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_06_glossary.html">Glossary of SAL Mnemonics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_07_FAQ.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08_learn_SAL.html">Learning SAL Coding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08a_learning_exercise_1.html">Learning Exercise 1</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Learning Exercise 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-a-nouns-related-to-time">Exercise A - Nouns Related to Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-b-nouns-related-to-information">Exercise B - Nouns Related to Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-c-nouns-related-to-concrete-objects">Exercise C - Nouns Related to Concrete Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-d-nouns-related-to-agentive-objects">Exercise D - Nouns Related to Agentive Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-e-nouns-related-to-mass-nouns">Exercise E - Nouns Related to Mass Nouns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-f-nouns-related-to-humans-places">Exercise F - Nouns Related to Humans/Places</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-g-nouns-related-to-measure">Exercise G - Nouns Related to Measure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#answer-keys">Answer Keys</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#answer-key-to-exercise-a-nouns-related-to-time">Answer Key to Exercise A - Nouns Related to Time</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#answer-key-to-exercise-b-nouns-related-to-information">Answer Key to Exercise B - Nouns Related to Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#answer-key-to-exercise-c-nouns-related-to-concrete-objects">Answer Key to Exercise C - Nouns Related to Concrete Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#answer-key-to-exercise-d-nouns-related-to-agentive-objects">Answer Key to Exercise D - Nouns Related to Agentive Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#answer-key-to-exercise-e-nouns-related-to-information">Answer Key to Exercise E - Nouns Related to Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#answer-key-to-exercise-f-nouns-related-to-humans-places">Answer Key to Exercise F - Nouns Related to Humans/Places</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#answer-key-to-exercise-g-nouns-related-to-measure">Answer Key to Exercise G - Nouns Related to Measure</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08c_learning_exercise_3.html">Learning Exercise 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_09_test.html">Test your Knowledge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenLogos</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Learning Exercise 2</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/SAL_08b_learning_exercise_2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="learning-exercise-2">
+<h1>Learning Exercise 2<a class="headerlink" href="#learning-exercise-2" title="Permalink to this headline">¶</a></h1>
+<p>This segment presupposes that you have worked your way through Learning Exercise 1 and have a knowledge of each of the SAL Noun Supersets.  Exercise 2 is designed to hone your SAL Noun coding skills.</p>
+<p>The nouns in this Exercise are also grouped in tables according to SAL Supersets.  In this exercise, however, not all the nouns in a given table belong to the Superset by which that table is labeled.  If you closely followed the explanations in Learning Exercise 1, you will begin to understand which nouns belong elsewhere and why.</p>
+<p>The method is the same as that of Learning Exercise 1.   You will be shown a table containing nouns.  The SAL codes for these nouns are not shown.  To discover how these nouns are coded, click on the noun and you will be taken to a description and explanation of the SAL code which applies.</p>
+<section id="exercise-a-nouns-related-to-time">
+<span id="exercise-2a"></span><h2>Exercise A - Nouns Related to Time<a class="headerlink" href="#exercise-a-nouns-related-to-time" title="Permalink to this headline">¶</a></h2>
+<p>To do this exercise, in the white box enter the mnemonic code for each of the nouns.  Those mnemonic codes can be found by clicking on the noun.  You will be taken to the section in the tutorial describing the noun in question and its correct SAL mnemonic code.</p>
+<p>Click here for <a class="reference internal" href="#exercise-2a-answers"><span class="std std-ref">Answer Key to Exercise A - Nouns Related to Time</span></a>.</p>
+<div>
+  <table>
+    <tr>
+      <td>
+        leap year
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        filing period
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        day
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        lunchbreak
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        fiscal year
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        billing period
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        payday
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        coffee break
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        year
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        springtime
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        current date
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Christmas
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        history
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        peacetime
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        (the) day before yesterday
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Christmastime
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+  </table>
+</div>
+<br></section>
+<section id="exercise-b-nouns-related-to-information">
+<span id="exercise-2b"></span><h2>Exercise B - Nouns Related to Information<a class="headerlink" href="#exercise-b-nouns-related-to-information" title="Permalink to this headline">¶</a></h2>
+<p>Click here for <a class="reference internal" href="#exercise-2b-answers"><span class="std std-ref">Answer Key to Exercise B - Nouns Related to Information</span></a>.</p>
+<div>
+  <table>
+    <tr>
+      <td>
+        anthology
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        portent
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        URL
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        bond
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        notebook
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        syndrome
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        HTML
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        money
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        buffer
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        diagnosis
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        line of code
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        insurance policy
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        computer memory
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        lecture
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        recipe
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        formula
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        laptop
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        web page
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        stock
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        web site
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+  </table>
+</div>
+<br></section>
+<section id="exercise-c-nouns-related-to-concrete-objects">
+<span id="exercise-2c"></span><h2>Exercise C - Nouns Related to Concrete Objects<a class="headerlink" href="#exercise-c-nouns-related-to-concrete-objects" title="Permalink to this headline">¶</a></h2>
+<p>Click here for <a class="reference internal" href="#exercise-2c-answers"><span class="std std-ref">Answer Key to Exercise C - Nouns Related to Concrete Objects</span></a>.</p>
+<div>
+  <table>
+    <tr>
+      <td>
+        carton
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        girder
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        rib
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        breeze
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        shelf
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        timber
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        artery
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ceiling
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        thermos
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        desk
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        muscle
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        curtain
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        handle
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        quark
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        heart
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        smudge
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+  </table>
+</div>
+<br></section>
+<section id="exercise-d-nouns-related-to-agentive-objects">
+<span id="exercise-2d"></span><h2>Exercise D - Nouns Related to Agentive Objects<a class="headerlink" href="#exercise-d-nouns-related-to-agentive-objects" title="Permalink to this headline">¶</a></h2>
+<p>Click here for <a class="reference internal" href="#exercise-2d-answers"><span class="std std-ref">Answer Key to Exercise D - Nouns Related to Agentive Objects</span></a>.</p>
+<div>
+  <table>
+    <tr>
+    <tr>
+      <td>
+        airplane
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+      <td>
+        browser
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        thermostat
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        scanner
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Concorde
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        compiler
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        sedative
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Xerox
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Ford
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        air conditioner
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Tylenol
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        shortwave radio
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        warhead
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        microphone
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Linux
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        pacemaker
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+  </table>
+</div>
+<br></section>
+<section id="exercise-e-nouns-related-to-mass-nouns">
+<span id="exercise-2e"></span><h2>Exercise E - Nouns Related to Mass Nouns<a class="headerlink" href="#exercise-e-nouns-related-to-mass-nouns" title="Permalink to this headline">¶</a></h2>
+<p>Click here for <a class="reference internal" href="#exercise-2e-answers"><span class="std std-ref">Answer Key to Exercise E - Nouns Related to Information</span></a>.</p>
+<div>
+  <table>
+    <tr>
+      <td>
+        silk
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        money
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        fire
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        decaffinated coffee
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        copper wire
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        silver
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        protoplasm
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        fuzz
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        clay
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        bond
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        plasma
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        gasoline
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        birdseed
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        revenue
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        duck
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        smoke
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        fertilizer
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        annual income
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        cereal
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        computer memory
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+  </table>
+</div>
+<br></section>
+<section id="exercise-f-nouns-related-to-humans-places">
+<span id="exercise-2f"></span><h2>Exercise F - Nouns Related to Humans/Places<a class="headerlink" href="#exercise-f-nouns-related-to-humans-places" title="Permalink to this headline">¶</a></h2>
+<p>Click here for <a class="reference internal" href="#exercise-2f-answers"><span class="std std-ref">Answer Key to Exercise F - Nouns Related to Humans/Places</span></a>.</p>
+<div>
+  <table>
+    <tr>
+      <td>
+        Japanese
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Wall Street
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        throng
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Rome
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Toyota
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Kremlin
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        litter
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        state
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Shakespeare
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        White House
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        university
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        coast
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Prince Charles
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        NASA
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        gas station
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        tributary
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Dubliner
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        consultant
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        England
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        alcove
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+  </table>
+</div>
+<br></section>
+<section id="exercise-g-nouns-related-to-measure">
+<span id="exercise-2g"></span><h2>Exercise G - Nouns Related to Measure<a class="headerlink" href="#exercise-g-nouns-related-to-measure" title="Permalink to this headline">¶</a></h2>
+<p>Click here for <a class="reference internal" href="#exercise-2g-answers"><span class="std std-ref">Answer Key to Exercise G - Nouns Related to Measure</span></a>.</p>
+<div>
+  <table>
+    <tr>
+      <td>
+        increment
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        dollar
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        person year
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        hundreds
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        calorie
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        megahertz
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        filing period
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Fahrenheit
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        millennium
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        diopter
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        pint
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        nanosecond
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        millennium bug
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        income
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        charge-back
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        centimeter
+        &nbsp;
+      </td>
+      <td>
+        <input type="text" />
+      </td>
+    </tr>
+  </table>
+</div>
+<br></section>
+<section id="answer-keys">
+<h2>Answer Keys<a class="headerlink" href="#answer-keys" title="Permalink to this headline">¶</a></h2>
+<section id="answer-key-to-exercise-a-nouns-related-to-time">
+<span id="exercise-2a-answers"></span><h3>Answer Key to Exercise A - Nouns Related to Time<a class="headerlink" href="#answer-key-to-exercise-a-nouns-related-to-time" title="Permalink to this headline">¶</a></h3>
+<p>Back to <a class="reference internal" href="#exercise-2a"><span class="std std-ref">Exercise A - Nouns Related to Time</span></a>.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Word</p></th>
+<th class="head"><p>Mnemonic</p></th>
+<th class="head"><p>Superset</p></th>
+<th class="head"><p>Set</p></th>
+<th class="head"><p>Subset</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>year</p></td>
+<td><p>MEdur</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>166</p></td>
+<td><p>unit of duration</p></td>
+</tr>
+<tr class="row-odd"><td><p>leap year</p></td>
+<td><p>TIundif</p></td>
+<td><p>10</p></td>
+<td><p>30</p></td>
+<td><p>30</p></td>
+<td><p>undifferentiated time</p></td>
+</tr>
+<tr class="row-even"><td><p>fiscal year</p></td>
+<td><p>TIundif</p></td>
+<td><p>10</p></td>
+<td><p>30</p></td>
+<td><p>30</p></td>
+<td><p>undifferentiated time</p></td>
+</tr>
+<tr class="row-odd"><td><p>history</p></td>
+<td><p>INknow</p></td>
+<td><p>12</p></td>
+<td><p>78</p></td>
+<td><p>78</p></td>
+<td><p>a field of knowledge (information)</p></td>
+</tr>
+<tr class="row-even"><td><p>filing period</p></td>
+<td><p>MEabs</p></td>
+<td><p>8</p></td>
+<td><p>46</p></td>
+<td><p>46</p></td>
+<td><p>can be followed by “of” + number</p></td>
+</tr>
+<tr class="row-odd"><td><p>billing period</p></td>
+<td><p>MEabs</p></td>
+<td><p>8</p></td>
+<td><p>46</p></td>
+<td><p>46</p></td>
+<td><p>can be followed by “of” + number</p></td>
+</tr>
+<tr class="row-even"><td><p>springtime</p></td>
+<td><p>TIsea</p></td>
+<td><p>10</p></td>
+<td><p>10</p></td>
+<td><p>173</p></td>
+<td><p>season of the year</p></td>
+</tr>
+<tr class="row-odd"><td><p>peacetime</p></td>
+<td><p>TIundif</p></td>
+<td><p>10</p></td>
+<td><p>30</p></td>
+<td><p>30</p></td>
+<td><p>undifferentiated time</p></td>
+</tr>
+<tr class="row-even"><td><p>day</p></td>
+<td><p>MEdur</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>166</p></td>
+<td><p>unit of duration</p></td>
+</tr>
+<tr class="row-odd"><td><p>payday</p></td>
+<td><p>ABtime</p></td>
+<td><p>6</p></td>
+<td><p>41</p></td>
+<td><p>732</p></td>
+<td><p>time event</p></td>
+</tr>
+<tr class="row-even"><td><p>current date</p></td>
+<td><p>INsymb</p></td>
+<td><p>12</p></td>
+<td><p>75</p></td>
+<td><p>75</p></td>
+<td><p>symbolic data</p></td>
+</tr>
+<tr class="row-odd"><td><p>(the) day before yesterday</p></td>
+<td><p>TIday</p></td>
+<td><p>10</p></td>
+<td><p>10</p></td>
+<td><p>171</p></td>
+<td><p>day of the week</p></td>
+</tr>
+<tr class="row-even"><td><p>lunchbreak</p></td>
+<td><p>TIper</p></td>
+<td><p>10</p></td>
+<td><p>10</p></td>
+<td><p>174</p></td>
+<td><p>period of the day</p></td>
+</tr>
+<tr class="row-odd"><td><p>coffee break</p></td>
+<td><p>ABstrvb</p></td>
+<td><p>6</p></td>
+<td><p>41</p></td>
+<td><p>749</p></td>
+<td><p>strong verbal</p></td>
+</tr>
+<tr class="row-even"><td><p>Christmas</p></td>
+<td><p>ABtime</p></td>
+<td><p>6</p></td>
+<td><p>41</p></td>
+<td><p>732</p></td>
+<td><p>time event</p></td>
+</tr>
+<tr class="row-odd"><td><p>Christmastime</p></td>
+<td><p>TIsea</p></td>
+<td><p>10</p></td>
+<td><p>10</p></td>
+<td><p>173</p></td>
+<td><p>season of the year</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-key-to-exercise-b-nouns-related-to-information">
+<span id="exercise-2b-answers"></span><h3>Answer Key to Exercise B - Nouns Related to Information<a class="headerlink" href="#answer-key-to-exercise-b-nouns-related-to-information" title="Permalink to this headline">¶</a></h3>
+<p>Back to <a class="reference internal" href="#exercise-2b"><span class="std std-ref">Exercise B - Nouns Related to Information</span></a>.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Word</p></th>
+<th class="head"><p>Mnemonic</p></th>
+<th class="head"><p>Superset</p></th>
+<th class="head"><p>Set</p></th>
+<th class="head"><p>Subset</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>anthology</p></td>
+<td><p>INdata</p></td>
+<td><p>12</p></td>
+<td><p>76</p></td>
+<td><p>76</p></td>
+<td><p>recorded data</p></td>
+</tr>
+<tr class="row-odd"><td><p>notebook</p></td>
+<td><p>INstor</p></td>
+<td><p>12</p></td>
+<td><p>77</p></td>
+<td><p>77</p></td>
+<td><p>place for storing data</p></td>
+</tr>
+<tr class="row-even"><td><p>buffer</p></td>
+<td><p>INstor</p></td>
+<td><p>12</p></td>
+<td><p>77</p></td>
+<td><p>77</p></td>
+<td><p>place for storing data</p></td>
+</tr>
+<tr class="row-odd"><td><p>computer memory</p></td>
+<td><p>MAfunc</p></td>
+<td><p>11</p></td>
+<td><p>49</p></td>
+<td><p>49</p></td>
+<td><p>place for data storage that functions as a Mass Noun</p></td>
+</tr>
+<tr class="row-even"><td><p>laptop</p></td>
+<td><p>COmach</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>750</p></td>
+<td><p>hardware (concrete/agentive)</p></td>
+</tr>
+<tr class="row-odd"><td><p>portent</p></td>
+<td><p>INevid</p></td>
+<td><p>12</p></td>
+<td><p>96</p></td>
+<td><p>96</p></td>
+<td><p>evidence/symptoms</p></td>
+</tr>
+<tr class="row-even"><td><p>syndrome</p></td>
+<td><p>INevid</p></td>
+<td><p>12</p></td>
+<td><p>96</p></td>
+<td><p>96</p></td>
+<td><p>evidence/symptoms</p></td>
+</tr>
+<tr class="row-odd"><td><p>diagnosis</p></td>
+<td><p>ABstrvb</p></td>
+<td><p>6</p></td>
+<td><p>41</p></td>
+<td><p>749</p></td>
+<td><p>strongly verbal</p></td>
+</tr>
+<tr class="row-even"><td><p>lecture</p></td>
+<td><p>INevent</p></td>
+<td><p>12</p></td>
+<td><p>76</p></td>
+<td><p>223</p></td>
+<td><p>scripted event</p></td>
+</tr>
+<tr class="row-odd"><td><p>web page</p></td>
+<td><p>INdata</p></td>
+<td><p>12</p></td>
+<td><p>76</p></td>
+<td><p>76</p></td>
+<td><p>recorded data</p></td>
+</tr>
+<tr class="row-even"><td><p>URL</p></td>
+<td><p>INsymb</p></td>
+<td><p>12</p></td>
+<td><p>75</p></td>
+<td><p>75</p></td>
+<td><p>symbolic data</p></td>
+</tr>
+<tr class="row-odd"><td><p>HTML</p></td>
+<td><p>INsymb</p></td>
+<td><p>12</p></td>
+<td><p>75</p></td>
+<td><p>75</p></td>
+<td><p>symbolic data</p></td>
+</tr>
+<tr class="row-even"><td><p>line of code</p></td>
+<td><p>INinst</p></td>
+<td><p>12</p></td>
+<td><p>12</p></td>
+<td><p>74</p></td>
+<td><p>instructional information</p></td>
+</tr>
+<tr class="row-odd"><td><p>recipe</p></td>
+<td><p>INinst</p></td>
+<td><p>12</p></td>
+<td><p>12</p></td>
+<td><p>74</p></td>
+<td><p>instructional information</p></td>
+</tr>
+<tr class="row-even"><td><p>stock</p></td>
+<td><p>MAfina</p></td>
+<td><p>11</p></td>
+<td><p>97</p></td>
+<td><p>97</p></td>
+<td><p>mass noun (financial)</p></td>
+</tr>
+<tr class="row-odd"><td><p>bond</p></td>
+<td><p>INinst</p></td>
+<td><p>12</p></td>
+<td><p>74</p></td>
+<td><p>74</p></td>
+<td><p>instructional/legal</p></td>
+</tr>
+<tr class="row-even"><td><p>money</p></td>
+<td><p>MAfina</p></td>
+<td><p>11</p></td>
+<td><p>97</p></td>
+<td><p>97</p></td>
+<td><p>mass noun (financial)</p></td>
+</tr>
+<tr class="row-odd"><td><p>insurance policy</p></td>
+<td><p>INinst</p></td>
+<td><p>12</p></td>
+<td><p>74</p></td>
+<td><p>74</p></td>
+<td><p>instructional/legal</p></td>
+</tr>
+<tr class="row-even"><td><p>formula</p></td>
+<td><p>INsymb</p></td>
+<td><p>12</p></td>
+<td><p>75</p></td>
+<td><p>75</p></td>
+<td><p>symbolic data</p></td>
+</tr>
+<tr class="row-odd"><td><p>web site</p></td>
+<td><p>INdata</p></td>
+<td><p>12</p></td>
+<td><p>76</p></td>
+<td><p>76</p></td>
+<td><p>recorded data</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-key-to-exercise-c-nouns-related-to-concrete-objects">
+<span id="exercise-2c-answers"></span><h3>Answer Key to Exercise C - Nouns Related to Concrete Objects<a class="headerlink" href="#answer-key-to-exercise-c-nouns-related-to-concrete-objects" title="Permalink to this headline">¶</a></h3>
+<p>Back to <a class="reference internal" href="#exercise-2c"><span class="std std-ref">Exercise C - Nouns Related to Concrete Objects</span></a>.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Word</p></th>
+<th class="head"><p>Mnemonic</p></th>
+<th class="head"><p>Superset</p></th>
+<th class="head"><p>Set</p></th>
+<th class="head"><p>Subset</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>carton</p></td>
+<td><p>COrecp</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>659</p></td>
+<td><p>receptacle (into/out of)</p></td>
+</tr>
+<tr class="row-odd"><td><p>shelf</p></td>
+<td><p>COsurf</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>722</p></td>
+<td><p>bearing surface (on)</p></td>
+</tr>
+<tr class="row-even"><td><p>thermos</p></td>
+<td><p>COrecp</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>659</p></td>
+<td><p>receptacle (into/out of)</p></td>
+</tr>
+<tr class="row-odd"><td><p>handle</p></td>
+<td><p>COtool</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>720</p></td>
+<td><p>tool/instrument</p></td>
+</tr>
+<tr class="row-even"><td><p>girder</p></td>
+<td><p>COstruc</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>612</p></td>
+<td><p>structural element</p></td>
+</tr>
+<tr class="row-odd"><td><p>timber</p></td>
+<td><p>MAraw</p></td>
+<td><p>11</p></td>
+<td><p>38</p></td>
+<td><p>38</p></td>
+<td><p>although a structural element, timber functions as a mass noun</p></td>
+</tr>
+<tr class="row-even"><td><p>desk</p></td>
+<td><p>COsurf</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>722</p></td>
+<td><p>bearing surface (on)</p></td>
+</tr>
+<tr class="row-odd"><td><p>quark</p></td>
+<td><p>COatom</p></td>
+<td><p>3</p></td>
+<td><p>19</p></td>
+<td><p>19</p></td>
+<td><p>atomistic thing</p></td>
+</tr>
+<tr class="row-even"><td><p>rib</p></td>
+<td><p>COstruc</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>612</p></td>
+<td><p>body parts are coded acc. to their function: e.g., structural element</p></td>
+</tr>
+<tr class="row-odd"><td><p>artery</p></td>
+<td><p>COcond</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>745</p></td>
+<td><p>body parts are coded acc. to their function: e.g., conduit</p></td>
+</tr>
+<tr class="row-even"><td><p>muscle</p></td>
+<td><p>COtool</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>720</p></td>
+<td><p>body parts are coded acc. to their function: e.g., device</p></td>
+</tr>
+<tr class="row-odd"><td><p>heart</p></td>
+<td><p>COmach</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>750</p></td>
+<td><p>body parts are coded acc. to their function: e.g., system/machine</p></td>
+</tr>
+<tr class="row-even"><td><p>breeze</p></td>
+<td><p>COamor</p></td>
+<td><p>3</p></td>
+<td><p>33</p></td>
+<td><p>33</p></td>
+<td><p>amorphous thing</p></td>
+</tr>
+<tr class="row-odd"><td><p>ceiling</p></td>
+<td><p>CObarr</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>525</p></td>
+<td><p>threshold/barrier/boundary (concrete)</p></td>
+</tr>
+<tr class="row-even"><td><p>curtain</p></td>
+<td><p>COcloth</p></td>
+<td><p>3</p></td>
+<td><p>34</p></td>
+<td><p>785</p></td>
+<td><p>object made of cloth</p></td>
+</tr>
+<tr class="row-odd"><td><p>smudge</p></td>
+<td><p>COmark</p></td>
+<td><p>3</p></td>
+<td><p>44</p></td>
+<td><p>44</p></td>
+<td><p>marks/blemishes</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-key-to-exercise-d-nouns-related-to-agentive-objects">
+<span id="exercise-2d-answers"></span><h3>Answer Key to Exercise D - Nouns Related to Agentive Objects<a class="headerlink" href="#answer-key-to-exercise-d-nouns-related-to-agentive-objects" title="Permalink to this headline">¶</a></h3>
+<p>Back to <a class="reference internal" href="#exercise-2d"><span class="std std-ref">Exercise D - Nouns Related to Agentive Objects</span></a>.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Word</p></th>
+<th class="head"><p>Mnemonic</p></th>
+<th class="head"><p>Superset</p></th>
+<th class="head"><p>Set</p></th>
+<th class="head"><p>Subset</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>airplane</p></td>
+<td><p>COvehic</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>611</p></td>
+<td><p>vehicle</p></td>
+</tr>
+<tr class="row-odd"><td><p>Concorde</p></td>
+<td><p>COvehic</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>611</p></td>
+<td><p>vehicle</p></td>
+</tr>
+<tr class="row-even"><td><p>Ford</p></td>
+<td><p>ANorg</p></td>
+<td><p>5</p></td>
+<td><p>94</p></td>
+<td><p>193</p></td>
+<td><p>proper name of an organization takes priority over the product</p></td>
+</tr>
+<tr class="row-odd"><td><p>warhead</p></td>
+<td><p>COchem</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>702</p></td>
+<td><p>chemical agent that can cause change</p></td>
+</tr>
+<tr class="row-even"><td><p>browser</p></td>
+<td><p>COsoft</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>300</p></td>
+<td><p>computer programs/routines</p></td>
+</tr>
+<tr class="row-odd"><td><p>compiler</p></td>
+<td><p>COsoft</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>300</p></td>
+<td><p>computer programs/routines</p></td>
+</tr>
+<tr class="row-even"><td><p>air conditioner</p></td>
+<td><p>COmach</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>750</p></td>
+<td><p>machines/systems</p></td>
+</tr>
+<tr class="row-odd"><td><p>microphone</p></td>
+<td><p>COcomm</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>708</p></td>
+<td><p>communication agent</p></td>
+</tr>
+<tr class="row-even"><td><p>thermostat</p></td>
+<td><p>COmeter</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>716</p></td>
+<td><p>measuring device</p></td>
+</tr>
+<tr class="row-odd"><td><p>sedative</p></td>
+<td><p>COchem</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>702</p></td>
+<td><p>chemical substance that can cause change</p></td>
+</tr>
+<tr class="row-even"><td><p>Tylenol</p></td>
+<td><p>MAchem</p></td>
+<td><p>11</p></td>
+<td><p>83</p></td>
+<td><p>83</p></td>
+<td><p>mass noun code takes priority</p></td>
+</tr>
+<tr class="row-odd"><td><p>Linux</p></td>
+<td><p>COsoft</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>300</p></td>
+<td><p>computer programs/routines, (generic and specific software are included in this subset)</p></td>
+</tr>
+<tr class="row-even"><td><p>scanner</p></td>
+<td><p>COmach</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>750</p></td>
+<td><p>machines/systems</p></td>
+</tr>
+<tr class="row-odd"><td><p>Xerox</p></td>
+<td><p>ANorg</p></td>
+<td><p>5</p></td>
+<td><p>94</p></td>
+<td><p>193</p></td>
+<td><p>proper name of an organization takes priority over the product</p></td>
+</tr>
+<tr class="row-even"><td><p>shortwave radio</p></td>
+<td><p>COcomm</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>300</p></td>
+<td><p>communication agent</p></td>
+</tr>
+<tr class="row-odd"><td><p>pacemaker</p></td>
+<td><p>COmach</p></td>
+<td><p>3</p></td>
+<td><p>35</p></td>
+<td><p>750</p></td>
+<td><p>machines/systems</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-key-to-exercise-e-nouns-related-to-information">
+<span id="exercise-2e-answers"></span><h3>Answer Key to Exercise E - Nouns Related to Information<a class="headerlink" href="#answer-key-to-exercise-e-nouns-related-to-information" title="Permalink to this headline">¶</a></h3>
+<p>Back to <a class="reference internal" href="#exercise-2e"><span class="std std-ref">Exercise E - Nouns Related to Mass Nouns</span></a>.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Word</p></th>
+<th class="head"><p>Mnemonic</p></th>
+<th class="head"><p>Superset</p></th>
+<th class="head"><p>Set</p></th>
+<th class="head"><p>Subset</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>silk</p></td>
+<td><p>MAraw</p></td>
+<td><p>11</p></td>
+<td><p>38</p></td>
+<td><p>38</p></td>
+<td><p>raw material</p></td>
+</tr>
+<tr class="row-odd"><td><p>copper wire</p></td>
+<td><p>MAfunc</p></td>
+<td><p>11</p></td>
+<td><p>49</p></td>
+<td><p>49</p></td>
+<td><p>functional mass</p></td>
+</tr>
+<tr class="row-even"><td><p>clay</p></td>
+<td><p>MAmine</p></td>
+<td><p>11</p></td>
+<td><p>84</p></td>
+<td><p>84</p></td>
+<td><p>natural substance</p></td>
+</tr>
+<tr class="row-odd"><td><p>birdseed</p></td>
+<td><p>MAvege</p></td>
+<td><p>11</p></td>
+<td><p>60</p></td>
+<td><p>60</p></td>
+<td><p>vegetative mass</p></td>
+</tr>
+<tr class="row-even"><td><p>fertilizer</p></td>
+<td><p>MAchem</p></td>
+<td><p>11</p></td>
+<td><p>83</p></td>
+<td><p>83</p></td>
+<td><p>chemical substance that induces change</p></td>
+</tr>
+<tr class="row-odd"><td><p>money</p></td>
+<td><p>MAfina</p></td>
+<td><p>11</p></td>
+<td><p>97</p></td>
+<td><p>97</p></td>
+<td><p>financial mass</p></td>
+</tr>
+<tr class="row-even"><td><p>silver</p></td>
+<td><p>MAraw</p></td>
+<td><p>11</p></td>
+<td><p>38</p></td>
+<td><p>38</p></td>
+<td><p>raw material/metal</p></td>
+</tr>
+<tr class="row-odd"><td><p>bond</p></td>
+<td><p>INinstr</p></td>
+<td><p>12</p></td>
+<td><p>74</p></td>
+<td><p>74</p></td>
+<td><p>instructional/legal</p></td>
+</tr>
+<tr class="row-even"><td><p>revenue</p></td>
+<td><p>MAfina</p></td>
+<td><p>11</p></td>
+<td><p>97</p></td>
+<td><p>97</p></td>
+<td><p>financial mass</p></td>
+</tr>
+<tr class="row-odd"><td><p>anuual income</p></td>
+<td><p>MEabs</p></td>
+<td><p>8</p></td>
+<td><p>46</p></td>
+<td><p>46</p></td>
+<td><p>can be followed by “of” + number</p></td>
+</tr>
+<tr class="row-even"><td><p>fire</p></td>
+<td><p>MAener</p></td>
+<td><p>11</p></td>
+<td><p>23</p></td>
+<td><p>23</p></td>
+<td><p>form of energy</p></td>
+</tr>
+<tr class="row-odd"><td><p>protoplasm</p></td>
+<td><p>MAanim</p></td>
+<td><p>11</p></td>
+<td><p>82</p></td>
+<td><p>82</p></td>
+<td><p>animate mass</p></td>
+</tr>
+<tr class="row-even"><td><p>plasma</p></td>
+<td><p>Maliqu</p></td>
+<td><p>11</p></td>
+<td><p>45</p></td>
+<td><p>45</p></td>
+<td><p>liquid</p></td>
+</tr>
+<tr class="row-odd"><td><p>duck</p></td>
+<td><p>ANfowlfd</p></td>
+<td><p>5</p></td>
+<td><p>51</p></td>
+<td><p>855</p></td>
+<td><p>remote mass code (855) indicates mass + animate</p></td>
+</tr>
+<tr class="row-even"><td><p>cereal</p></td>
+<td><p>MAedib</p></td>
+<td><p>11</p></td>
+<td><p>43</p></td>
+<td><p>43</p></td>
+<td><p>edible mass</p></td>
+</tr>
+<tr class="row-odd"><td><p>decaffinated coffee</p></td>
+<td><p>MAliqu</p></td>
+<td><p>11</p></td>
+<td><p>45</p></td>
+<td><p>45</p></td>
+<td><p>liquid</p></td>
+</tr>
+<tr class="row-even"><td><p>fuzz</p></td>
+<td><p>MAundif</p></td>
+<td><p>11</p></td>
+<td><p>20</p></td>
+<td><p>20</p></td>
+<td><p>undifferentiated mass</p></td>
+</tr>
+<tr class="row-odd"><td><p>gasoline</p></td>
+<td><p>MAliqu</p></td>
+<td><p>11</p></td>
+<td><p>45</p></td>
+<td><p>45</p></td>
+<td><p>liquids</p></td>
+</tr>
+<tr class="row-even"><td><p>smoke</p></td>
+<td><p>MAgas</p></td>
+<td><p>11</p></td>
+<td><p>50</p></td>
+<td><p>50</p></td>
+<td><p>gases</p></td>
+</tr>
+<tr class="row-odd"><td><p>computer memory</p></td>
+<td><p>MAfunc</p></td>
+<td><p>11</p></td>
+<td><p>49</p></td>
+<td><p>49</p></td>
+<td><p>data storage (mass noun)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-key-to-exercise-f-nouns-related-to-humans-places">
+<span id="exercise-2f-answers"></span><h3>Answer Key to Exercise F - Nouns Related to Humans/Places<a class="headerlink" href="#answer-key-to-exercise-f-nouns-related-to-humans-places" title="Permalink to this headline">¶</a></h3>
+<p>Back to <a class="reference internal" href="#exercise-2f"><span class="std std-ref">Exercise F - Nouns Related to Humans/Places</span></a>.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Word</p></th>
+<th class="head"><p>Mnemonic</p></th>
+<th class="head"><p>Superset</p></th>
+<th class="head"><p>Set</p></th>
+<th class="head"><p>Subset</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Japanese</p></td>
+<td><p>ANlang</p></td>
+<td><p>5</p></td>
+<td><p>91</p></td>
+<td><p>206</p></td>
+<td><p>people/language</p></td>
+</tr>
+<tr class="row-odd"><td><p>Shakespeare</p></td>
+<td><p>ANname</p></td>
+<td><p>5</p></td>
+<td><p>91</p></td>
+<td><p>207</p></td>
+<td><p>proper name</p></td>
+</tr>
+<tr class="row-even"><td><p>Prince Charles</p></td>
+<td><p>ANtitle</p></td>
+<td><p>5</p></td>
+<td><p>91</p></td>
+<td><p>807</p></td>
+<td><p>proper title</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dubliner</p></td>
+<td><p>ANplace</p></td>
+<td><p>5</p></td>
+<td><p>91</p></td>
+<td><p>205</p></td>
+<td><p>people/place (not a language)</p></td>
+</tr>
+<tr class="row-even"><td><p>Wall Street</p></td>
+<td><p>PLagfunc</p></td>
+<td><p>9</p></td>
+<td><p>26</p></td>
+<td><p>228</p></td>
+<td><p>agentive functional location</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kremlin</p></td>
+<td><p>ANorg</p></td>
+<td><p>5</p></td>
+<td><p>94</p></td>
+<td><p>193</p></td>
+<td><p>human organization (proper name)</p></td>
+</tr>
+<tr class="row-even"><td><p>White House</p></td>
+<td><p>PLagfunc</p></td>
+<td><p>9</p></td>
+<td><p>26</p></td>
+<td><p>228</p></td>
+<td><p>agentive functional location</p></td>
+</tr>
+<tr class="row-odd"><td><p>NASA</p></td>
+<td><p>ANorg</p></td>
+<td><p>5</p></td>
+<td><p>94</p></td>
+<td><p>193</p></td>
+<td><p>human organization (proper name)</p></td>
+</tr>
+<tr class="row-even"><td><p>consultant</p></td>
+<td><p>ANdes</p></td>
+<td><p>5</p></td>
+<td><p>91</p></td>
+<td><p>91</p></td>
+<td><p>human profession/designation</p></td>
+</tr>
+<tr class="row-odd"><td><p>throng</p></td>
+<td><p>ANcoll</p></td>
+<td><p>5</p></td>
+<td><p>94</p></td>
+<td><p>94</p></td>
+<td><p>human collective</p></td>
+</tr>
+<tr class="row-even"><td><p>university</p></td>
+<td><p>PLagfunc</p></td>
+<td><p>9</p></td>
+<td><p>26</p></td>
+<td><p>228</p></td>
+<td><p>agentive functional location</p></td>
+</tr>
+<tr class="row-odd"><td><p>gas station</p></td>
+<td><p>PLfunc</p></td>
+<td><p>9</p></td>
+<td><p>26</p></td>
+<td><p>26</p></td>
+<td><p>functional location (non-agentive)</p></td>
+</tr>
+<tr class="row-even"><td><p>England</p></td>
+<td><p>PLcoun</p></td>
+<td><p>9</p></td>
+<td><p>94</p></td>
+<td><p>230</p></td>
+<td><p>country/state/province (agentive and proper)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rome</p></td>
+<td><p>PLcity</p></td>
+<td><p>9</p></td>
+<td><p>94</p></td>
+<td><p>226</p></td>
+<td><p>city (agentive and proper)</p></td>
+</tr>
+<tr class="row-even"><td><p>state</p></td>
+<td><p>PLagcom</p></td>
+<td><p>9</p></td>
+<td><p>94</p></td>
+<td><p>236</p></td>
+<td><p>agentive common-noun geog. entity</p></td>
+</tr>
+<tr class="row-odd"><td><p>coast</p></td>
+<td><p>PLnagcom</p></td>
+<td><p>9</p></td>
+<td><p>29</p></td>
+<td><p>29</p></td>
+<td><p>non-agentive common-noun geog. location</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answer-key-to-exercise-g-nouns-related-to-measure">
+<span id="exercise-2g-answers"></span><h3>Answer Key to Exercise G - Nouns Related to Measure<a class="headerlink" href="#answer-key-to-exercise-g-nouns-related-to-measure" title="Permalink to this headline">¶</a></h3>
+<p>Back to <a class="reference internal" href="#exercise-2g"><span class="std std-ref">Exercise G - Nouns Related to Measure</span></a>.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Word</p></th>
+<th class="head"><p>Mnemonic</p></th>
+<th class="head"><p>Superset</p></th>
+<th class="head"><p>Set</p></th>
+<th class="head"><p>Subset</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>increment</p></td>
+<td><p>MEdis</p></td>
+<td><p>8</p></td>
+<td><p>95</p></td>
+<td><p>95</p></td>
+<td><p>discrete measurable concept</p></td>
+</tr>
+<tr class="row-odd"><td><p>calorie</p></td>
+<td><p>MEtemp</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>164</p></td>
+<td><p>unit of temperature</p></td>
+</tr>
+<tr class="row-even"><td><p>millennium</p></td>
+<td><p>MEdur</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>166</p></td>
+<td><p>unit of duration</p></td>
+</tr>
+<tr class="row-odd"><td><p>millennium bug</p></td>
+<td><p>ABcont</p></td>
+<td><p>6</p></td>
+<td><p>41</p></td>
+<td><p>765</p></td>
+<td><p>contrary events</p></td>
+</tr>
+<tr class="row-even"><td><p>dollar</p></td>
+<td><p>MEval</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>168</p></td>
+<td><p>unit of money/value</p></td>
+</tr>
+<tr class="row-odd"><td><p>megahertz</p></td>
+<td><p>MEvel</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>162</p></td>
+<td><p>unit of velocity</p></td>
+</tr>
+<tr class="row-even"><td><p>diopter</p></td>
+<td><p>MEspec</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>167</p></td>
+<td><p>specialized unit of measure</p></td>
+</tr>
+<tr class="row-odd"><td><p>income</p></td>
+<td><p>MAincome</p></td>
+<td><p>11</p></td>
+<td><p>97</p></td>
+<td><p>97</p></td>
+<td><p>financial mass</p></td>
+</tr>
+<tr class="row-even"><td><p>person year</p></td>
+<td><p>MEdur</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>166</p></td>
+<td><p>unit of duration</p></td>
+</tr>
+<tr class="row-odd"><td><p>filing period</p></td>
+<td><p>MEabs</p></td>
+<td><p>8</p></td>
+<td><p>46</p></td>
+<td><p>46</p></td>
+<td><p>abstract concept measured by unit</p></td>
+</tr>
+<tr class="row-even"><td><p>pint</p></td>
+<td><p>MEvol</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>163</p></td>
+<td><p>unit of volume</p></td>
+</tr>
+<tr class="row-odd"><td><p>charge-back</p></td>
+<td><p>ABstrvb</p></td>
+<td><p>6</p></td>
+<td><p>41</p></td>
+<td><p>749</p></td>
+<td><p>strong verbal</p></td>
+</tr>
+<tr class="row-even"><td><p>hundreds</p></td>
+<td><p>ASnum</p></td>
+<td><p>2</p></td>
+<td><p>92</p></td>
+<td><p>101</p></td>
+<td><p>numeric groupings (aspective)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fahrenheit</p></td>
+<td><p>MEsys</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>234</p></td>
+<td><p>system of measurement</p></td>
+</tr>
+<tr class="row-even"><td><p>nanosecond</p></td>
+<td><p>MEdur</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>166</p></td>
+<td><p>unit of duration</p></td>
+</tr>
+<tr class="row-odd"><td><p>centimeter</p></td>
+<td><p>MElin</p></td>
+<td><p>8</p></td>
+<td><p>61</p></td>
+<td><p>170</p></td>
+<td><p>unit of linear/area measure</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="SAL_08a_learning_exercise_1.html" class="btn btn-neutral float-left" title="Learning Exercise 1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SAL_08c_learning_exercise_3.html" class="btn btn-neutral float-right" title="Learning Exercise 3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Anabela Barreiro.</p>
+  </div>
+
+  <div>
+      <span class="creativecommons">
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" >
+              <img src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/by-sa.svg"
+                   border="0" alt="Creative Commons License"/>
+          </a>
+              OpenLogos web materials are licensed under a
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                  CC BY-SA 4.0.
+              </a>
+      </span>
+  </div>
+
+  
+  <br>Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

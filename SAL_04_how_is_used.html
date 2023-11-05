@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <!-- don't use caching -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How is SAL used &mdash; OpenLogos 1.0.2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/hacks.css" />
+    <link rel="shortcut icon" href="_static/OpenLogos_logo.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="SAL Coding Tips" href="SAL_05_coding_tips.html" />
+    <link rel="prev" title="SAL Adjective Supersets" href="SAL_03c_adjective_sets.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            OpenLogos
+              <img src="_static/OpenLogos_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing OpenLogos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_00_tutorial.html">SAL Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_01_getting_started.html">Getting Started with SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_02_basic_concepts.html">Basic Concepts Regarding SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03_elements.html">SAL Elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03a_nouns.html">SAL Noun Code Taxonomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03b_noun_sets.html">SAL Noun Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03c_adjective_sets.html">SAL Adjective Supersets</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How is SAL used</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-discussion">General Discussion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-sal-is-used-in-res">How SAL is used in RES</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#first-some-general-facts-about-res">First some General Facts About RES</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-sal-is-used-in-semtab">How SAL is used in SEMTAB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-sal-is-used-in-parse-tran">How SAL is used in PARSE/TRAN</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_05_coding_tips.html">SAL Coding Tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_06_glossary.html">Glossary of SAL Mnemonics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_07_FAQ.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08_learn_SAL.html">Learning SAL Coding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08a_learning_exercise_1.html">Learning Exercise 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08b_learning_exercise_2.html">Learning Exercise 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08c_learning_exercise_3.html">Learning Exercise 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_09_test.html">Test your Knowledge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenLogos</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">How is SAL used</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/SAL_04_how_is_used.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-is-sal-used">
+<span id="id1"></span><h1>How is SAL used<a class="headerlink" href="#how-is-sal-used" title="Permalink to this headline">¶</a></h1>
+<section id="general-discussion">
+<h2>General Discussion<a class="headerlink" href="#general-discussion" title="Permalink to this headline">¶</a></h2>
+<p>A primary function of source language analysis is the resolution of ambiguities regarding the function and meaning of words and phrases.  For example, the following strings both have a similar syntactic structure:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>to citizens of Rome and friends</p></li>
+<li><p>to citizens of Rome and environs</p></li>
+</ol>
+</div></blockquote>
+<p>yet it is clear that they parse very differently.</p>
+<p>Seen purely as a syntactic string,</p>
+<blockquote>
+<div><p>PREP1 N1 PREP2 N2 CONJ N3</p>
+</div></blockquote>
+<p>this string could be parsed in several ways, depending on how the scope of PREP1 and PREP2is interpreted:</p>
+<blockquote>
+<div><p>PREP1 (N1 PREP2 N2)) CONJ N3</p>
+<p>PREP1 (N1 PREP2 N2 CONJ N3)</p>
+</div></blockquote>
+<p>In order to resolve correctly, some handle on meaning must be available to the parse.  This handle is provided by the semantico-syntactic representation afforded in SAL.  Here is a simple example of how SAL codes (at the most general, Superset level) are used to resolve structural ambiguity:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>to citizens of Rome and friends</p>
+<blockquote>
+<div><p>to  N(HUM) of N(PLACE) and (HUM)</p>
+</div></blockquote>
+</li>
+<li><p>to citizens of Rome and environs</p>
+<blockquote>
+<div><p>to N(HUM) of N(PLACE) and N(PLACE)</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p>Because of the semantic symmetry of the SAL classifications shared by the first and last nouns (citizens and friends) in (1), the Logos parser would interpret the preposition to as applying to both.  By the same token, in (2), because Rome and environs are semantically symmetrical, the preposition of is seen as apply to both</p>
+<p class="center">***</p>
+<p>How SAL is used to resolve ambiguity as to part of speech.</p>
+<ul>
+<li><p>Many Verb Particles are homographic with prepositions, and often the parser has difficulty in resolving this ambiguity.  For example:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>He turned in the driveway.</p></li>
+<li><p>He turned in his badge.</p></li>
+</ol>
+</div></blockquote>
+<p>In (1), turned is an intransitive verb and in is a preposition.  In (2), turned is a transitive verb and in is a verb particle. The SAL code for driveway as a path in the Place Noun Superset would provide a critical clue to the intransitive, motional nature of turned in (1).</p>
+</li>
+</ul>
+<p class="center">***</p>
+<p>How SAL is used to resolve ambiguity regarding attachment of prepositional phrases.</p>
+<ul>
+<li><p>Codes assigned to adjectives, e.g., to reflect preposition governance, are often of critical importance to parsing decisions. For example, in (1), below, the adjective tall is a non-governance type adverbial adjective, whereas in (2), adjacent is a prep governance type adjective, coded as governing the preposition “to”.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>He built his garage tall to house his truck.</p></li>
+<li><p>He built his garage adjacent to mine.</p></li>
+</ol>
+</div></blockquote>
+<p>In (1), the particle to has the value of in order to (and house is properly seen as a verb). In (2), the governance code assigned to adjacent allows the parser to see to as a preposition (and mine as a pronoun). If adjacent has not been properly coded for governance here, very likely to mine would have been seen as an adverbial infinitive clause. The only intelligence the parser has to work with in order to properly analyze (2) is the prep governance code assigned to the adjective adjacent.</p>
+</li>
+</ul>
+<p class="center">***</p>
+<p>How SAL is used to resolve ambiguity regarding the scope of adjectives and prepositions.</p>
+<ul>
+<li><p>Resolving the scope of adjectives in compound noun phrases is accomplished in a straightforward manner with the use of SAL codes.  For example:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>smart boys and girls</p></li>
+<li><p>blue sky and sunshine</p></li>
+</ol>
+</div></blockquote>
+<p>In (1), the adjective smart clearly applies to both boys and girls, but in (2), the adjective blue does not apply to both nouns in the compound NP.   Parsing rules test for symmetry or lack of symmetry among the SAL codes when making decisions about the scope of the descriptive adjective.  In (1), for example, both boys and girls are found to have the same SAL noun code, viz., HUM.  In (2), sky and sunshine are found to have different SAL noun codes and thus the parsing rule can limit the scope of blue to sky. This rather straightforward methodology obviously has its limits.  For example:</p>
+<blockquote>
+<div><ol class="arabic simple" start="3">
+<li><p>old people and children</p></li>
+</ol>
+</div></blockquote>
+<p>In (3) the adjective old does not apply to both nouns, despite that fact that people and children are both HUM.  To resolve (3) correctly, the parser needs a finer grained semantic taxonomy than is afforded in SAL.  And even were such a fine-grained taxonomy in place (one in fact is presently under development), the question remains as to how general or how specific the test must be.   There are dangers in testing too finely as well as too coarsely.  And knowing what the appropriate level to test for is a good question.</p>
+</li>
+</ul>
+<p class="center">***</p>
+<p>How SAL is used to resolve ambiguity regarding verbs.</p>
+<ul>
+<li><p>Codes assigned to adverbs, e.g., to reflect durative time vs. punctative time, are often of critical importance to translation decisions. For example, the distinction between the punctative set and the durative set in the Temporal Adverb Superset are important when translating into languages whose verbs are sensitive to time aspects.  For example, in Russian, the imperfective aspect of the Russian verb must be used to express sustained action;   the perfective aspect denotes completed action or time-specific action.  (In English the durative is usually expressed by the present progressive tense;  e.g. He was/is eating.)</p>
+<p>It is often difficult when translating English into Russian to know which aspect of the verb to use. In such cases, the classification of the adverb may be helpful. For example, the verb to drink would take the perfective in Russian in (1), below, and the imperfective in (2).</p>
+<ol class="arabic simple">
+<li><p>The doctor said I should never drink milk.</p></li>
+<li><p>The doctor said I must drink the medicine immediately.</p></li>
+</ol>
+<p>In (1), the durative adverb never indicates sustained repetitive action, expressed in Russian with the imperfective aspect.  In (2), the punctual adverb immediately calls for the perfective aspect of the Russian verb for drink.</p>
+<p>Note how in the following sentences the adverbial SAL codes for tense (or the absence of tense) is critical to the analysis of tense-ambiguous verbs like set, re-set, put, etc..</p>
+<ol class="arabic simple">
+<li><p>They re-set the clock daily at noon.</p></li>
+<li><p>They re-set the clock yesterday at noon.</p></li>
+</ol>
+<p>In (1), the absence of a tense subset code for daily (a Frequency Superset Adverb) causes re-set to be seen as its default setting, i.e., present tense.  In (2), the past tense subset code for yesterday causes the parser to interpret re-set as past.</p>
+<p>Note that these adverbial codes also contribute to the interpretation of the verb’s aspects (critical for translating into Russian).</p>
+<p>Adverb codes can be helpful in resolving ambiguities regarding the BE + ADJ(ED) construction in the following types of sentences:</p>
+<ol class="arabic simple">
+<li><p>X is attached to Y</p></li>
+<li><p>X is very attached to Y</p></li>
+</ol>
+<p>The parser would normally interpret is attached … in (1) as a passive VP, as in e.g., the picture is attached to the wall.  In (2), however, the pre-adverbial code of the adverb very would prevent a VP interpretation and would instead allow the parser to interpret is attached as BE + PREDADJ, as in John is very attached to his family. (Pre-adverbial adverbs are intensifier-type adverbs that can appear before both adverbs and adjectives.  There are six intensifier-type adverbs, each distinguished by its position relative to the morpheme that it intensifies.)</p>
+</li>
+</ul>
+<p class="center">***</p>
+<p>How SAL is used to resolve questions regarding the meaning of prepositions.</p>
+<ul>
+<li><p>Prepositions frequently acquire their meaning from the word to which they are attached.  For example:</p>
+<ol class="arabic simple">
+<li><p>John put the book on chemistry on the shelf.</p></li>
+</ol>
+<p>In (1) both the meaning and the grammatical function of the preposition on differs in each of its instances.  In the first instance, on acquires the meaning of about or concerning because of its attachment to book.  A parsing rewrite rule for the following pattern effects this analysis:</p>
+<blockquote>
+<div><p>NP(INFORMATION TYPE) + PREP(on) + NP(~SURFACE)   –&gt;  NP / (on = concerning)</p>
+</div></blockquote>
+<p>The SAL classifications INFORMATION and SURFACE provide the intelligence for this analysis.</p>
+<p>The SAL classification of the verb put also allows the parser to attach on the shelf to the verb. (The verb put has a SAL code which indicates governance for locative prepositions.)</p>
+</li>
+</ul>
+<p class="center">***</p>
+<p>How SAL is used to effect context-sensitive target transfers of source verbs, prepositions, and adjectives.</p>
+<ul class="simple">
+<li><p>See SEMTAB rules for the verb, e.g. raise in TermBuiilder’s View Function.   There you will find thirty rules governing the meaning and transfer for raise based on context.</p></li>
+</ul>
+<p class="center">***</p>
+<p>Other typical uses of SAL.</p>
+<ul>
+<li><p>Parsing entails decisions regarding how sentence components relate.  In the following sentences, the SAL code of the adjective important provides information critical to such parsing decisions.</p>
+<ol class="arabic simple">
+<li><p>It was important for the citizens of Boston that the team won.</p></li>
+<li><p>The coach held aloft the Keys to the City of Boston that the team won.</p></li>
+<li><p>It was important for the citizens of Boston to win this series.</p></li>
+<li><p>The team needed the support of the citizens of Boston to win this  series.</p></li>
+</ol>
+<p>In (1), the SAL code assigned to the adjective important [PCurgent type adjective] allows the Logos System’s deterministic parser to interpret that the team won as a subordinate clausal complement to the adjective, and not as a relative clause as in (2).  This code also allows the parser to see the verb won as intransitive rather than transitive (as it is in (2)).
+Similarly, in (3), the PCurgent code assigned to important enables a deterministic parser to interpret the infinitive clause to win this series as complementary to the adjective and not as adverbial to the sentence as in (4).  In (4), but not in (3), the particle to would be rendered in order to in the target language.</p>
+</li>
+</ul>
+</section>
+<section id="how-sal-is-used-in-res">
+<h2>How SAL is used in RES<a class="headerlink" href="#how-sal-is-used-in-res" title="Permalink to this headline">¶</a></h2>
+<section id="first-some-general-facts-about-res">
+<h3>First some General Facts About RES<a class="headerlink" href="#first-some-general-facts-about-res" title="Permalink to this headline">¶</a></h3>
+<p>In English source, RES performs a macro-parse of the input sentence.  Specifically,  RES:</p>
+<ul class="simple">
+<li><p>tags every element as to part of speech</p></li>
+<li><p>resolves all words with multiple parts of speech (i.e. disambiguates syntactic homographs)</p></li>
+<li><p>identifies all clauses by type, including clausal subjects, clausal objects and clausal complements</p></li>
+<li><p>identifies the subject and predicate of every clause</p></li>
+<li><p>recognizes all transitions from one clause to another</p></li>
+<li><p>recognizes the syntactic function of all punctuation</p></li>
+<li><p>recognizes embedded parenthetical material and absolute constructions</p></li>
+<li><p>passes this information to subsequent steps of analysis (TRANs)</p></li>
+</ul>
+<p>RES is a left-to-right, bottom-up parser that produces a single parse, not a parse tree.  RES also employs a top-down control function that constrains the parse.</p>
+<p>To produce a single, correct parse, RES relies heavily upon the semantics of the SAL codes that represent the input sentence.  (RES also has a limited look-ahead capability, needed in order to avoid so-called “garden-path” situations.)</p>
+<p>Some examples of how SAL codes effect parsing decisions in RES (in order of importance).
+<em>-to be developed-</em></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>How SAL codes for MASS nouns effect parsing.</p></li>
+<li><p>How SAL codes for VERBAL ABSTRACTS effect parsing</p></li>
+<li><p>How SAL codes for AGENT nouns effect parsing.</p>
+<p>SAL taxonomy for nouns contain a number of elements that can function as agents.  Some are specifcally labeled “agentive”, others are “agentive” by implication.  These include the following: (to be expanded).</p>
+</li>
+<li><p>How SAL codes effect parsing of coordinate structures</p></li>
+<li><p>How SAL codes effect parsing of relative clauses</p></li>
+<li><p>How SAL codes effect etc. etc..</p></li>
+</ol>
+</div></blockquote>
+</section>
+</section>
+<section id="how-sal-is-used-in-semtab">
+<h2>How SAL is used in SEMTAB<a class="headerlink" href="#how-sal-is-used-in-semtab" title="Permalink to this headline">¶</a></h2>
+<p><em>-to be developed-</em></p>
+</section>
+<section id="how-sal-is-used-in-parse-tran">
+<h2>How SAL is used in PARSE/TRAN<a class="headerlink" href="#how-sal-is-used-in-parse-tran" title="Permalink to this headline">¶</a></h2>
+<p><em>-to be developed-</em></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="SAL_03c_adjective_sets.html" class="btn btn-neutral float-left" title="SAL Adjective Supersets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SAL_05_coding_tips.html" class="btn btn-neutral float-right" title="SAL Coding Tips" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Anabela Barreiro.</p>
+  </div>
+
+  <div>
+      <span class="creativecommons">
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" >
+              <img src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/by-sa.svg"
+                   border="0" alt="Creative Commons License"/>
+          </a>
+              OpenLogos web materials are licensed under a
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                  CC BY-SA 4.0.
+              </a>
+      </span>
+  </div>
+
+  
+  <br>Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

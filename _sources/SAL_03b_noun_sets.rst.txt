@@ -1,6 +1,8 @@
 SAL Noun Supersets
 ==================
 
+.. _concrete-count-noun-ss:
+
 CONCRETE Count Noun Superset      [mnemonic:  CO]  [3]
 -------------------------------------------------------------------------------
 
@@ -288,7 +290,7 @@ concretization of verbals    [mnemonic: COverb]    [3 34 211]
 
                    
 
- 
+.. _concretization-of-mass-nouns: 
 
 concretization of mass nouns [mnemonic: COmass]    [3 34 210]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -304,6 +306,7 @@ concretization of mass nouns [mnemonic: COmass]    [3 34 210]
  
 
  
+.. _product-brand-names:
 
 product/brand names    [mnemonic: CObrand]    [3 34 209]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -780,6 +783,7 @@ undifferentiated concrete things   [mnemonic: COobj]    [3 03 212]
  
 
  
+.. _mass-noun-superset:
 
 MASS Noun Superset  [mnemonic: MA]     [11]
 -------------------------------------------------------------------------------
@@ -1224,7 +1228,7 @@ people/place   [mnemonic: ANplace]    [5 91 205]
 
  
 
- 
+.. _people-language: 
 
 people/language   [mnemonic: ANlang]    [5 91 206]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1281,7 +1285,7 @@ Proper names of human collectives (e.g., Congress, Parliament) should be coded a
 
  
 
- 
+.. _proper organization names: 
 
 proper organization names  [mnemonic: ANorg]    [5 94 193]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1856,7 +1860,7 @@ Sets and subsets within the INFORMATION Noun Superset are as follows:
 
  
 
- 
+.. _instructional-legal: 
 
 instructional/legal  [mnemonic: INinst]    [12 74]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1940,7 +1944,7 @@ Terms like URL, ASCII, HTML, JAVA should be coded as symbolic data under INFORMA
 
  
 
- 
+.. _scripted-events: 
 
 scripted events [mnemonic: INevent]    [12 76 223]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2037,12 +2041,6 @@ storage media for recorded data [mnemonic: INstor]    [12 77]
 
  
 
- 
-
- 
-
- 
-
 undifferentiated information [mnemonic: INundif]    [12 79]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -2053,10 +2051,8 @@ undifferentiated information [mnemonic: INundif]    [12 79]
 **Developers' Tips:**
 
  
-
  
-
- 
+.. _abstract-noun-superset: 
 
 ABSTRACT Noun Superset  [mnemonic: AB ]    [6]
 -------------------------------------------------------------------------------
@@ -2261,7 +2257,7 @@ NOUN [ABnegc] + OF + V'ING as in the risk of doing s.t.
 
  
 
- 
+.. _strong-verbals: 
 
 strong verbals: actions/processes/behavior or the result of same [mnemonic: ABstrvb]    [6 41 749] 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2294,15 +2290,18 @@ Be sure to consider the preposition governance of strong verbals, as these codes
 **Developers' Tips:**
 
  
+.. _strong-verbals-with-prepositional-governance:
 
+Strong Verbals (with Prepositional Governance)  [ABstrv] 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  
 
 .. csv-table:: 
-   :header: "Characteristic",  "Mnemonic",  "Numeric (SS Set Subset)", "Examples" 
+   :header: 
    :delim: |
    :widths: auto
-
-    Strong Verbals (with Prepositional Governance)  [ABstrv] motional preps + acc: to, onto, into, over  | ABmot         | [6 24 749]  | stumble, reach, reroute
+    
+    motional preps + acc: to, onto, into, over  | ABmot         | [6 24 749]  | stumble, reach, reroute
     locative preps + dat: at, on, in, under, above  | ABloc           | [6 68 749]  | cutover, dent, puncture, scribble, slap
     at = relational sense  | ABat  | [6 94 749]  | balk, peek, smile
     for  | ABfor  | [6 46 749]  | affinity, flair, respect
@@ -2315,9 +2314,7 @@ Be sure to consider the preposition governance of strong verbals, as these codes
     of   -  No governance code is assigned for of because, with rare exceptions, an of after a strong verbal is always genitival, introducing either the object or the subject of the strong verbal and NOT a true complement of the verb.  E.g., removal of waste, transfer of goods, etc.  | WARNING REGARDING "OF"!
 
 
- 
-
- 
+.. _time-events:
 
 time events [mnemonic: ABtime]    [6 41 732]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2607,7 +2604,7 @@ Typical Patterns for Transitive PROCESS Nouns (PN):
 
  
 
- 
+.. _measure-noun-superset: 
 
 MEASURE Noun Superset  [mnemonic: ME]    [8]
 -------------------------------------------------------------------------------
@@ -3022,7 +3019,7 @@ Words like fiscal year and tax year should be coded here and not in the abstract
 
  
 
- 
+.. _aspective-noun-superset: 
 
 ASPECTIVE Noun Superset  [mnemonic: AS]    [2]
 -------------------------------------------------------------------------------
@@ -3359,7 +3356,7 @@ If the word is an alpha-numeric string, it will be assigned the code shown above
  
 
  
-
+.. _remote-agentive-subset:
  
 remote agentive subset   [mnemonic: REagen]    [228]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -3377,9 +3374,7 @@ In general, remote agentives would be assigned mainly to functional locations un
 **Developers' Tips:**   
 
  
-
- 
-
+.. _remote-mass-subset:
  
 remote mass subset   [mnemonic: REmass]    [855]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -3409,7 +3404,7 @@ E.g.
  
 
  
-
+.. _apposition-inviting-subset:
  
 apposition-inviting subset   [mnemonic: APinvit]    [986]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

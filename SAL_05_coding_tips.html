@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <!-- don't use caching -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAL Coding Tips &mdash; OpenLogos 1.0.2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/hacks.css" />
+    <link rel="shortcut icon" href="_static/OpenLogos_logo.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Glossary of SAL Mnemonics" href="SAL_06_glossary.html" />
+    <link rel="prev" title="How is SAL used" href="SAL_04_how_is_used.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            OpenLogos
+              <img src="_static/OpenLogos_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing OpenLogos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_00_tutorial.html">SAL Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_01_getting_started.html">Getting Started with SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_02_basic_concepts.html">Basic Concepts Regarding SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03_elements.html">SAL Elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03a_nouns.html">SAL Noun Code Taxonomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03b_noun_sets.html">SAL Noun Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03c_adjective_sets.html">SAL Adjective Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_04_how_is_used.html">How is SAL used</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SAL Coding Tips</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tips-on-coding-nouns-in-termbuilder">Tips on Coding Nouns in TermBuilder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview-of-noun-coding-methods">Overview of Noun Coding Methods</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#guideline-to-sal-noun-coding">Guideline to SAL Noun Coding</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nouns-with-multiple-meanings">Nouns with Multiple Meanings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#noun-coding-priorities">Noun Coding Priorities</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tips-for-coding-descriptive-adjectives">Tips for Coding Descriptive Adjectives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adjective-coding-procedure">Adjective Coding Procedure</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tips-on-coding-adverbs">Tips on Coding Adverbs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_06_glossary.html">Glossary of SAL Mnemonics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_07_FAQ.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08_learn_SAL.html">Learning SAL Coding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08a_learning_exercise_1.html">Learning Exercise 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08b_learning_exercise_2.html">Learning Exercise 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08c_learning_exercise_3.html">Learning Exercise 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_09_test.html">Test your Knowledge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenLogos</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">SAL Coding Tips</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/SAL_05_coding_tips.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sal-coding-tips">
+<h1>SAL Coding Tips<a class="headerlink" href="#sal-coding-tips" title="Permalink to this headline">¶</a></h1>
+<p><strong>Coding tips for Nouns, for Adjectives, for Adverbs</strong></p>
+<section id="tips-on-coding-nouns-in-termbuilder">
+<h2>Tips on Coding Nouns in TermBuilder<a class="headerlink" href="#tips-on-coding-nouns-in-termbuilder" title="Permalink to this headline">¶</a></h2>
+<p>The easiest and most accurate method for encoding new nouns and noun phrases is presented below.</p>
+<p>This instruction presupposes that you have used TermBuilder’s AutoCode function to encode a new entry and that you have not yet actually updated the dictionary.   You should be looking in TermBuilder’s New Entry Window where your entry and the automatically assigned codes are displayed.</p>
+<ol class="arabic simple">
+<li><p>In the left-hand frame of TermBuilder’s New Entry Window, scroll to Category (just below Part of Speech).  (Category will contain the SAL superset value automatically assigned by Auto Code.)</p></li>
+<li><p>Click on the value shown in the row labeled Category.  A small box icon will display to the right.</p></li>
+<li><p>Click on the box icon.  This will take you to the SAL Wizard.</p></li>
+<li><p>In the SAL Wizard, you are presented with several options. The easiest and most accurate way to code your new entry is to use the “prompts” option.</p></li>
+<li><p>Click on the “prompts” option.  If TermBuilder has some knowledge about your word, it will display all the meanings it knows to be associated with your entry (or with the head word of your entry if it is a compound noun phrase). (TermBuilder has a large store of information about basic nouns and their various meanings)</p></li>
+<li><p>Click on the meaning that most applies.</p></li>
+<li><p>If none of the meanings seem to apply, click on the “default” option. “Default” gives you a wide range of possible codes for you to choose from.</p></li>
+<li><p>You must also click on the “default” option to code the entry in cases where the “prompts” option does not have a + sign before it, meaning that TermBuilder has no information about your entry. In such cases, AutoCode assignments cannot be relied upon and you should recode the entry using the “default” option, or the “SAL” option if available and appropriate</p></li>
+<li><p>If you are tutored in SAL coding, and the “SAL” option is available on your system, you may click on “SAL”.  This option gives you the full SAL taxonomy to work with and affords the most accurate codes possible.   Working with SAL, however, presupposes prior tutoring.</p></li>
+</ol>
+<section id="overview-of-noun-coding-methods">
+<h3>Overview of Noun Coding Methods<a class="headerlink" href="#overview-of-noun-coding-methods" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>TERMBUILDER OPTION</p></th>
+<th class="head"><p>DIFFICULTY</p></th>
+<th class="head"><p>ACCURACY</p></th>
+<th class="head"><p>COMMENT</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AutoCode</p></td>
+<td><p>easiest</p></td>
+<td><p>lowest</p></td>
+<td><p>least recommended; should not be used if term is unknown to TermBuilder</p></td>
+</tr>
+<tr class="row-odd"><td><p>Prompts</p></td>
+<td><p>easy</p></td>
+<td><p>good</p></td>
+<td><p>the recommended method if TermBuilder has some prior knowledge of your head word</p></td>
+</tr>
+<tr class="row-even"><td><p>Default</p></td>
+<td><p>harder</p></td>
+<td><p>good</p></td>
+<td><p>the recommended method if your entry is completely unknown to TermBuilder’s knowledge base</p></td>
+</tr>
+<tr class="row-odd"><td><p>SAL Taxonomy</p></td>
+<td><p>hardest</p></td>
+<td><p>highest</p></td>
+<td><p>the superior method, reserved for tutored users and developers</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="guideline-to-sal-noun-coding">
+<h2>Guideline to SAL Noun Coding<a class="headerlink" href="#guideline-to-sal-noun-coding" title="Permalink to this headline">¶</a></h2>
+<section id="nouns-with-multiple-meanings">
+<h3>Nouns with Multiple Meanings<a class="headerlink" href="#nouns-with-multiple-meanings" title="Permalink to this headline">¶</a></h3>
+<p>Many nouns fall into more than one SAL category.  For example, passage can be both a conduit under Concrete, and a path under Place.   It can also be a piece of writing or musical composition under Information.</p>
+<p>Selection among the multiple meanings of a given noun can often be effected by the use of Subject Matter Codes (SMC) when entering the term in TermBuilder.</p>
+<p>In some cases, however, Subject Matter Codes are not helpful.  In such cases, the user must make an arbitrary choice among SAL codes at the time the word is entered.  (Later development plans include giving the system the ability to resolve among the multiple meanings of a common noun on the basis of extra-sentential context.  This capability does not presently exist in the Logos System.)</p>
+<p>When making coding decisions, users should observe the coding priorities listed below.</p>
+<section id="noun-coding-priorities">
+<span id="id1"></span><h4>Noun Coding Priorities<a class="headerlink" href="#noun-coding-priorities" title="Permalink to this headline">¶</a></h4>
+<p>There is a critical set of priorities governing coding choices for nouns that should be observed, if translation degradation is to be avoided.  The following represents the coding hierarchy in order of importance:</p>
+<ul>
+<li><p>Verb-biased Nouns (See verbal abstracts set under Abstract Superset).   Nouns coded for verb bias tell the system to expect a verb complement.</p>
+<p>Verb-biased codes are critical for parsing.  For example:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>ways of cooking lentils</p></li>
+<li><p>types of cooking utensils.</p></li>
+</ol>
+</div></blockquote>
+<p>The verbal abstracts code given to ways in (1) biases the parser to expect a verb and therefore allows the parser to resolve cooking correctly to a verb.  In (2) cooking is an adjective.</p>
+</li>
+<li><p>Nouns taking prepositional complementation.  (See strong verbals under Abstract Superset.)   For example:</p>
+<p>attitude towards
+interest in
+anxiety about
+phone connection to
+attention to</p>
+<p>Prep governance codes are critical for parsing decisions regarding prepositional attachement.</p>
+</li>
+<li><p>Mass Nouns.  Unlike count nouns, mass nouns can occur in the singular without an article or quantifier; e.g., Gold is expensive.</p>
+<p>Mass codes are critical to parsing.  For example:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Test gold for …</p></li>
+<li><p>… test tube for… .</p></li>
+</ol>
+</div></blockquote>
+<p>In (1), gold as a Mass noun helps the parser to see test as a verb.  (Unlike count nouns, singular mass nouns without an article can be the object of a verb.)
+In (2), test must be a noun because tube is a singular count noun.</p>
+<p>Mass-like codes occur in various places in the SAL noun taxonomy.   These include:</p>
+<ul class="simple">
+<li><p>Mass Superset, which is mass by definition</p></li>
+<li><p>trees/wood subset (e.g. oak) under Concrete Superset</p></li>
+<li><p>edibles/color subset (e.g. orange) under Concrete Superset</p></li>
+<li><p>mammals/food/fur subset (e.g. fox) under Animate Superset</p></li>
+<li><p>fowl/food subset (e.g. duck) under Animate Superset</p></li>
+<li><p>remote mass subset</p></li>
+</ul>
+</li>
+<li><p>Nouns denoting agents.  Agentive type nouns occur in various places in the SAL noun taxonomy.  These include:</p>
+<ul class="simple">
+<li><p>Animate Superset, which is agentive by definition</p></li>
+<li><p>agentive set under Concrete Superset</p></li>
+<li><p>functional location (agentive) subset under Place Superset</p></li>
+<li><p>geographical entities (agentive) subset under Place Superset</p></li>
+<li><p>remote agentive subset (an optional subset code under any set or superset)</p></li>
+</ul>
+<p>See <a class="reference internal" href="SAL_03a_nouns.html#sal-noun-code-hierarchy"><span class="std std-ref">SAL Noun Code Hierarchy</span></a>.</p>
+</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="tips-for-coding-descriptive-adjectives">
+<h2>Tips for Coding Descriptive Adjectives<a class="headerlink" href="#tips-for-coding-descriptive-adjectives" title="Permalink to this headline">¶</a></h2>
+<p>Note that participial adjectives (-ed, -ing, and -able forms) derive their codes from their verb form automatically. Users and developers cannot code participial adjectives.</p>
+<hr class="docutils" />
+<section id="adjective-coding-procedure">
+<h3>Adjective Coding Procedure<a class="headerlink" href="#adjective-coding-procedure" title="Permalink to this headline">¶</a></h3>
+<p>Working from Right to Left, choose the first Row that fits your adjective and click on the associated Table.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Attributive</p></th>
+<th class="head"><p>Predicate</p></th>
+<th class="head"><p>Convert. to Adverb*</p></th>
+<th class="head"><p>TO-V Comp.</p></th>
+<th class="head"><p>WH-Clause Comp.</p></th>
+<th class="head"><p>Table</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ADJ N</p></td>
+<td><p>NP is ADJ</p></td>
+<td><p>ADJ N = V ADV</p></td>
+<td><p>NP is ADJ TO V</p></td>
+<td><p>NP is ADJ THAT</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Table A</p></td>
+</tr>
+<tr class="row-even"><td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>Table B</p></td>
+</tr>
+<tr class="row-odd"><td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td></td>
+<td><p>Table C</p></td>
+</tr>
+<tr class="row-even"><td><p>Y</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Table D</p></td>
+</tr>
+<tr class="row-odd"><td><p>Y</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Table D</p></td>
+</tr>
+</tbody>
+</table>
+<p>* Adjective Convertible to Adverb:  E.g., slow movement = move slowly</p>
+<hr class="docutils" />
+<table class="colwidths-auto docutils align-default" id="id2">
+<caption><span class="caption-text">Table A - Preclausal Adjectives</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>It is ADJ that</p></th>
+<th class="head"><p>It is ADJ to v</p></th>
+<th class="head"><p>NP is ADJ to v</p></th>
+<th class="head"><p>NP is ADJ that</p></th>
+<th class="head"><p>ADJ type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>urgent subset</p></td>
+</tr>
+<tr class="row-odd"><td><p>Y</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>clear subset</p></td>
+</tr>
+<tr class="row-even"><td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>limited</p></td>
+<td><p>certain subset</p></td>
+</tr>
+<tr class="row-odd"><td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>good subset</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>happy subset</p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>Y</p></td>
+<td><p>aware subset</p></td>
+</tr>
+</tbody>
+</table>
+<p>* Select the ADJ Type that most closely fits</p>
+<p><strong>RuleWriters’ Note:</strong> Preclausal codes are to be specified at the superset or subset level only</p>
+<table class="colwidths-auto docutils align-default" id="id3">
+<caption><span class="caption-text">Table B  - Preverbal Adjectives</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>It is ADJ to V</p></th>
+<th class="head"><p>NP is ADJ to V</p></th>
+<th class="head"><p>NP is ADJ V’ing</p></th>
+<th class="head"><p>It is ADJ to V’ing</p></th>
+<th class="head"><p>NP is ADJ to V’ing</p></th>
+<th class="head"><p>NP is ADJ {in,with,of,etc.} V’ing</p></th>
+<th class="head"><p>ADJ modifies SUBJ NP</p></th>
+<th class="head"><p>ADJ Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Y</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>valid subset</p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>Y</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>akin subset</p></td>
+</tr>
+<tr class="row-even"><td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>easy subset</p></td>
+</tr>
+<tr class="row-odd"><td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>limited</p></td>
+<td><p>Y</p></td>
+<td><p>wise subset</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>Y</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>limited</p></td>
+<td><p>Y</p></td>
+<td><p>eager subset</p></td>
+</tr>
+<tr class="row-odd"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>limited</p></td>
+<td><p>Y</p></td>
+<td><p>first subset</p></td>
+</tr>
+<tr class="row-even"><td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>limited</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>limited</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>busy subset</p></td>
+</tr>
+</tbody>
+</table>
+<p>* Select the ADJ Type that most closely fits</p>
+<p><strong>RuleWriters’ Note:</strong>   Preverbal codes should be specified at the superset or subset level only</p>
+<table class="colwidths-auto docutils align-default" id="id4">
+<caption><span class="caption-text">Table C - Adverbial Adjectives</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Description</p></th>
+<th class="head"><p>Examples</p></th>
+<th class="head"><p>SAL Adjective Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Adjectives governing  prepositions</p></td>
+<td><p>adjacent  (to), compilant (with), famous (for)</p></td>
+<td><p>prep governance subset</p></td>
+</tr>
+<tr class="row-odd"><td><p>Adjectives of state or manner</p></td>
+<td><p>clean, joyful, sly, personable</p></td>
+<td><p>state/manner subset</p></td>
+</tr>
+<tr class="row-even"><td><p>Adjectives of time or order</p></td>
+<td><p>recent, random, daily, final</p></td>
+<td><p>time/order subset</p></td>
+</tr>
+<tr class="row-odd"><td><p>Adjectives of place</p></td>
+<td><p>above, backward, overseas, regional</p></td>
+<td><p>locative subset</p></td>
+</tr>
+<tr class="row-even"><td><p>Adjectives ofquantity or measure</p></td>
+<td><p>minimal, slight, countless, lengthy</p></td>
+<td><p>quantity/measure subset</p></td>
+</tr>
+<tr class="row-odd"><td><p>Adjectives of degree or intensity</p></td>
+<td><p>real, utter, mere, entire</p></td>
+<td><p>degree subset</p></td>
+</tr>
+</tbody>
+</table>
+<p>* Select the ADJ Type that most closely fits</p>
+<table class="colwidths-auto docutils align-default" id="id5">
+<caption><span class="caption-text">Table D - Non-Adverbial Adjectives</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Description</p></th>
+<th class="head"><p>Examples</p></th>
+<th class="head"><p>SAL Adjective Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Can be predicate adjective</p></td>
+<td><p>all purpose</p></td>
+<td><p>predicate adjective subset</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cannot be predicate adjective</p></td>
+<td><p>Atlantic, bridal, naval</p></td>
+<td><p>non-predicate adjective subset</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="tips-on-coding-adverbs">
+<h2>Tips on Coding Adverbs<a class="headerlink" href="#tips-on-coding-adverbs" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default" id="id6">
+<caption><span class="caption-text">Intensifier Adverb Decision Table</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Placement</p></th>
+<th class="head"><p>Pre-Adv</p></th>
+<th class="head"><p>Pre-Nom</p></th>
+<th class="head"><p>Pre-Pre-Adv</p></th>
+<th class="head"><p>Pre-Adj</p></th>
+<th class="head"><p>Post-Nom</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Examples:</p></td>
+<td><p>extremely, tolerably, too, *more, most</p></td>
+<td><p>especially, just, only, even, strictly</p></td>
+<td><p>*much, really, so, somewhat</p></td>
+<td><p>*all, full, well, completely</p></td>
+<td><p>*enough, apiece</p></td>
+</tr>
+<tr class="row-odd"><td><p>Before Adv</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>Y</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Before Noun</p></td>
+<td><p>*</p></td>
+<td><p>Y</p></td>
+<td><p>*</p></td>
+<td><p>*</p></td>
+<td><p>*</p></td>
+</tr>
+<tr class="row-odd"><td><p>Before Quantifier</p></td>
+<td></td>
+<td><p>Y</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Before Pre-Adv</p></td>
+<td></td>
+<td></td>
+<td><p>Y</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Before Adj</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td></td>
+<td><p>Y</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Post-Noun</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>Illustrations:</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Before Adv</p></td>
+<td><p>extremely well said</p></td>
+<td></td>
+<td><p>much more useful</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Before Noun</p></td>
+<td></td>
+<td><p>just cheese</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Before Quantifier</p></td>
+<td></td>
+<td><p>just one day</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Before Pre-Adv</p></td>
+<td></td>
+<td></td>
+<td><p>really too hot</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Before Adj</p></td>
+<td><p>extremely adept</p></td>
+<td><p>just ready</p></td>
+<td></td>
+<td><p>well-received</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Post-Noun</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>food enough</p></td>
+</tr>
+</tbody>
+</table>
+<p>* Signifies that the morpheme before a noun becomes a determiner.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="SAL_04_how_is_used.html" class="btn btn-neutral float-left" title="How is SAL used" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SAL_06_glossary.html" class="btn btn-neutral float-right" title="Glossary of SAL Mnemonics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Anabela Barreiro.</p>
+  </div>
+
+  <div>
+      <span class="creativecommons">
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" >
+              <img src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/by-sa.svg"
+                   border="0" alt="Creative Commons License"/>
+          </a>
+              OpenLogos web materials are licensed under a
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                  CC BY-SA 4.0.
+              </a>
+      </span>
+  </div>
+
+  
+  <br>Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>
