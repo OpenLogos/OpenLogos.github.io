@@ -21,6 +21,17 @@ The OpenLogos program is based on the Logos Machine Translation System, one of t
    SAL_03_elements
    SAL_03a_nouns
    SAL_03b_noun_sets
+   SAL_03c_adjective_sets
+   SAL_03d_coding_adjectives
+   SAL_04_how_is_used
+   SAL_05_coding_tips
+   SAL_06_glossary
+   SAL_07_FAQ
+   SAL_08_learn_SAL
+   SAL_08a_learning_exercise_1
+   SAL_08b_learning_exercise_2
+   SAL_08c_learning_exercise_3
+   SAL_09_test
    references
 
 History

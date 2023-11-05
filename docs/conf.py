@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'OpenLogos'
-copyright = '2023, OpenLogos'
-author = 'OpenLogos'
+copyright = '2023, Anabela Barreiro'
+author = 'Anabela Barreiro'
 master_doc = 'index'
 
 # The full version, including alpha/beta/rc tags
