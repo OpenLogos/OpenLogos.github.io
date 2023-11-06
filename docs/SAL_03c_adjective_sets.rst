@@ -115,7 +115,7 @@ pre-clausal: urgent type [mnemonic: PCurgent]  [code: 13 86 432]
 **Tips:**  For some adjectives in this subset, the test for that clause complementation may be extended to include wh- clauses.  E.g., It is optional whether they do this or not.
 
 
-**Caution:**   When in the predicate adjective position, PCurgent adjectives cannot take a normal NP subject and have that clause complementation ( e.g. *He is essential that...).
+**Caution:**   When in the predicate adjective position, PCurgent adjectives cannot take a normal NP subject and have that clause complementation ( e.g. \*He is essential that...).
 
 When in the predicate adjective position,  PCurgent adjectives that do have a normal NP subject (e.g. Vitamins are important) cannot simultaneously take infinitive clause complementation.  For example, in sentences (1) and (2) below, the infinitive clause is adverbial.  (In both (1) and (2), the particle to has the sense of in order to.)
 
@@ -158,7 +158,7 @@ pre-clausal: certain type [mnemonic: PCcertain]  [code: 13 87 438]
 **Tips:**  For some adjectives in this subset, the test for that clause complementation may be extended to include wh- clauses.  E.g., It is not certain when/whether they will come.
 
 
-**Caution:**   Note that some adjectives, like indisputable, undecided, uncertain, incurious, etc., which bear a partial resemblance to PCcertain type adjectives, nevertheless do not satisfy all the conditions of this subset and hence should not be so encoded.   E.g. *John is undecided to vote in the election.
+**Caution:**   Note that some adjectives, like indisputable, undecided, uncertain, incurious, etc., which bear a partial resemblance to PCcertain type adjectives, nevertheless do not satisfy all the conditions of this subset and hence should not be so encoded.   E.g. \*John is undecided to vote in the election.
 
 **Developers' Tips:**  The PCcertain code allows a deterministic parser to distinguish between that clauses which complement the adjective and relative clauses, and between infinitive clauses which complement the adjective and adverbial clauses.  See Developers' Tips under PCurgent.
 
@@ -179,32 +179,55 @@ pre-clausal: good type  [mnemonic: PCgood]  [code: 13 87 439]
 **Patterns:**  
 
     It is ADJ that . . .
+
          It is silly that . . .
+
     It is ADJ for NP that. . .
+
          It is good for the employees that . . .
+
     It is ADJ to VP
+
          It is smart to exercise.
+
     It is ADJ for NP to VP
+
          It was silly for them to expect. . .
+
     It is ADJ of NP to VP
+
          It was optimistic of them to expect. . .
+
     It is ADJ V'ing. . .
+
          It is smart doing the right thing. 
+
     NP is ADJ to VP.
+
          John is smart to exercise.
 
 **Patterns specific to good-type sub-groups:**
 
     It is ADJ to NP that. . .
+
          It was vital to him that . . .
+
     NP is ADJ V'ing. . .
+
          He is smart doing the right thing.  . .
+
     NP is ADJ at V'ing. . .
+
          She is good at teaching.
+
     NP is ADJ in V'ing. . .
+
          He was selfish in doing this.
+
      NP is ADJ for V'ing. . .
+
          Salt is good for seasoning food.
+
     It was an ADJ NP to VP . . . (see Tips, below)
 
 **Tips:** Note that this type of adjective, when used attributively (e.g., nice gesture) may still take its verbal complementation.  For example:
@@ -299,7 +322,7 @@ pre-clausal: aware type  [mnemonic: PCaware]  [code: 13 88 443]
 **Definition:**    Aware-type adjectives, when used as predicate adjectives, have the following characteristics:
 
 * may take that clause complementation.
-* may never have logical it for a subject  (*It is aware that . . . )
+* may never have logical it for a subject  (\*It is aware that . . . )
 * may also take various verbal clause complementation (e.g., unimpressed with having won; cognizant of having broken a record; unconcerned about helping them, etc.
 * may take the subjunctive  (e.g., They are adamant that he come.) 
  
