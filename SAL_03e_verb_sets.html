@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <!-- don't use caching -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAL Verb Supersets &mdash; OpenLogos 1.0.2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/hacks.css" />
+    <link rel="shortcut icon" href="_static/OpenLogos_logo.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How is SAL used" href="SAL_04_how_is_used.html" />
+    <link rel="prev" title="SAL Adjective Supersets" href="SAL_03c_adjective_sets.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            OpenLogos
+              <img src="_static/OpenLogos_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing OpenLogos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_00_tutorial.html">SAL Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_01_getting_started.html">Getting Started with SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_02_basic_concepts.html">Basic Concepts Regarding SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03_elements.html">SAL Elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03a_nouns.html">SAL Noun Code Taxonomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03b_noun_sets.html">SAL Noun Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03c_adjective_sets.html">SAL Adjective Supersets</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SAL Verb Supersets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-explanation-of-the-sal-verb-code-taxonomy">General Explanation of the SAL Verb Code Taxonomy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intransitive-verbs-wc02">Intransitive Verbs  [WC02]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#existential-intransitive-superset-inex-11">Existential Intransitive Superset  [INEX]   [11]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operational-intransitive-superset-inop-12">Operational Intransitive Superset  [INOP]   [12]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#motional-intransitive-superset-inmo-10">Motional Intransitive Superset  [INMO]   [10]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transitive-verbs-wc02">Transitive Verbs [WC02]</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#weak-transitives">Weak Transitives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#strong-transitives">Strong Transitives</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#subjective-transitive-superset-subtr-04">Subjective Transitive Superset  [SUBTR]   [04]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reciprocal-transitive-superset-rectr-13">Reciprocal Transitive Superset  [RECTR]   [13]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#objective-transitive">Objective Transitive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-human-subjects-obhum-02">(a) Human Subjects  [OBHUM]   [02]</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-undifferentiated-subjects-obtr-07">(b) Undifferentiated Subjects  (OBTR]  [07]</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#di-transitive-superset-ditr-09">Di-Transitive Superset  [DITR]   [09]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pre-process-transitive-superset-prepr-06">Pre-Process Transitive Superset  [PREPR]   [06]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simple-pre-verbal-transitive-superset-prev-05">Simple Pre-Verbal Transitive Superset  [PREV]   [05]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pre-verbal-di-transitive-superset-prevdi-14">Pre-Verbal Di-Transitive Superset  [PREVDI]   [14]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pre-clausal-transitive-superset-pcl-03">Pre-Clausal Transitive Superset  [PCL]   [03]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pre-clausal-verbal-transitive-superset-precv-08">Pre-Clausal/Verbal Transitive Superset [PRECV]   [08]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transitive-verbs-pre-clausals-pcl-03">Transitive Verbs: Pre-Clausals  [PCL]   [03]</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mnemonic-pcldoubt-type-code-3-53">[mnemonic: PCLdoubt-type]  [code: 3 53]</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Transitive Verbs: Pre-Clausals  [PCL]   [03]</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mnemonic-pcldeclare-type-code-3-22">[mnemonic: PCLdeclare-type]  [code: 3 22]</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Transitive Verbs: Pre-Clausals  [PCL]   [03]</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mnemonic-pclinform-type-code-3-30">[mnemonic: PCLinform-type]  [code: 3 30]</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Transitive Verbs: Pre-Clausals  [PCL]   [03]</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mnemonic-pclexplain-type-code-3-32">[mnemonic: PCLexplain-type]  [code: 3 32]</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Transitive Verbs: Pre-Clausals  [PCL]   [03]</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mnemonic-pclstrike-type-code-3-87">[mnemonic: PCLstrike-type]  [code: 3 87]</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verb-prepositional-governance-codes">Verb Prepositional Governance Codes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_04_how_is_used.html">How is SAL used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_05_coding_tips.html">SAL Coding Tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_06_glossary.html">Glossary of SAL Mnemonics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_07_FAQ.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08_learn_SAL.html">Learning SAL Coding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08a_learning_exercise_1.html">Learning Exercise 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08b_learning_exercise_2.html">Learning Exercise 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08c_learning_exercise_3.html">Learning Exercise 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_09_test.html">Test your Knowledge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenLogos</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">SAL Verb Supersets</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/SAL_03e_verb_sets.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sal-verb-supersets">
+<h1>SAL Verb Supersets<a class="headerlink" href="#sal-verb-supersets" title="Permalink to this headline">¶</a></h1>
+<section id="general-explanation-of-the-sal-verb-code-taxonomy">
+<h2>General Explanation of the SAL Verb Code Taxonomy<a class="headerlink" href="#general-explanation-of-the-sal-verb-code-taxonomy" title="Permalink to this headline">¶</a></h2>
+<p>Verbs are organized in a taxonomy of Supersets and sets. There are no subsets as the subset codes are used for verb-specific verb ID’s.</p>
+<p>Verbs have eleven Supersets.  Nine of these Supersets represent Transitive Verbs, three represent Intransitive Verbs.</p>
+<ul>
+<li><p>Intransitives</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Existential</p></li>
+<li><p>Operational</p></li>
+<li><p>Motional</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Weak Transitives</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Subjective Transitives</p></li>
+<li><p>Reciprocal Transitives</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Strong Transitives</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Objective Transitives</p></li>
+<li><p>Di-Transitives</p></li>
+<li><p>Pre-Process</p></li>
+<li><p>Simple Pre-Verbals</p></li>
+<li><p>Pre-Verbal Di-Transitives</p></li>
+<li><p>Pre-Clausals</p></li>
+<li><p>Pre-Clausals/Verbals</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Verb Superset and set codes denote the valence or argument structure common to its verb members.</p>
+<p>It is important to note that verbs are always encoded for their most complex argument structure.</p>
+</section>
+<section id="intransitive-verbs-wc02">
+<h2>Intransitive Verbs  [WC02]<a class="headerlink" href="#intransitive-verbs-wc02" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Existential Intransitives</p>
+<blockquote>
+<div><ul>
+<li><p>INEXbe</p>
+<p>She is the valedictorian of her class.</p>
+</li>
+<li><p>INEXbecome-type</p>
+<p>He became a doctor at a very young age.</p>
+</li>
+<li><p>INEXgrow-type</p>
+<p>Their voices sounded cheerful.</p>
+</li>
+<li><p>INEXseem-type</p>
+<p>He seemed happy with the results.</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Operational Intransitives</p>
+<blockquote>
+<div><ul>
+<li><p>INOPmisc</p>
+<p>She sings well.</p>
+</li>
+<li><p>INOPloc</p>
+<p>He stood in the rain.</p>
+</li>
+<li><p>INOPpcl</p></li>
+<li><p>INOPprev</p>
+<p>They refrained from smoking.
+They conspired to defeat the candidate.</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Motional Intransitives</p>
+<blockquote>
+<div><ul>
+<li><p>INMOinto-type</p>
+<p>They walked into the room.</p>
+</li>
+<li><p>INMOin-type</p>
+<p>They danced in the streets.</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="existential-intransitive-superset-inex-11">
+<h2>Existential Intransitive Superset  [INEX]   [11]<a class="headerlink" href="#existential-intransitive-superset-inex-11" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>    Existential Intransitive verbs include the verb be and various be-substitute verbs that take predicate nominatives (e.g., become, remain) and predicate ajectives (e.g., grow, sound).</p>
+<p><strong>Examples:</strong>   is, appear, become, feel, grow, remain, seem</p>
+<p>Existential Intransitives include the following sets:</p>
+<blockquote>
+<div><ul>
+<li><p>INEXbe-type  [11 60]  (be)</p>
+<blockquote>
+<div><p>She is the valedictorian of her class.
+She was at the seashore all summer.</p>
+</div></blockquote>
+</li>
+<li><p>INEXbecome-type  [11 61]  (become, remain)</p>
+<blockquote>
+<div><p>He became a doctor at a very young age.
+He remained a Democrat all his life.
+She remained at the seashore all summer.</p>
+</div></blockquote>
+</li>
+<li><p>INEXgrow-type  [11 64]  (grow, look, sound)</p>
+<blockquote>
+<div><p>Their voices sounded cheerful.
+The day grew cooler as evening drew nigh.</p>
+</div></blockquote>
+</li>
+<li><p>INEXseem-type  [11 76]  (appear, seem)</p>
+<blockquote>
+<div><p>He seemed happy with the results.
+It seems that the operation was successful.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Tips:</strong>  Coders may experience possible confusion as to whether a pre-clausal verb  should be coded for the transitive or the intransitive. In general, pre-clausals should be coded as transitive, except for a very small class of exceptions;  e.g., appear, seem, and insist.  To be sure, verbs like agree and think should also be coded for their non-pre-clausal intransitive function;  e.g., She thought about her days at school, and She agreed with me.   In the case of a sentence like She agreed with me that …, it will be up to the parser to select the transitive pre-clausal rather than the intransitive.</p>
+<p><strong>Developers’ Tip:</strong>   Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="operational-intransitive-superset-inop-12">
+<h2>Operational Intransitive Superset  [INOP]   [12]<a class="headerlink" href="#operational-intransitive-superset-inop-12" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>    Operational Intransitive verbs denote all intransitive verbs that are not existential or verbs of motion.   This includes all those intransitive verbs that take clausal and verbal complementation (except for appear, seem which are Existential Intransitives).</p>
+<p><strong>Examples:</strong>  close, come, conspire, end, open, participate, persist, refrain, sing, sleep, snore, stand, stay</p>
+<p>Operational Intransitives include the following sets:</p>
+<blockquote>
+<div><ul>
+<li><p>INOPmisc  [12 29, 31, 97, 29]</p>
+<blockquote>
+<div><p>She sings well.</p>
+</div></blockquote>
+</li>
+<li><p>INOPloc  [12 68]</p>
+<blockquote>
+<div><p>He stood in the rain.</p>
+</div></blockquote>
+</li>
+<li><p>INOPpcl  [12 69]</p>
+<blockquote>
+<div><p>?</p>
+</div></blockquote>
+</li>
+<li><p>INOPprev  [12 72]</p>
+<blockquote>
+<div><p>They refrained from smoking.
+They set out to break a record.
+She persisted in pursuing her goals.
+They came to realize their mistake.
+The work consisted in checking papers.
+They conspired to defeat the candidate.
+He participated in solving the problem.</p>
+</div></blockquote>
+</li>
+<li><p>INOPprecv  [12 73]</p>
+<blockquote>
+<div><p>He insisted on joining them.
+They insisted that the answer was correct.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Tips:</strong>  Code the verb INOPloc if it strongly claims locative prepositions, e.g., He stayed at the office until midnight.</p>
+<p><strong>Developers’ Tips:</strong>   Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="motional-intransitive-superset-inmo-10">
+<h2>Motional Intransitive Superset  [INMO]   [10]<a class="headerlink" href="#motional-intransitive-superset-inmo-10" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>    Motional Intransitive verbs comprise all verbs of motion.</p>
+<p><strong>Examples:</strong>    dance, depart, fly, go, run, sail, skip, walk,</p>
+<p>Motional Intransitives include the following sets:</p>
+<blockquote>
+<div><ul>
+<li><p>INMOinto-type  [10 24]  (depart, go, walk)</p>
+<blockquote>
+<div><p>They departed for Chicago this morning.
+They walked into the room.
+They drove to the library.</p>
+</div></blockquote>
+</li>
+<li><p>INMOin-type  [10 68]  (dance, sail)</p>
+<blockquote>
+<div><p>They sailed around the lake all morning.
+They danced in the streets.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Tips:</strong>   Code the verb INMOinto-type if it can take kinetic-type prepositions,  e.g., into, onto, up to, etc., denoting directed motion. Otherwise, code verbs of motion INMOin-type.</p>
+<p><strong>Caution:</strong>   The verb come should not be coded here, but rather as INOPprev because it takes verbal complementation, e.g., He came to realize his mistake.</p>
+<p><strong>Developers’ Tips:</strong>    Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="transitive-verbs-wc02">
+<h2>Transitive Verbs [WC02]<a class="headerlink" href="#transitive-verbs-wc02" title="Permalink to this headline">¶</a></h2>
+<section id="weak-transitives">
+<h3>Weak Transitives<a class="headerlink" href="#weak-transitives" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Subjective Transitives</p>
+<blockquote>
+<div><ul>
+<li><p>SUBTRregard-type</p>
+<blockquote>
+<div><p>They regard him to be a genius.</p>
+</div></blockquote>
+</li>
+<li><p>SUBTR (+ prep governance)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Reciprocal Transitives</p>
+<blockquote>
+<div><ul>
+<li><p>RECTRinclude-type</p>
+<blockquote>
+<div><p>The contract includes an escape clause.</p>
+</div></blockquote>
+</li>
+<li><p>RECTR (+ prep governance)</p>
+<blockquote>
+<div><p>They <strong>located</strong> the pearls <strong>in the drawer</strong>.
+The unit <strong>exuded</strong> oil <strong>from the cracks</strong>.
+The heirs <strong>fought</strong> one another <strong>over money</strong>.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="strong-transitives">
+<h3>Strong Transitives<a class="headerlink" href="#strong-transitives" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Objective Transitives (Human Subject)</p>
+<blockquote>
+<div><ul>
+<li><p>OBHUMundif</p>
+<blockquote>
+<div><p>The sculptor <strong>created</strong> a statue.</p>
+</div></blockquote>
+</li>
+<li><p>OBHUM   (+ prep governance)</p>
+<blockquote>
+<div><p>The boy <strong>stole</strong> apples <strong>from the orchard</strong>.
+The dean <strong>praised</strong> her <strong>for her contributions</strong>.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Objective Transitives  (Undifferentiated Subject)</p>
+<blockquote>
+<div><ul>
+<li><p>OBJTRundif</p>
+<blockquote>
+<div><p>The sprayer shellacked the surface.</p>
+</div></blockquote>
+</li>
+<li><p>OBJTR (+ prep governance)</p>
+<blockquote>
+<div><p>They <strong>increased</strong> the count <strong>to</strong> ten.
+The machine <strong>pressed</strong> the grommet <strong>into</strong> place.
+They <strong>abbreviated</strong> his title <strong>to</strong> V. P.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Di-Transitives</p>
+<blockquote>
+<div><ul>
+<li><p>DITRdispense-type (requires to)</p>
+<blockquote>
+<div><p>They <strong>contributed</strong> money <strong>to</strong> good causes.</p>
+</div></blockquote>
+</li>
+<li><p>DITRgive-type (optional to)</p>
+<blockquote>
+<div><p>She <strong>gave him</strong> the book.</p>
+</div></blockquote>
+</li>
+<li><p>DITRfetch-type (optional for)</p>
+<blockquote>
+<div><p>He <strong>bought</strong> her a ring.</p>
+</div></blockquote>
+</li>
+<li><p>DITRprovide-type (optional with, to)</p>
+<blockquote>
+<div><p>They furnished us the answers.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Pre-Process</p>
+<blockquote>
+<div><ul>
+<li><p>PREPRaccomplish-type</p>
+<blockquote>
+<div><p>He effected a reduction in expenditures.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Simple Pre-Verbals</p>
+<blockquote>
+<div><ul>
+<li><p>PREVfinish-type</p>
+<blockquote>
+<div><p>He finished cleaning up the basement.</p>
+</div></blockquote>
+</li>
+<li><p>PREVbegin-type</p>
+<blockquote>
+<div><p>She began playing the piano.
+She began to play the piano.</p>
+</div></blockquote>
+</li>
+<li><p>PREVfail-type</p>
+<blockquote>
+<div><p>They refused to surrender.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Pre-Verbal Di-Transitives</p>
+<blockquote>
+<div><ul>
+<li><p>PREVDIpermit-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N to V</p></li>
+<li><p>V V’ing  (only in some verbs in this set)</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIaccustom-type</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N to V  (limited application)</p>
+<blockquote>
+<div><p>- or -</p>
+</div></blockquote>
+</li>
+<li><p>V N to V’ing</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIaid-type</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N to V</p>
+<blockquote>
+<div><p>- or -</p>
+</div></blockquote>
+</li>
+<li><p>V N in/into V’ing</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIdare-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N to V (obligatory)</p></li>
+<li><p>V to V (obligatory)</p></li>
+<li><p>V N V’ing (possible)</p></li>
+<li><p>V N PstP (possible)</p></li>
+<li><p>V V’ing (for love and like only)</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIbar-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N from V’ing</p></li>
+<li><p>V one’s V’ing</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIkeep-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V V’ing</p></li>
+<li><p>V N from V’ing</p></li>
+<li><p>V one’s V’ing</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIleave-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N V’ing</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIappoint-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N to V</p></li>
+<li><p>N is V’d N/ V N N</p></li>
+<li><p>N is V’d as N</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDImisc-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N  Prep V’ing</p></li>
+<li><p>V one’s V’ing  (limited application)</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIbid-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N V</p></li>
+<li><p>N V’d to V  (limited application)</p></li>
+<li><p>V V (help only)</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Pre-Clausal Verbs</p>
+<blockquote>
+<div><ul>
+<li><p>PCLdoubt-type</p>
+<blockquote>
+<div><p>We doubt/calculate/etc. that</p>
+</div></blockquote>
+</li>
+<li><p>PCLdeclare-type</p>
+<blockquote>
+<div><p>We declare/predict/etc. that
+We declare/predict/etc. to them that
+We declare/predict/etc. them to be …
+We declare/proclaim/etc. them the winner.</p>
+</div></blockquote>
+</li>
+<li><p>PCLinform-type</p>
+<blockquote>
+<div><p>We answer/grant/etc. that …
+We inform/assure/etc. them that …</p>
+</div></blockquote>
+</li>
+<li><p>PCLexplain-type</p>
+<blockquote>
+<div><p>We explain/reply/etc. that …
+We explain/reply/etc. to them that</p>
+</div></blockquote>
+</li>
+<li><p>PCLstrike-type</p>
+<blockquote>
+<div><p>It strikes me that …
+They bet me that …</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Pre-Clausals/Verbals</p>
+<blockquote>
+<div><ul>
+<li><p>PRECVagree-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V to V</p></li>
+<li><p>V th-/wh-</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVtell-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N to V</p></li>
+<li><p>V N th-/wh-</p></li>
+<li><p>V N of N</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVask-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V to V</p></li>
+<li><p>V N to V</p></li>
+<li><p>V that</p></li>
+<li><p>V N th-/wh-</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVwish-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V to V</p></li>
+<li><p>V N to V</p></li>
+<li><p>V th-/wh-</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVenjoin-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N to V</p></li>
+<li><p>V th-/wh-</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVadmit-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V one’s V’ing</p></li>
+<li><p>V to V’ing</p></li>
+<li><p>V th-/wh-</p></li>
+<li><p>V to N that</p></li>
+<li><p>V N N</p></li>
+<li><p>V N as N</p></li>
+<li><p>V N to N</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVrecall-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V one’s V’ing</p></li>
+<li><p>V one V’ing</p></li>
+<li><p>V th-/wh-</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVsee-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N V’ing</p></li>
+<li><p>V N V</p></li>
+<li><p>V th-/wh-</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVwarn-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V N to V</p></li>
+<li><p>V N that</p></li>
+<li><p>V that</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVintend-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>V V’ing</p></li>
+<li><p>V that</p></li>
+<li><p>V N to N and V N N</p></li>
+<li><p>V to V</p></li>
+<li><p>V N to V</p></li>
+<li><p>V N that N V (subjunctive)</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVplease-type</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>It V N to V</p></li>
+<li><p>It V N that</p></li>
+<li><p>N be PP that</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+<section id="subjective-transitive-superset-subtr-04">
+<h2>Subjective Transitive Superset  [SUBTR]   [04]<a class="headerlink" href="#subjective-transitive-superset-subtr-04" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>    Subjective Transitive verbs denote verbs where the object of the verb is mentally engaged.  Subjects of this verb, therefore, are typically human.  (To be sure, not all verbs that take human subjects belong here, however.)</p>
+<p>Subjective Transitives are considered Weak Transitives (an informal SAL grouping) because the effect of the verb tends to be on the subject rather than the object.</p>
+<p><strong>Examples:</strong>   pronounce, rate, regard, view</p>
+<p>Subjective Transitives include the following sets:</p>
+<blockquote>
+<div><ul>
+<li><p>SUBTRregard-type  [04 38]</p>
+<blockquote>
+<div><p>They regard him to be a genius.
+They view him as their leader.
+She is rated the head of her class.</p>
+</div></blockquote>
+</li>
+<li><p>SUBTR (+ prep governance)  [04 xx]</p>
+<blockquote>
+<div><p>(See Verb Prep Governance Chart.)</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Tips:</strong>  SUBTRregard-type verbs take a nominative complement (e.g., They pronounced her the winner.)  This is also true of the second set, reflecting prep governance;  i.e., the verb is also complemented by a prepositional phrase indicated by the lower case mnemonic, e.g., SUBTRin.</p>
+<p>In the verbs of this superset, the effect of the action is on the subject.  In all sets under this Subjective Transitive Superset, the object is mentally engaged (contrast with Objective Transitives, where the effect of the action is on the object).</p>
+<p><strong>Caution:</strong>   Verbs like consider do not belong here because they also take clausal complementation, and are therefore to be coded as Pre-Clausal.</p>
+<p><strong>Developers’ Tips:</strong>   Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="reciprocal-transitive-superset-rectr-13">
+<h2>Reciprocal Transitive Superset  [RECTR]   [13]<a class="headerlink" href="#reciprocal-transitive-superset-rectr-13" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>   The Reciprocal Transitive Superset denotes verbs where the effect of the action tends to be on both the subject and the object especially in terms of a relationship (or lack of one) or interaction between them. Examples are fight, include, etc.</p>
+<p>Reciprocal Transitives are considered Weak Transitives (an informal SAL grouping) because the effect of the verb tends to be on both the subject and the object rather than on the object alone, as in Objective Transitives.</p>
+<p><strong>Examples:</strong>   clasp, compose, comprise, contain, descend, discard, disgorge, exhale, exude, grab, include, locate, ooze, situate, spawn</p>
+<p>Reciprocal Transitives include the following sets:</p>
+<blockquote>
+<div><ul>
+<li><p>RECTRinclude-type   [13 54]</p>
+<blockquote>
+<div><p>The contract includes an escape clause.</p>
+</div></blockquote>
+</li>
+<li><p>RECTR (+ prep governance codes)  [13 xx]</p>
+<blockquote>
+<div><p>They <strong>located</strong> the pearls <strong>in the drawer</strong>.  RECTRloc
+The unit <strong>exuded</strong> oil <strong>from the cracks</strong>.   RECTRfrom19
+The heirs <strong>fought</strong> one another <strong>over money</strong>. RECTRon90
+(See Verb Prep Governance Chart.)</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Tips:</strong>   Whereas verbs like wrestle and fight (which imply reciprocal action between subject and object) belong in this superset, the verb love cannot be included here because it takes pre-verbal complementation, a verb characteristic which takes higher precedence.  In general, verbs are always coded for their most complex complementation structure.</p>
+<p><strong>Developers’ Tips:</strong>   Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="objective-transitive">
+<h2>Objective Transitive<a class="headerlink" href="#objective-transitive" title="Permalink to this headline">¶</a></h2>
+<section id="a-human-subjects-obhum-02">
+<h3>(a) Human Subjects  [OBHUM]   [02]<a class="headerlink" href="#a-human-subjects-obhum-02" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="b-undifferentiated-subjects-obtr-07">
+<h3>(b) Undifferentiated Subjects  (OBTR]  [07]<a class="headerlink" href="#b-undifferentiated-subjects-obtr-07" title="Permalink to this headline">¶</a></h3>
+<p><strong>Definition:</strong>   A broad class of transitive verbs where the subject/agent performs an action on an object/patient.  This class of verb is divided into two supersets:   a) OBHUM where the subject/agent is typically human;  and b) OBTR where the subject/agent could be typically human or non-human.The two supersets share common sets and therefore are combined here.</p>
+<p>Note that many of these verbs take prepositional phrase complementation and are given set codes to reflect this.</p>
+<p><strong>Examples:</strong>   abbreviate, create, increase, praise, press, shellac</p>
+<ul>
+<li><p>Objective Transitives (Human Subject)  [02]</p>
+<blockquote>
+<div><ul>
+<li><p>OBHUMundif  [02 21, 92, 75, 98]</p>
+<blockquote>
+<div><p>The sculptor <strong>created</strong> a statue.</p>
+</div></blockquote>
+</li>
+<li><p>OBHUM  (+ prep governance) [02 xx]</p>
+<blockquote>
+<div><blockquote>
+<div><p>The boy <strong>stole</strong> apples <strong>from the orchard</strong>.
+The dean <strong>praised</strong> her <strong>for her contributions</strong>.
+They <strong>acquainted</strong> him <strong>with the situation</strong>.</p>
+<blockquote>
+<div><p>OBJHUMwith74</p>
+</div></blockquote>
+<p>A worker <strong>pressed</strong> the cover <strong>onto the barrel</strong>.</p>
+<blockquote>
+<div><p>OBJHUMinto-type</p>
+</div></blockquote>
+</div></blockquote>
+<p>(See Verb Prep Governance Chart.)</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Objective Transitives   (Undifferentiated Subject)  [07]</p>
+<blockquote>
+<div><ul>
+<li><p>OBJTRundif [07 21, 92, 75, 98]</p>
+<blockquote>
+<div><p>The sprayer shellacked the surface.</p>
+</div></blockquote>
+</li>
+<li><p>OBJTR (+ prep governance)  [07 xx]</p>
+<blockquote>
+<div><blockquote>
+<div><p>They <strong>increased</strong> the count <strong>to ten</strong>.</p>
+<blockquote>
+<div><p>OBJTRto18</p>
+</div></blockquote>
+<p>The machine <strong>pressed</strong> the grommet <strong>into place</strong>.</p>
+<blockquote>
+<div><p>OBJTRin20</p>
+</div></blockquote>
+<p>They <strong>abbreviated</strong> his title <strong>to V.P.</strong></p>
+<blockquote>
+<div><p>OBJTRto35</p>
+</div></blockquote>
+<p>The system <strong>disconnected</strong> the printer <strong>from the network</strong>.</p>
+<blockquote>
+<div><p>OBJTRfrom19</p>
+</div></blockquote>
+<p>The umbrella <strong>protected</strong> the bathers <strong>from the sun</strong>.</p>
+<blockquote>
+<div><p>OBJTRfrom78</p>
+</div></blockquote>
+<p>The medicine <strong>cured</strong> the patient <strong>of his affliction</strong>.</p>
+<blockquote>
+<div><p>OBJTRof</p>
+</div></blockquote>
+<p>The sensor <strong>aligned</strong> the insert <strong>with the hole</strong>.</p>
+<blockquote>
+<div><p>OBJTRwith59</p>
+</div></blockquote>
+<p>The crane <strong>swung</strong> the crate <strong>onto the truck</strong>.</p>
+<blockquote>
+<div><p>OBJTRinto-type</p>
+</div></blockquote>
+<p>The printer <strong>printed</strong> his signature <strong>on the checks</strong>.</p>
+<blockquote>
+<div><p>OBJTRin-type</p>
+</div></blockquote>
+<p>The bee <strong>stung</strong> him <strong>on his neck</strong>.   OBJTRin-type</p>
+</div></blockquote>
+<p>(See Verb Prep Governance Chart.)</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Developers’ Tips:</strong>  Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.  The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.   SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+</section>
+<section id="di-transitive-superset-ditr-09">
+<h2>Di-Transitive Superset  [DITR]   [09]<a class="headerlink" href="#di-transitive-superset-ditr-09" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>   The Di-Transitive Superset denotes verbs that take both direct and indirect objects.   These verbs are distributed over sets according to their argument structure.</p>
+<p><strong>Examples:</strong>   allocate, allot, contribute, dispatch, fetch, furnish, give, introduce, issue, offer, pass, procure, provide, send, supply</p>
+<ul>
+<li><p>Di-Transitives include the following sets:</p>
+<blockquote>
+<div><ul>
+<li><p>DITRdispense-type (requires to)  [09 32]</p>
+<blockquote>
+<div><p>They <strong>contributed</strong> money <strong>to</strong> good causes.</p>
+</div></blockquote>
+</li>
+<li><p>DITRgive-type (optional to)   [09 37]</p>
+<blockquote>
+<div><p>She <strong>gave him</strong> the book.
+He <strong>gave</strong> the book <strong>to</strong> him.</p>
+</div></blockquote>
+</li>
+<li><p>DITRfetch-type (optional for)  [09 41]</p>
+<blockquote>
+<div><p>He <strong>bought</strong> her a ring.
+He <strong>bought</strong> a ring <strong>for</strong> her.</p>
+</div></blockquote>
+</li>
+<li><p>DITRprovide-type (optional with, to)  [09 39]</p>
+<blockquote>
+<div><p>They furnished us the answers.
+They furnished the answers <strong>to</strong> us.
+They furnished us with the answers.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Caution:</strong>   Some verbs that take indirect objects also take clausal and verbal complementation (e.g., teach, write, explain).   Such verbs should not be encoded here, but should be coded for their more complex argument structure.</p>
+<p><strong>Developers’ Tips:</strong>   Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="pre-process-transitive-superset-prepr-06">
+<h2>Pre-Process Transitive Superset  [PREPR]   [06]<a class="headerlink" href="#pre-process-transitive-superset-prepr-06" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>   The Pre-Process Superset denotes a small group of verbs that take as objects process nouns (nouns derived from verbs).  These verbs may lend themselves to the following type of transformation:</p>
+<blockquote>
+<div><p><strong>Accomplish the removal = remove</strong></p>
+</div></blockquote>
+<p><strong>Examples:</strong>   accomplish, effect, instigate,  perform, restart</p>
+<ul>
+<li><p>Pre-Process Superset comprises a single set as follows:</p>
+<blockquote>
+<div><ul>
+<li><p>PREPRaccomplish-type [06 33]</p>
+<blockquote>
+<div><p>He effected a reduction in expenditures.
+They instigated a reform of the party.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Caution:</strong>   Verbs in this set do not ever take verbal or clausal complementation.</p>
+<p><strong>Developers’ Tips:</strong>   Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="simple-pre-verbal-transitive-superset-prev-05">
+<h2>Simple Pre-Verbal Transitive Superset  [PREV]   [05]<a class="headerlink" href="#simple-pre-verbal-transitive-superset-prev-05" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>   The Simple Pre-Verbal Superset denotes a class of verbs which take infinitival verb complementation, including the -ing form of the verbal complement.  Note that this class of verbs has a simple argument structure and therefore it does not accommodate the indirect object, for example.</p>
+<p><strong>Examples:</strong>  begin, complete, continue, fail, finish, grow, omit, practice, refuse, resume, start, volunteer</p>
+<ul>
+<li><p>The Simple Pre-Verbal Superset includes the following three sets:</p>
+<blockquote>
+<div><ul>
+<li><p>PREVfinish-type (V-ing)  [05 40]</p>
+<blockquote>
+<div><p>He finished cleaning up the basement.</p>
+</div></blockquote>
+</li>
+<li><p>PREVbegin-type  (V-ing and to V)  [05 48]</p>
+<blockquote>
+<div><p>She began playing the piano.
+She began to play the piano.</p>
+</div></blockquote>
+</li>
+<li><p>PREVfail-type (to V)  [05 49]</p>
+<blockquote>
+<div><p>They refused to surrender.</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Caution:</strong>   Verbs taking verbal complementation that also invite indirect objects should not be coded here, but under Pre-Verbal Di-Transitives.</p>
+<p><strong>Developers’ Tips:</strong>   Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="pre-verbal-di-transitive-superset-prevdi-14">
+<h2>Pre-Verbal Di-Transitive Superset  [PREVDI]   [14]<a class="headerlink" href="#pre-verbal-di-transitive-superset-prevdi-14" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>   The Pre-Verbal Di-Transitive Superset is a class of verbs that takes compound complementation in the same sentence: (1) verb clause of various patterns and (2) direct or indirect object.</p>
+<p>Note that verbs in this superset do not take th-clause complementation.</p>
+<ul>
+<li><p>Pre-Verbal Di-Transitives comprise the following sets shown with their argument structure:</p>
+<blockquote>
+<div><ul>
+<li><p>PREVDIpermit-type [14 93]  (enable, encourage, favor, permit, program, suffer)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N to V</p>
+<blockquote>
+<div><p>This will enable everyone to prosper.</p>
+</div></blockquote>
+</li>
+<li><p>V V’ing  (only in some verbs in this set)</p>
+<blockquote>
+<div><p>Town ordinances do not permit fishing from beaches.
+We should always encourage their helping the poor.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIaccustom-type [14 34]  (accustom, dedicate, devote, equate)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N to V  (limited application)</p>
+<blockquote>
+<div><p>He could never accustom himself to speak frankly to them.</p>
+<blockquote>
+<div><p>- or -</p>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p>V N to V’ing</p>
+<blockquote>
+<div><p>They devoted great efforts to saving the environment.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIaid-type [14 67]  (aid, assist, inveigle, involve, talk, trick, pressure)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N to V</p>
+<blockquote>
+<div><p>Circumstances pressured them to agree.</p>
+<blockquote>
+<div><p>- or -</p>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p>V N in/into V’ing</p>
+<blockquote>
+<div><p>The salesman talked them into buying.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIdare-type [14 89]  (dare, get, like, love, prepare, want)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N to V (obligatory)</p>
+<blockquote>
+<div><p>They couldn’t get him to concede.
+They prepared the students to take the test.</p>
+</div></blockquote>
+</li>
+<li><p>V to V (obligatory)</p>
+<blockquote>
+<div><p>I didn’t get to speak my mind.
+Residents prepared to evacuate.</p>
+</div></blockquote>
+</li>
+<li><p>V N V’ing (possible)</p>
+<blockquote>
+<div><p>His remarks got the students thinking.</p>
+</div></blockquote>
+</li>
+<li><p>V N PstP (possible)</p>
+<blockquote>
+<div><p>The nation wants him pardoned.</p>
+</div></blockquote>
+</li>
+<li><p>V V’ing (for love and like only)</p>
+<blockquote>
+<div><p>She liked playing with the children.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIbar-type [14 83]  (bar, block, inhibit, prevent, prohibit)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N from V’ing</p>
+<blockquote>
+<div><p>The seal prevented gas from escaping.</p>
+</div></blockquote>
+</li>
+<li><p>V one’s V’ing</p>
+<blockquote>
+<div><p>They barred his entering the race.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIkeep-type [14 36]  (keep, preclude, stop)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V V’ing</p>
+<blockquote>
+<div><p>Stop talking.  Start acting.</p>
+</div></blockquote>
+</li>
+<li><p>V N from V’ing</p>
+<blockquote>
+<div><p>Nothing should keep you from participating.</p>
+</div></blockquote>
+</li>
+<li><p>V one’s V’ing</p>
+<blockquote>
+<div><p>Nothing should stop your participating in the race.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIleave-type [14 23]  (leave, behold)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N V’ing</p>
+<blockquote>
+<div><p>The news left her reeling.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIappoint-type [14 95]  (appoint, assign, choose, designate, qualify)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N to V</p>
+<blockquote>
+<div><p>This qualifies them to participate.</p>
+</div></blockquote>
+</li>
+<li><p>N is V’d N/ V N N</p>
+<blockquote>
+<div><p>She was designated president.</p>
+<p>He was assigned a programmer.</p>
+<p>They appointed her chairperson.</p>
+</div></blockquote>
+</li>
+<li><p>N is V’d as N</p>
+<blockquote>
+<div><p>She was qualified as a professional</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDImisc-type [14 70]  (accuse, credit, criticize, thank, value)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N  Prep V’ing</p>
+<blockquote>
+<div><p>The government accused him of spying.</p>
+<p>They credited him with saving the day.</p>
+<p>Everyone thanked her for helping.</p>
+</div></blockquote>
+</li>
+<li><p>V one’s V’ing  (limited application)</p>
+<blockquote>
+<div><p>They criticized his arguing the case so vehemently.</p>
+<p>They valued her researching the question so well.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PREVDIbid-type [14 88]  (bid, have, help, let, make)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N V</p>
+<blockquote>
+<div><p>The judge would not let the witness answer.</p>
+<p>They made him do it.</p>
+</div></blockquote>
+</li>
+<li><p>N V’d to V  (limited application)</p>
+<blockquote>
+<div><p>He was made to do it.</p>
+</div></blockquote>
+</li>
+<li><p>V V (help only)</p>
+<blockquote>
+<div><p>He helped carry the packages.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Caution:</strong>   If the Pre-Verbal verb you are seeking to code also takes th-clause complementation, it should not be coded here, but under the Pre-Verbal/ Pre-Clausal Superset.</p>
+<p><strong>Developers’ Tips:</strong>   Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="pre-clausal-transitive-superset-pcl-03">
+<h2>Pre-Clausal Transitive Superset  [PCL]   [03]<a class="headerlink" href="#pre-clausal-transitive-superset-pcl-03" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>    Pre-Clausal verbs take th-clause complementation.  Some members of this superset also take wh-clause complementation.  Verbs in this superset do not take verb clause complementation (for which see Pre-Clausals/ Verbals superset on the Index to the left).</p>
+<p><strong>Examples:</strong>  answer, ascertain, assure, believe, cable, calculate, certify, denote, doubt, ensure, estimate, explain, foretell, inform, judge, notify, predict, protest, prove, read, relate, signify</p>
+<ul>
+<li><p>Transitive Pre-Clausals include the following sets:</p>
+<blockquote>
+<div><ul>
+<li><p>PCLdoubt-type   [03 53]</p>
+<blockquote>
+<div><p>We doubt/calculate/etc. that</p>
+</div></blockquote>
+</li>
+<li><p>PCLdeclare-type     [03 22]</p>
+<blockquote>
+<div><p>We declare/predict/etc. that</p>
+<p>We declare/predict/etc. to them that</p>
+<p>We declare/predict/etc. them to be …</p>
+<p>We declare/proclaim/etc. them the winner.</p>
+</div></blockquote>
+</li>
+<li><p>PCLinform-type  [03 30]</p>
+<blockquote>
+<div><p>We answer/grant/etc. that …</p>
+<p>We inform/assure/etc. them that …</p>
+</div></blockquote>
+</li>
+<li><p>PCLexplain-type     [03 32]</p>
+<blockquote>
+<div><p>We explain/reply/etc. that …</p>
+<p>We explain/reply/etc. to them that</p>
+</div></blockquote>
+</li>
+<li><p>PCLstrike-type  [03 87]</p>
+<blockquote>
+<div><p>It strikes me that …</p>
+<p>They bet me that …</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Tips:</strong>   Do not confuse Transitive Pre-Clausal verbs with Intransitive Pre-Clausal verbs. Transitive Pre-Clausal verbs are so designated because these verbs can also take simple direct objects (e.g., He conceded that … /  He conceded the point.)  Intransitive Pre-Clausals cannot take direct objects (e.g., insist, appear, etc.)</p>
+<p><strong>Developers’ Tips:</strong>   Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="pre-clausal-verbal-transitive-superset-precv-08">
+<h2>Pre-Clausal/Verbal Transitive Superset [PRECV]   [08]<a class="headerlink" href="#pre-clausal-verbal-transitive-superset-precv-08" title="Permalink to this headline">¶</a></h2>
+<p><strong>Definition:</strong>   The Pre-Clausal/Verbal Superset comprises a class of verbs that takes both verbal and th-clause complementation.  Verbs in this superset may take a variety of other argument structures as well.</p>
+<ul>
+<li><p>Pre-Clausal/Verbal Superset includes the following sets:</p>
+<blockquote>
+<div><ul>
+<li><p>PRECVagree-type  [08 55] (agree, claim, decide, forget, hope, learn, plan, presume, think)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V to V</p>
+<blockquote>
+<div><p>They agreed to pay the debt.</p>
+</div></blockquote>
+</li>
+<li><p>V th-/wh-</p>
+<blockquote>
+<div><p>We thought that the rain would stop.</p>
+<p>Forget what I said earlier.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVtell-type  [08 62] (convince, fate, persuade, petition, remind, tell)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N to V</p>
+<blockquote>
+<div><p>They persuaded him to run for office.</p>
+</div></blockquote>
+</li>
+<li><p>V N th-/wh-</p>
+<blockquote>
+<div><p>Convince her that this is the best course of action.</p>
+<p>Tell us what your thoughts are on the subject.</p>
+</div></blockquote>
+</li>
+<li><p>V N of N (limited application)</p>
+<blockquote>
+<div><p>We reminded him of his promise.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVask-type  [08 63] (ask, beg, promise, suffice)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V to V</p>
+<blockquote>
+<div><p>They promised to accompany us.</p>
+</div></blockquote>
+</li>
+<li><p>V N to V</p>
+<blockquote>
+<div><p>They begged her to join them.</p>
+</div></blockquote>
+</li>
+<li><p>V that</p>
+<blockquote>
+<div><p>The governor promised that taxes would be lowered.</p>
+</div></blockquote>
+</li>
+<li><p>V N th-/wh-</p>
+<blockquote>
+<div><p>Tell him that she agrees.</p>
+<p>Ask him whether he agrees.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVwish-type  [08 91] (desire, determine, expect, mean, request, wish)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V to V</p>
+<blockquote>
+<div><p>He meant to make reservations.</p>
+</div></blockquote>
+</li>
+<li><p>V N to V (limited application)</p>
+<blockquote>
+<div><p>We expect you to comply.</p>
+</div></blockquote>
+</li>
+<li><p>V th-/wh-</p>
+<blockquote>
+<div><p>The doctor has determined that the illness would soon pass.</p>
+<p>They could not determine what caused the illness.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVenjoin-type  [08 65] (command, direct, enjoin, order, require, trust, understand)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N to V</p>
+<blockquote>
+<div><p>The police ordered residents to evacuate the area.</p>
+</div></blockquote>
+</li>
+<li><p>V th-/wh-</p>
+<blockquote>
+<div><p>We trust that you’ll be comfortable.</p>
+<p>You will understand what the reason was.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVadmit-type  [08 85] (acknowledge, admit, confess, consider, deny, own, report)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V one’s V’ing</p>
+<blockquote>
+<div><p>The judges acknowledged her winning the competition.</p>
+</div></blockquote>
+</li>
+<li><p>V to V’ing</p>
+<blockquote>
+<div><p>He confessed to being the author.</p>
+</div></blockquote>
+</li>
+<li><p>V th-/wh-</p>
+<blockquote>
+<div><p>Consider what the consequences may be.</p>
+</div></blockquote>
+</li>
+<li><p>V to N that</p>
+<blockquote>
+<div><p>Students reported to the teacher that the project was done.</p>
+</div></blockquote>
+</li>
+<li><p>V N N (limited application)</p>
+<blockquote>
+<div><p>They considered him their leader.</p>
+<p>They denied him the promotion.</p>
+</div></blockquote>
+</li>
+<li><p>V N as N (limited application</p>
+<blockquote>
+<div><p>They admitted her as a full member.</p>
+<blockquote>
+<div><p>They considered him as their leader.</p>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p>V N to N (limited application)</p>
+<blockquote>
+<div><p>Report the matter to the authorities.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVrecall-type  [08 45] (anticipate, appreciate, fancy, recall, recollect)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V one’s V’ing</p>
+<blockquote>
+<div><p>They appreciated John’s helping them.</p>
+</div></blockquote>
+</li>
+<li><p>V one V’ing</p>
+<blockquote>
+<div><p>I cannot fancy Mary doing that.</p>
+</div></blockquote>
+</li>
+<li><p>V th-/wh-</p>
+<blockquote>
+<div><p>Try to recollect what happened.</p>
+<p>She recalled that it was raining that day.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVsee-type  [08 43] (hear, notice, observe, perceive, see, watch, discover (ing only), find (ing only), imagine (ing only)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N V’ing</p>
+<blockquote>
+<div><p>They saw him running with the ball.</p>
+<p>Imagine yourself winning the lottery!</p>
+</div></blockquote>
+</li>
+<li><p>V N V (limited application)</p>
+<blockquote>
+<div><p>They watched him make a touchdown.</p>
+<p>They heard her deliver the speech.</p>
+</div></blockquote>
+</li>
+<li><p>V th -/wh-</p>
+<blockquote>
+<div><p>They noticed that the rain had stopped.</p>
+<p>They could not imagine who might have done it.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVwarn-type  [08 50] (caution, forewarn, instruct, teach, warn, advise (v V’ing)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V N to V</p>
+<blockquote>
+<div><p>He taught his son to swim.</p>
+</div></blockquote>
+</li>
+<li><p>V N that</p>
+<blockquote>
+<div><p>Warn them that a storm is coming.</p>
+</div></blockquote>
+</li>
+<li><p>V that</p>
+<blockquote>
+<div><p>He advised that we proceed with caution.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVintend-type  [08 42] (allow, forbid, intend, prefer,  propose, recommend, remember, regret)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V V’ing</p>
+<blockquote>
+<div><p>He prefers dining alone.</p>
+</div></blockquote>
+</li>
+<li><p>V that</p>
+<blockquote>
+<div><p>They regret that they could not participate.</p>
+</div></blockquote>
+</li>
+<li><p>V N to N and V N N (in limited applications)</p>
+<blockquote>
+<div><p>They recommended her to them.</p>
+<p>They prefer city life to rural living.</p>
+<p>They allowed him entrance.</p>
+</div></blockquote>
+</li>
+<li><p>V to V  (limited application)</p>
+<blockquote>
+<div><p>I intend to vote this year.</p>
+</div></blockquote>
+</li>
+<li><p>V N to V  (limited application)</p>
+<blockquote>
+<div><p>They allowed the students to express their views.</p>
+</div></blockquote>
+</li>
+<li><p>V N that N V (subjunctive)  (limited application)</p>
+<blockquote>
+<div><p>I propose that he do that.</p>
+<p>I recommend that she attend the session.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>PRECVplease-type  [08 77] (amuse, bother, concern, please)</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>It V N to V</p>
+<blockquote>
+<div><p>It pleased her to be chosen.</p>
+</div></blockquote>
+</li>
+<li><p>It V N that</p>
+<blockquote>
+<div><p>It amused us that he said so.</p>
+</div></blockquote>
+</li>
+<li><p>N be PP that</p>
+<blockquote>
+<div><p>We were concerned that his health was failing.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Developers’ Tips:</strong>   Because of the endless richness of verb argument structures, the SAL Verb Taxonomy can only hope to capture salient features, and even that  imperfectly.   The Logos Model depends upon use of the Semantic Table (SEMTAB) to capture argument structures not provided for in the taxonomy.  SEMTAB rules to cover fine points of verb argument structures can be written via TermBuilder.</p>
+</section>
+<section id="transitive-verbs-pre-clausals-pcl-03">
+<h2>Transitive Verbs: Pre-Clausals  [PCL]   [03]<a class="headerlink" href="#transitive-verbs-pre-clausals-pcl-03" title="Permalink to this headline">¶</a></h2>
+<section id="mnemonic-pcldoubt-type-code-3-53">
+<h3>[mnemonic: PCLdoubt-type]  [code: 3 53]<a class="headerlink" href="#mnemonic-pcldoubt-type-code-3-53" title="Permalink to this headline">¶</a></h3>
+<p><strong>Definition:</strong>    A simple class of pre-clausal verbs that take th-clause complementation.  Some of these verbs may also take wh-clause complementation;  e.g., Inquire which …</p>
+<p><strong>Examples:</strong>    calculate, check, doubt, ensure, inquire</p>
+<p><strong>Patterns:</strong></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V that/what</p>
+<blockquote>
+<div><p>Meteorologists calculated that the storm would veer northward.
+He doubted what he had been told.
+Check which fuse is functional.</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Caution:</strong>   These verbs do not allow indirect objects.</p>
+<p><strong>Developers’ Tips:</strong></p>
+</section>
+</section>
+<section id="id1">
+<h2>Transitive Verbs: Pre-Clausals  [PCL]   [03]<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<section id="mnemonic-pcldeclare-type-code-3-22">
+<h3>[mnemonic: PCLdeclare-type]  [code: 3 22]<a class="headerlink" href="#mnemonic-pcldeclare-type-code-3-22" title="Permalink to this headline">¶</a></h3>
+<p><strong>Definition:</strong>    A mixed class of pre-clausal verbs that satisfy some combination of the <strong>Patterns</strong> shown below, notably the th-clause complementation.   These verbs also take indirect objects and, in many cases, predicate nominative complementation.  Less commonly, they may take wh-clause complementation;   e.g., We cannot describe what happened.</p>
+<p><strong>Examples:</strong>    ascertain, believe, certify, concede, declare, demonstrate, describe, estimate, infer, judge, note,  predict, proclaim, prove, say, show, suggest, suspect</p>
+<p><strong>Patterns:</strong></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V that/what</p>
+<blockquote>
+<div><p>Evidence suggests that …
+Scientists predict that …
+We noted what they said …</p>
+</div></blockquote>
+</li>
+<li><p>V to N that/what</p>
+<blockquote>
+<div><p>The witness conceded to the examiner that …
+Certify to the police that …
+Show them what you bought.</p>
+</div></blockquote>
+</li>
+<li><p>V N1 to be N2</p>
+<blockquote>
+<div><p>They believed him to be the author.</p>
+</div></blockquote>
+</li>
+<li><p>V N1 N2 =  V N1 to be N2</p>
+<blockquote>
+<div><p>They declared her a genius (i.e., declared her to be a genius).</p>
+</div></blockquote>
+</li>
+<li><p>V N1 N2 =  V N1 to N2</p>
+<blockquote>
+<div><p>They conceded him the point (i.e., conceded the point to him).</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Tips:</strong>  Pattern (1) above represents the minimum obligatory complementation for this set of verbs insofar as they function pre-clausally.  Some of the optional (facultative) complementation obviously is not pre-clausal;  e.g., Patterns (3), (4), and (5).</p>
+<p><strong>Caution:</strong>   Not all verbs in this class satisfy all patterns;  e.g., *We believe to him that …</p>
+<p><strong>Developers’ Tips:</strong></p>
+</section>
+</section>
+<section id="id2">
+<h2>Transitive Verbs: Pre-Clausals  [PCL]   [03]<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<section id="mnemonic-pclinform-type-code-3-30">
+<h3>[mnemonic: PCLinform-type]  [code: 3 30]<a class="headerlink" href="#mnemonic-pclinform-type-code-3-30" title="Permalink to this headline">¶</a></h3>
+<p><strong>Definition:</strong>    A class of pre-clausal verbs that satisfy the Patterns shown below, notably the th-clause complementation with optional indirect objects.  Less commonly, some verbs in this class may take wh-clause complementation.</p>
+<p><strong>Examples:</strong>    answer, assure, cable, grant, inform, notify, telephone, wire, write</p>
+<p><strong>Patterns:</strong></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V that/what</p>
+<blockquote>
+<div><p>Notify residents that …
+Inform us what …</p>
+</div></blockquote>
+</li>
+<li><p>V to NP that/what</p>
+<blockquote>
+<div><p>We wrote to them that …
+We wrote to them what/why …</p>
+</div></blockquote>
+</li>
+</ol>
+<ol class="arabic" start="2">
+<li><p>V NP that/what</p>
+<blockquote>
+<div><p>We wrote them that …
+We notified them why …</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Tips:</strong>  None of the patterns above are obligatory.</p>
+<p><strong>Caution:</strong>  This set may express the indirect object without the preposition to; e.g., Wire me the results.  In that regard, it differs from the explain-type set where the preposition to cannot be omitted for the indirect object.</p>
+<p><strong>Developers’ Tips:</strong></p>
+</section>
+</section>
+<section id="id3">
+<h2>Transitive Verbs: Pre-Clausals  [PCL]   [03]<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<section id="mnemonic-pclexplain-type-code-3-32">
+<h3>[mnemonic: PCLexplain-type]  [code: 3 32]<a class="headerlink" href="#mnemonic-pclexplain-type-code-3-32" title="Permalink to this headline">¶</a></h3>
+<p><strong>Definition:</strong>    A class of pre-clausal verbs that satisfy the Patterns shown below, notably the th-clause complementation with optional indirect objects.  Less commonly, some verbs in this class may take wh-clause complementation.</p>
+<p><strong>Examples:</strong>    cry, denote, explain, foretell, imply, indicate, object, protest, read, relate, reply, signify, testify</p>
+<p><strong>Patterns:</strong></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V that/what</p>
+<blockquote>
+<div><p>They implied that
+They related what …</p>
+</div></blockquote>
+</li>
+<li><p>V to NP that/what</p>
+<blockquote>
+<div><p>Explain to them what …</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Tips:</strong>  Neither of the above patterns is obligatory.</p>
+<p><strong>Caution:</strong>  This set may not express the indirect object without the preposition to; e.g., Explain to me the results.  In that regard, it differs from the inform-type set where the preposition to can be omitted for the indirect object.</p>
+<p><strong>Developers’ Tips:</strong></p>
+</section>
+</section>
+<section id="id4">
+<h2>Transitive Verbs: Pre-Clausals  [PCL]   [03]<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<section id="mnemonic-pclstrike-type-code-3-87">
+<h3>[mnemonic: PCLstrike-type]  [code: 3 87]<a class="headerlink" href="#mnemonic-pclstrike-type-code-3-87" title="Permalink to this headline">¶</a></h3>
+<p><strong>Definition:</strong>   A class of pre-clausal verbs that satisfy some combination of the Patterns shown below, notably the th-clause complementation with optional direct or indirect objects.</p>
+<p><strong>Examples:</strong>    bet, strike, wager</p>
+<p><strong>Patterns:</strong></p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>V DO that</p>
+<blockquote>
+<div><p>They bet ten dollars that …</p>
+</div></blockquote>
+</li>
+<li><p>V IO that</p>
+<blockquote>
+<div><p>They bet him that …</p>
+</div></blockquote>
+</li>
+<li><p>V IO DO that</p>
+<blockquote>
+<div><p>They bet him ten dollars that …</p>
+</div></blockquote>
+</li>
+<li><p>It V DO that</p>
+<blockquote>
+<div><p>It strikes me that …</p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Tips:</strong>  This set differs from other pre-clausal sets in allowing a direct object combined with clausal complementation (Patterns 1, 3, and 4).</p>
+</section>
+</section>
+<section id="verb-prepositional-governance-codes">
+<h2>Verb Prepositional Governance Codes<a class="headerlink" href="#verb-prepositional-governance-codes" title="Permalink to this headline">¶</a></h2>
+<p>XX in the mnemonic is replaced by the appropriate superset mnemonic; e.g., OBHUMwith.
+(This applies to the following transitive supersets:  OBHUM, OBTR, SUBTR, and RECTR
+and to the intransitive INOP.)</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Mnemonic</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Set Code</p></th>
+<th class="head"><p>Examples</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>XXinto-type</p></td>
+<td><p>motional sense preps = on, upon, to, onto, in (acc), towards, from, underneath</p></td>
+<td><p>24</p></td>
+<td><p>march, place, press</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXin-type</p></td>
+<td><p>locative preps = in, on, under (dat), at (place)</p></td>
+<td><p>68</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>XXafter</p></td>
+<td><p>after/upon/on = along the lines of/after</p></td>
+<td><p>86</p></td>
+<td><p>base, model</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>against (see for/as)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>XXaround</p></td>
+<td><p>around/about = around</p></td>
+<td><p>56</p></td>
+<td><p>coil, twist, wind</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>as (see for/as)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>XXat28</p></td>
+<td><p>at = to, on (static place); to = onto</p></td>
+<td><p>28</p></td>
+<td><p>affix, anchor, apply, attach, clamp, couple</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXat94</p></td>
+<td><p>at = toward</p></td>
+<td><p>94</p></td>
+<td><p>aim, point</p></td>
+</tr>
+<tr class="row-even"><td><p>XXfor71</p></td>
+<td><p>for = for the presence of or to know or to get</p></td>
+<td><p>71</p></td>
+<td><p>assess, consult, review</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>away from (see from)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>XXfor46</p></td>
+<td><p>for/as = for the sake of/against/as being</p></td>
+<td><p>46</p></td>
+<td><p>preserve, save</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXfor80</p></td>
+<td><p>for = with respect to</p></td>
+<td><p>80</p></td>
+<td><p>correct</p></td>
+</tr>
+<tr class="row-even"><td><p>XXfor84</p></td>
+<td><p>for/as = for the purpose of/against</p></td>
+<td><p>84</p></td>
+<td><p>employ, utilize, use</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXfor81</p></td>
+<td><p>for = in place of, in exchange for</p></td>
+<td><p>81</p></td>
+<td><p>exchange, substitute, trade</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>from (from … to) see to</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>XXfrom78</p></td>
+<td><p>from = against</p></td>
+<td><p>78</p></td>
+<td><p>defend, guard, preserve, protect, shelter</p></td>
+</tr>
+<tr class="row-even"><td><p>XXfrom19</p></td>
+<td><p>from = away from, off of, out of</p></td>
+<td><p>19</p></td>
+<td><p>bite, detach, disconnect, dismiss</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXfrom96</p></td>
+<td><p>from/between = with respect to, vis a vis</p></td>
+<td><p>96</p></td>
+<td><p>discriminate, distinguish, abstain</p></td>
+</tr>
+<tr class="row-even"><td><p>XXfrom26</p></td>
+<td><p>from … to = what … to become</p></td>
+<td><p>26</p></td>
+<td><p>alter, change, demote,  transform</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXin82</p></td>
+<td><p>in = default (misc.)</p></td>
+<td><p>82</p></td>
+<td><p>calibrate</p></td>
+</tr>
+<tr class="row-even"><td><p>XXin27</p></td>
+<td><p>in/into = so as to become</p></td>
+<td><p>27</p></td>
+<td><p>assemble, cut, divide</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXin20</p></td>
+<td><p>in/into = within</p></td>
+<td><p>20</p></td>
+<td><p>house, lock</p></td>
+</tr>
+<tr class="row-even"><td><p>XXof17</p></td>
+<td><p>of = converbal prep</p></td>
+<td><p>17</p></td>
+<td><p>cleanse, clear, cure, empty, rid, rob</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Off/off of = from, away from</p></td>
+<td></td>
+<td><p>pick, pull, scrape</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>out of = (see from)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>XXon86</p></td>
+<td><p>on/upon = after</p></td>
+<td><p>86</p></td>
+<td><p>base, model, pattern</p></td>
+</tr>
+<tr class="row-even"><td><p>XXon90</p></td>
+<td><p>on/over/about = about, concerning; “at” in passive construction = about, over</p></td>
+<td><p>90</p></td>
+<td><p>annoy, bother, brief, challenge</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXto28</p></td>
+<td><p>to = onto;  at = on (static)</p></td>
+<td><p>28</p></td>
+<td><p>affix, anchor, apply, attach, clamp, couple</p></td>
+</tr>
+<tr class="row-even"><td><p>XXto57</p></td>
+<td><p>to/toward = relational sense</p></td>
+<td><p>57</p></td>
+<td><p>adapt, appeal, order, orient</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXto35</p></td>
+<td><p>to = so as to become</p></td>
+<td><p>35</p></td>
+<td><p>abbreviate, degrade, modify, simplify</p></td>
+</tr>
+<tr class="row-even"><td><p>XXto24</p></td>
+<td><p>to (from … to) = into, onto, toward (motional) or to (destination)</p></td>
+<td><p>24</p></td>
+<td><p>carry, copy, divert, drip, take, transport, turn</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXto18</p></td>
+<td><p>to = up to, until, down to, within limits of (esp. measure/time/place)  (see also 18, 32:  up to/down to)</p></td>
+<td><p>18</p></td>
+<td><p>accelerate, increase, postpone, reduce, incline</p></td>
+</tr>
+<tr class="row-even"><td><p>XXto58</p></td>
+<td><p>to = with</p></td>
+<td><p>58</p></td>
+<td><p>bond, connect, join</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>toward (see to)</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>XXwith74</p></td>
+<td><p>with = about</p></td>
+<td><p>74</p></td>
+<td><p>acquaint, familiarize</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXwith52</p></td>
+<td><p>with = by means of (may be ambiguous)</p></td>
+<td><p>52</p></td>
+<td><p>accommodate, balance, choke, overwhelm, fill</p></td>
+</tr>
+<tr class="row-even"><td><p>XXwith59</p></td>
+<td><p>with = in relation to, with respect to</p></td>
+<td><p>59</p></td>
+<td><p>align, accord, compare</p></td>
+</tr>
+<tr class="row-odd"><td><p>XXwith47</p></td>
+<td><p>with = together with</p></td>
+<td><p>47</p></td>
+<td><p>associate, combine, mix</p></td>
+</tr>
+<tr class="row-even"><td><p>XXundif</p></td>
+<td><p>To cover cases where a verb belonging to the superset has no prep governance</p></td>
+<td><p>VT: 21, 75, 92, 98 VI: 29, 31, 97</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="SAL_03c_adjective_sets.html" class="btn btn-neutral float-left" title="SAL Adjective Supersets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SAL_04_how_is_used.html" class="btn btn-neutral float-right" title="How is SAL used" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Anabela Barreiro.</p>
+  </div>
+
+  <div>
+      <span class="creativecommons">
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" >
+              <img src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/by-sa.svg"
+                   border="0" alt="Creative Commons License"/>
+          </a>
+              OpenLogos web materials are licensed under a
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                  CC BY-SA 4.0.
+              </a>
+      </span>
+  </div>
+
+  
+  <br>Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>

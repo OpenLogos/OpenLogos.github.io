@@ -25,7 +25,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="How is SAL used" href="SAL_04_how_is_used.html" />
+    <link rel="next" title="SAL Verb Supersets" href="SAL_03e_verb_sets.html" />
     <link rel="prev" title="SAL Noun Supersets" href="SAL_03b_noun_sets.html" /> 
 </head>
 
@@ -98,6 +98,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#participial-adjectives-superset">Participial Adjectives Superset</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03e_verb_sets.html">SAL Verb Supersets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SAL_04_how_is_used.html">How is SAL used</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SAL_05_coding_tips.html">SAL Coding Tips</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SAL_06_glossary.html">Glossary of SAL Mnemonics</a></li>
@@ -237,7 +238,7 @@
 </dl>
 </div></blockquote>
 <p><strong>Tips:</strong>  For some adjectives in this subset, the test for that clause complementation may be extended to include wh- clauses.  E.g., It is optional whether they do this or not.</p>
-<p><strong>Caution:</strong>   When in the predicate adjective position, PCurgent adjectives cannot take a normal NP subject and have that clause complementation ( e.g. <a href="#id1"><span class="problematic" id="id2">*</span></a>He is essential that…).</p>
+<p><strong>Caution:</strong>   When in the predicate adjective position, PCurgent adjectives cannot take a normal NP subject and have that clause complementation ( e.g. *He is essential that…).</p>
 <p>When in the predicate adjective position,  PCurgent adjectives that do have a normal NP subject (e.g. Vitamins are important) cannot simultaneously take infinitive clause complementation.  For example, in sentences (1) and (2) below, the infinitive clause is adverbial.  (In both (1) and (2), the particle to has the sense of in order to.)</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -278,7 +279,7 @@
 </dl>
 </div></blockquote>
 <p><strong>Tips:</strong>  For some adjectives in this subset, the test for that clause complementation may be extended to include wh- clauses.  E.g., It is not certain when/whether they will come.</p>
-<p><strong>Caution:</strong>   Note that some adjectives, like indisputable, undecided, uncertain, incurious, etc., which bear a partial resemblance to PCcertain type adjectives, nevertheless do not satisfy all the conditions of this subset and hence should not be so encoded.   E.g. <a href="#id3"><span class="problematic" id="id4">*</span></a>John is undecided to vote in the election.</p>
+<p><strong>Caution:</strong>   Note that some adjectives, like indisputable, undecided, uncertain, incurious, etc., which bear a partial resemblance to PCcertain type adjectives, nevertheless do not satisfy all the conditions of this subset and hence should not be so encoded.   E.g. *John is undecided to vote in the election.</p>
 <p><strong>Developers’ Tips:</strong>  The PCcertain code allows a deterministic parser to distinguish between that clauses which complement the adjective and relative clauses, and between infinitive clauses which complement the adjective and adverbial clauses.  See Developers’ Tips under PCurgent.</p>
 </section>
 <section id="pre-clausal-good-type-mnemonic-pcgood-code-13-87-439">
@@ -293,41 +294,59 @@
 <p><strong>Examples:</strong>   excellent, good, great, horrible, mad, nice, odd, optimistic,  prudent, selfish, sensible, silly, smart, vital</p>
 <p><strong>Patterns:</strong></p>
 <blockquote>
-<div><dl class="simple">
-<dt>It is ADJ that …</dt><dd><p>It is silly that …</p>
-</dd>
-<dt>It is ADJ for NP that…</dt><dd><p>It is good for the employees that …</p>
-</dd>
-<dt>It is ADJ to VP</dt><dd><p>It is smart to exercise.</p>
-</dd>
-<dt>It is ADJ for NP to VP</dt><dd><p>It was silly for them to expect…</p>
-</dd>
-<dt>It is ADJ of NP to VP</dt><dd><p>It was optimistic of them to expect…</p>
-</dd>
-<dt>It is ADJ V’ing…</dt><dd><p>It is smart doing the right thing.</p>
-</dd>
-<dt>NP is ADJ to VP.</dt><dd><p>John is smart to exercise.</p>
-</dd>
-</dl>
+<div><p>It is ADJ that …</p>
+<blockquote>
+<div><p>It is silly that …</p>
+</div></blockquote>
+<p>It is ADJ for NP that…</p>
+<blockquote>
+<div><p>It is good for the employees that …</p>
+</div></blockquote>
+<p>It is ADJ to VP</p>
+<blockquote>
+<div><p>It is smart to exercise.</p>
+</div></blockquote>
+<p>It is ADJ for NP to VP</p>
+<blockquote>
+<div><p>It was silly for them to expect…</p>
+</div></blockquote>
+<p>It is ADJ of NP to VP</p>
+<blockquote>
+<div><p>It was optimistic of them to expect…</p>
+</div></blockquote>
+<p>It is ADJ V’ing…</p>
+<blockquote>
+<div><p>It is smart doing the right thing.</p>
+</div></blockquote>
+<p>NP is ADJ to VP.</p>
+<blockquote>
+<div><p>John is smart to exercise.</p>
+</div></blockquote>
 </div></blockquote>
 <p><strong>Patterns specific to good-type sub-groups:</strong></p>
 <blockquote>
-<div><dl>
-<dt>It is ADJ to NP that…</dt><dd><p>It was vital to him that …</p>
-</dd>
-<dt>NP is ADJ V’ing…</dt><dd><p>He is smart doing the right thing.  . .</p>
-</dd>
-<dt>NP is ADJ at V’ing…</dt><dd><p>She is good at teaching.</p>
-</dd>
-<dt>NP is ADJ in V’ing…</dt><dd><blockquote>
+<div><p>It is ADJ to NP that…</p>
+<blockquote>
+<div><p>It was vital to him that …</p>
+</div></blockquote>
+<p>NP is ADJ V’ing…</p>
+<blockquote>
+<div><p>He is smart doing the right thing.  . .</p>
+</div></blockquote>
+<p>NP is ADJ at V’ing…</p>
+<blockquote>
+<div><p>She is good at teaching.</p>
+</div></blockquote>
+<p>NP is ADJ in V’ing…</p>
+<blockquote>
+<div><blockquote>
 <div><p>He was selfish in doing this.</p>
 </div></blockquote>
-<dl class="simple">
-<dt>NP is ADJ for V’ing…</dt><dd><p>Salt is good for seasoning food.</p>
-</dd>
-</dl>
-</dd>
-</dl>
+<p>NP is ADJ for V’ing…</p>
+<blockquote>
+<div><p>Salt is good for seasoning food.</p>
+</div></blockquote>
+</div></blockquote>
 <p>It was an ADJ NP to VP … (see Tips, below)</p>
 </div></blockquote>
 <p><strong>Tips:</strong> Note that this type of adjective, when used attributively (e.g., nice gesture) may still take its verbal complementation.  For example:</p>
@@ -410,7 +429,7 @@
 <p><strong>Definition:</strong>    Aware-type adjectives, when used as predicate adjectives, have the following characteristics:</p>
 <ul class="simple">
 <li><p>may take that clause complementation.</p></li>
-<li><p>may never have logical it for a subject  (<a href="#id5"><span class="problematic" id="id6">*</span></a>It is aware that … )</p></li>
+<li><p>may never have logical it for a subject  (*It is aware that … )</p></li>
 <li><p>may also take various verbal clause complementation (e.g., unimpressed with having won; cognizant of having broken a record; unconcerned about helping them, etc.</p></li>
 <li><p>may take the subjunctive  (e.g., They are adamant that he come.)</p></li>
 </ul>
@@ -977,7 +996,7 @@ Past Participial [mnemonic: PAST] [code: 16] [form: 50]
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="SAL_03b_noun_sets.html" class="btn btn-neutral float-left" title="SAL Noun Supersets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="SAL_04_how_is_used.html" class="btn btn-neutral float-right" title="How is SAL used" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="SAL_03e_verb_sets.html" class="btn btn-neutral float-right" title="SAL Verb Supersets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
