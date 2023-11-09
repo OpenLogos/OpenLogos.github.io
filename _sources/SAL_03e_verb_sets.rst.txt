@@ -5,32 +5,32 @@ General Explanation of the SAL Verb Code Taxonomy
 --------------------------------------------------
 
 
-Verbs are organized in a taxonomy of Supersets and sets. There are no subsets as the subset codes are used for verb-specific verb ID's.
+Verbs are organized in a taxonomy of :maroon:`Supersets` and :red:`sets`. There are no subsets as the :blue:`subset` codes are used for verb-specific verb ID's.
 
-Verbs have eleven Supersets.  Nine of these Supersets represent Transitive Verbs, three represent Intransitive Verbs.  
+Verbs have eleven :maroon:`Supersets`.  Nine of these :maroon:`Supersets` represent :navy:`Transitive` Verbs, three represent :navy:`Intransitive` Verbs.  
 
-* Intransitives
+* :navy:`Intransitives`
 
-    * Existential
-    * Operational
-    * Motional
+    * :maroon:`Existential`
+    * :maroon:`Operational`
+    * :maroon:`Motional`
 
-* Weak Transitives
+* :navy:`Weak Transitives`
 
-    * Subjective Transitives
-    * Reciprocal Transitives
+    * :maroon:`Subjective Transitives`
+    * :maroon:`Reciprocal Transitives`
 
-* Strong Transitives
+* :navy:`Strong Transitives`
 
-    * Objective Transitives
-    * Di-Transitives
-    * Pre-Process
-    * Simple Pre-Verbals
-    * Pre-Verbal Di-Transitives
-    * Pre-Clausals
-    * Pre-Clausals/Verbals
+    * :maroon:`Objective Transitives`
+    * :maroon:`Di-Transitives`
+    * :maroon:`Pre-Process`
+    * :maroon:`Simple Pre-Verbals`
+    * :maroon:`Pre-Verbal Di-Transitives`
+    * :maroon:`Pre-Clausals`
+    * :maroon:`Pre-Clausals/Verbals`
 
-Verb Superset and set codes denote the valence or argument structure common to its verb members. 
+Verb :maroon:`Superset` and :red:`set` codes denote the valence or argument structure common to its verb members. 
 
 .. In the following, maroon denotes verb Superset, red denotes verb set.  
 
@@ -40,50 +40,50 @@ It is important to note that verbs are always encoded for their most complex arg
 Intransitive Verbs  [WC02]
 -----------------------------------------------------------------------------
 
-* Existential Intransitives
+* :maroon:`Existential Intransitives`
 
-    * INEXbe
+    * :red:`INEXbe`
 
       She is the valedictorian of her class.
 
-    * INEXbecome-type
+    * :red:`INEXbecome-type`
 
       He became a doctor at a very young age.
 
-    * INEXgrow-type
+    * :red:`INEXgrow-type`
 
       Their voices sounded cheerful.
 
-    * INEXseem-type
+    * :red:`INEXseem-type`
 
       He seemed happy with the results.
 
 
-* Operational Intransitives
+* :maroon:`Operational Intransitives`
 
-    * INOPmisc
+    * :red:`INOPmisc`
 
       She sings well.
 
-    * INOPloc
+    * :red:`INOPloc`
 
       He stood in the rain.
 
-    * INOPpcl
+    * :red:`INOPpcl`
 
-    * INOPprev
+    * :red:`INOPprev`
 
       They refrained from smoking.
       They conspired to defeat the candidate. 
 
 
-* Motional Intransitives
+* :maroon:`Motional Intransitives`
 
-    * INMOinto-type
+    * :red:`INMOinto-type`
 
       They walked into the room.
 
-    * INMOin-type
+    * :red:`INMOin-type`
 
       They danced in the streets.
 

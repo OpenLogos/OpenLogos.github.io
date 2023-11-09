@@ -1782,22 +1782,20 @@ Back to :ref:`exercise-1c`.
    :widths: auto
 
     trajectory    | PLpath    | 9 | 55 | 55  | path-type place
-    Quebec        | PLcoun    | 9 | 94 | 230 | **proper** names of countries/states/provinces
-    (agentive)
-    museum        | PLagfunc  | 9 | 26 | 228 | functional location (agentive)
-    Tokyo         | PLcity    | 9 | 94 | 226 | **proper** names of cities (agentive)
-    post office   | PLagfunc  | 9 | 26 | 228 | functional location (agentive)
-    village       | PLagcom   | 9 | 94 | 236 | **common**-noun geographical entity (agentive)
+    Quebec        | PLcoun    | 9 | 94 | 230 | **proper** names of countries/states/provinces :red:`(agentive)`
+    museum        | PLagfunc  | 9 | 26 | 228 | functional location :red:`(agentive)`
+    Tokyo         | PLcity    | 9 | 94 | 226 | **proper** names of cities :red:`(agentive)`
+    post office   | PLagfunc  | 9 | 26 | 228 | functional location :red:`(agentive)`
+    village       | PLagcom   | 9 | 94 | 236 | **common**-noun geographical entity :red:`(agentive)`
     pantry        | PLencl    | 9 | 27 | 27  | enclosed space
-    neighborhood  | PLnagcom  | 9 | 29 | 29  | **common**-noun geographical location (non-agentive)
-    airport       | PLagfunc  | 9 | 26 | 228 | functional location (agentive)
-    township      | PLagcom   | 9 | 94 | 236 | **common**-noun geog. entities
-    (agentive)
+    neighborhood  | PLnagcom  | 9 | 29 | 29  | **common**-noun geographical location :red:`(non-agentive)`
+    airport       | PLagfunc  | 9 | 26 | 228 | functional location :red:`(agentive)`
+    township      | PLagcom   | 9 | 94 | 236 | **common**-noun geog. entities :red:`(agentive)`
     locale        | PLundif   | 9 | 57 | 57  | undifferentiated place
-    Suez Canal    | PLwater   | 9 | 56 | 229 | **proper** names of bodies of water  (non-agentive)
-    Mt. Fuji      | PLothprop | 9 | 56 | 238 | **proper** names of other geog. entities  (non-agentive)
-    drugstore     | PLfunc    | 9 | 26 | 26  | functional location (non-agentive)
-    South America | PLcont    | 9 | 56 | 227 | **proper** names of the continents  (non-agentive)
+    Suez Canal    | PLwater   | 9 | 56 | 229 | **proper** names of bodies of water  :red:`(non-agentive)`
+    Mt. Fuji      | PLothprop | 9 | 56 | 238 | **proper** names of other geog. entities  :red:`(non-agentive)`
+    drugstore     | PLfunc    | 9 | 26 | 26  | functional location :red:`(non-agentive)`
+    South America | PLcont    | 9 | 56 | 227 | **proper** names of the continents  :red:`(non-agentive)`
     corridor      | PLpath    | 9 | 55 | 55  | path-type place
 
 \* The bold facing in the comment column above is designed to call attention to the two critical aspects of Place Noun coding, namely, Proper versus Common nouns, and Agentive versus non-Agentive Place Nouns. 

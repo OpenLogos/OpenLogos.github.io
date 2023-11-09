@@ -29,8 +29,8 @@ Overview of Noun Coding Methods
    :delim: |
    :widths: 10 20 20 40
 
-    AutoCode     | easiest | lowest  | least recommended; should not be used if term is unknown to TermBuilder                    
-    Prompts      | easy    | good    | the recommended method if TermBuilder has some prior knowledge of your head word           
+    AutoCode     | easiest | lowest  | least recommended; should **not** be used if term is unknown to TermBuilder                    
+    Prompts      | easy    | good    | the **recommended** method if TermBuilder has some prior knowledge of your head word           
     Default      | harder  | good    | the recommended method if your entry is completely unknown to TermBuilder's knowledge base 
     SAL Taxonomy | hardest | highest | the superior method, reserved for tutored users and developers                             
 
@@ -43,7 +43,7 @@ Guideline to SAL Noun Coding
 Nouns with Multiple Meanings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Many nouns fall into more than one SAL category.  For example, passage can be both a conduit under Concrete, and a path under Place.   It can also be a piece of writing or musical composition under Information.  
+Many nouns fall into more than one SAL category.  For example, passage can be both a conduit under :maroon:`Concrete`, and a path under :maroon:`Place`.   It can also be a piece of writing or musical composition under :maroon:`Information`.  
 
 Selection among the multiple meanings of a given noun can often be effected by the use of Subject Matter Codes (SMC) when entering the term in TermBuilder. 
 
@@ -58,16 +58,16 @@ Noun Coding Priorities
 
 There is a critical set of priorities governing coding choices for nouns that should be observed, if translation degradation is to be avoided.  The following represents the coding hierarchy in order of importance:
 
-* Verb-biased Nouns (See verbal abstracts set under Abstract Superset).   Nouns coded for verb bias tell the system to expect a verb complement. 
+* Verb-biased Nouns (See :red:`verbal abstracts` set under :maroon:`Abstract Superset`).   Nouns coded for verb bias tell the system to expect a verb complement. 
 
   Verb-biased codes are critical for parsing.  For example:
 
           (1) ways of cooking lentils
           (2) types of cooking utensils. 
 
-  The verbal abstracts code given to ways in (1) biases the parser to expect a verb and therefore allows the parser to resolve cooking correctly to a verb.  In (2) cooking is an adjective.
+  The :red:`verbal abstracts` code given to ways in (1) biases the parser to expect a verb and therefore allows the parser to resolve cooking correctly to a verb.  In (2) cooking is an adjective.
 
-* Nouns taking prepositional complementation.  (See strong verbals under Abstract Superset.)   For example:
+* Nouns taking prepositional complementation.  (See :red:`strong verbals` under :maroon:`Abstract Superset`.)   For example:
 
   attitude towards
   interest in
@@ -77,32 +77,32 @@ There is a critical set of priorities governing coding choices for nouns that sh
 
   Prep governance codes are critical for parsing decisions regarding prepositional attachement.
 
-* Mass Nouns.  Unlike count nouns, mass nouns can occur in the singular without an article or quantifier; e.g., Gold is expensive.
+* :maroon:`Mass` Nouns.  Unlike count nouns, mass nouns can occur in the singular without an article or quantifier; e.g., Gold is expensive.
 
-  Mass codes are critical to parsing.  For example:
+  :maroon:`Mass` codes are critical to parsing.  For example:
 
       (1) Test gold for . . .
       (2) . . . test tube for. . . .
 
-  In (1), gold as a Mass noun helps the parser to see test as a verb.  (Unlike count nouns, singular mass nouns without an article can be the object of a verb.)
+  In (1), gold as a :maroon:`Mass` noun helps the parser to see test as a verb.  (Unlike count nouns, singular mass nouns without an article can be the object of a verb.)
   In (2), test must be a noun because tube is a singular count noun.
 
-  Mass-like codes occur in various places in the SAL noun taxonomy.   These include:
+  :maroon:`Mass`-like codes occur in various places in the SAL noun taxonomy.   These include:
 
-  *  Mass Superset, which is mass by definition
-  *  trees/wood subset (e.g. oak) under Concrete Superset 
-  *  edibles/color subset (e.g. orange) under Concrete Superset
-  *  mammals/food/fur subset (e.g. fox) under Animate Superset
-  *  fowl/food subset (e.g. duck) under Animate Superset
-  *  remote mass subset
+  *  :maroon:`Mass Superset`, which is mass by definition
+  *  :blue:`trees/wood subset` (e.g. oak) under :maroon:`Concrete Superset` 
+  *  :blue:`edibles/color subset` (e.g. orange) under :maroon:`Concrete Superset`
+  *  :blue:`mammals/food/fur subset` (e.g. fox) under :maroon:`Animate Superset`
+  *  :blue:`fowl/food subset` (e.g. duck) under :maroon:`Animate Superset`
+  *  :blue:`remote mass subset`
 
 * Nouns denoting agents.  Agentive type nouns occur in various places in the SAL noun taxonomy.  These include:
 
-  * Animate Superset, which is agentive by definition
-  * agentive set under Concrete Superset
-  * functional location (agentive) subset under Place Superset
-  * geographical entities (agentive) subset under Place Superset
-  * remote agentive subset (an optional subset code under any set or superset)
+  * :maroon:`Animate Superset`, which is agentive by definition
+  * :red:`agentive set` under :maroon:`Concrete Superset`
+  * :blue:`functional location (agentive) subset` under :maroon:`Place Superset`
+  * :blue:`geographical entities (agentive) subset` under :maroon:`Place Superset`
+  * :blue:`remote agentive subset` (an optional subset code under any set or superset)
 
   See :ref:`sal-noun-code-hierarchy`.
 
@@ -124,15 +124,15 @@ Working from Right to Left, choose the first Row that fits your adjective and cl
    :delim: |
    :widths: auto
 
-    ADJ N  | NP is ADJ  | ADJ N = V ADV  | NP is ADJ TO V  | NP is ADJ THAT  |
-    Y  | Y  | Y  | Y  | Y  | Table A
-    Y  | Y  | Y  | Y  |  | Table B
-    Y  | Y  | Y  |  |  | Table C
-    Y  | Y  |  |  |  | Table D
-    Y  |  |  |  |  | Table D
+    ADJ N | NP is ADJ | ADJ N = V ADV | NP is ADJ TO V | NP is ADJ THAT |
+    Y     | Y         | Y             | Y              | Y              | Table A
+    Y     | Y         | Y             | Y              |                | Table B
+    Y     | Y         | Y             |                |                | Table C
+    Y     | Y         |               |                |                | Table D
+    Y     |           |               |                |                | Table D
 
 
-\* Adjective Convertible to Adverb:  E.g., slow movement = move slowly
+\* Adjective Convertible to Adverb:  E.g., **slow** movement = move **slowly**
 
 _______________________________________________________
 
@@ -141,46 +141,47 @@ _______________________________________________________
    :delim: |
    :widths: auto
  
-    Y | Y | - | -       | urgent subset
-    Y | - | - | -       | clear subset
-    Y | Y | Y | limited | certain subset
-    Y | Y | Y | -       | good subset
-    - | - | Y | Y       | happy subset
-    - | - | - | Y       | aware subset
+    Y | Y | - | -       | :blue:`urgent` subset
+    Y | - | - | -       | :blue:`clear` subset
+    Y | Y | Y | limited | :blue:`certain` subset
+    Y | Y | Y | -       | :blue:`good` subset
+    - | - | Y | Y       | :blue:`happy` subset
+    - | - | - | Y       | :blue:`aware` subset
   
 \* Select the ADJ Type that most closely fits 
 
-**RuleWriters' Note:** Preclausal codes are to be specified at the superset or subset level only
+**RuleWriters' Note:** Preclausal codes are to be specified at the :maroon:`superset` or :blue:`subset` level only
 
  
-.. csv-table:: Table B  - Preverbal Adjectives
-   :header: "It is ADJ to V", "NP is ADJ to V", "NP is ADJ V'ing", "It is ADJ to V'ing", "NP is ADJ to V'ing", "NP is ADJ {in,with,of,etc.} V'ing", "ADJ modifies SUBJ NP", "ADJ Type"
+.. csv-table:: Table B - Preverbal Adjectives
+   :header: 
    :delim: |
    :widths: auto
- 
-    Y | - | -       | - | -       | -       | - | valid subset
-    - | - | -       | Y | -       | -       | - | akin subset
-    Y | Y | -       | - | -       | -       | - | easy subset
-    Y | Y | Y       | - | -       | limited | Y | wise subset
-    - | Y | -       | - | -       | limited | Y | eager subset
-    - | Y | Y       | - | -       | limited | Y | first subset
-    - | - | limited | - | limited | Y       | Y | busy subset
+
+    **It is ADJ to V** | **NP is ADJ to V** | **NP is ADJ V'ing** | **It is ADJ to V'ing** | **NP is ADJ to V'ing** | **NP is ADJ {in,with,of,etc.} V'ing** | **ADJ modifies SUBJ NP** | **ADJ Type**
+    Y              | -              | -               | -                  | -                  | -                                 | -                    | :blue:`valid` subset
+    -              | -              | -               | Y                  | -                  | -                                 | -                    | :blue:`akin` subset
+    Y              | Y              | -               | -                  | -                  | -                                 | -                    | :blue:`easy` subset
+    Y              | Y              | Y               | -                  | -                  | limited                           | Y                    | :blue:`wise` subset
+    -              | Y              | -               | -                  | -                  | limited                           | Y                    | :blue:`eager` subset
+    -              | Y              | Y               | -                  | -                  | limited                           | Y                    | :blue:`first` subset
+    -              | -              | limited         | -                  | limited            | Y                                 | Y                    | :blue:`busy` subset
 
 \* Select the ADJ Type that most closely fits 
 
-**RuleWriters' Note:**   Preverbal codes should be specified at the superset or subset level only
+**RuleWriters' Note:**   Preverbal codes should be specified at the :maroon:`superset` or :blue:`subset` level only
 
 .. csv-table:: Table C - Adverbial Adjectives
    :header: "Description", "Examples", "SAL Adjective Type"
    :delim: |
    :widths: auto
 
-    Adjectives governing  prepositions | adjacent  (to), compilant (with), famous (for) | prep governance subset
-    Adjectives of state or manner      | clean, joyful, sly, personable                 | state/manner subset
-    Adjectives of time or order        | recent, random, daily, final                   | time/order subset
-    Adjectives of place                | above, backward, overseas, regional            | locative subset
-    Adjectives ofquantity or measure   | minimal, slight, countless, lengthy            | quantity/measure subset
-    Adjectives of degree or intensity  | real, utter, mere, entire                      | degree subset
+    Adjectives governing  prepositions | adjacent  (to), compilant (with), famous (for) | :blue:`prep governance` subset
+    Adjectives of state or manner      | clean, joyful, sly, personable                 | :blue:`state/manner` subset
+    Adjectives of time or order        | recent, random, daily, final                   | :blue:`time/order` subset
+    Adjectives of place                | above, backward, overseas, regional            | :blue:`locative` subset
+    Adjectives ofquantity or measure   | minimal, slight, countless, lengthy            | :blue:`quantity/measure` subset
+    Adjectives of degree or intensity  | real, utter, mere, entire                      | :blue:`degree` subset
 
 \* Select the ADJ Type that most closely fits 
 
@@ -190,8 +191,8 @@ _______________________________________________________
    :delim: |
    :widths: auto
  
-    Can be predicate adjective     | all purpose             | predicate adjective subset
-    Cannot be predicate adjective | Atlantic, bridal, naval | non-predicate adjective subset
+    Can be predicate adjective     | all purpose             | :blue:`predicate adjective` subset
+    Cannot be predicate adjective  | Atlantic, bridal, naval  | :blue:`non-predicate adjective` subset
 
 
 
@@ -213,11 +214,11 @@ Tips on Coding Adverbs
     Before Adj        | Y                                       | Y                                      |                              | Y                             |
     Post-Noun         |                                         |                                        |                              |                               | Y
     Illustrations:    |                                         |                                        |                              |                               |
-    Before Adv        | extremely well said                     |                                        | much more useful             |                               |
-    Before Noun       |                                         | just cheese                            |                              |                               |
-    Before Quantifier |                                         | just one day                           |                              |                               |
-    Before Pre-Adv    |                                         |                                        | really too hot               |                               |
-    Before Adj        | extremely adept                         | just ready                             |                              | well-received                 |
-    Post-Noun         |                                         |                                        |                              |                               | food enough
+    Before Adv        | extremely well said                     |                                        | **much** more useful             |                               |
+    Before Noun       |                                         | **just** cheese                            |                              |                               |
+    Before Quantifier |                                         | **just** one day                           |                              |                               |
+    Before Pre-Adv    |                                         |                                        | **really** too hot               |                               |
+    Before Adj        | **extremely** adept                         | **just** ready                             |                              | **well**-received                 |
+    Post-Noun         |                                         |                                        |                              |                               | food **enough**
 
 \* Signifies that the morpheme before a noun becomes a determiner.
