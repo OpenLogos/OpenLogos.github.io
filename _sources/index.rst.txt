@@ -1,7 +1,7 @@
 .. raw:: html
 
     <div align="center">
-        <img alt="OpenLogos logo" src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/OpenLogos_logo.svg " width="250" />
+        <img alt="OpenLogos logo" src="_static/images/OpenLogos_logo.svg " width="250" />
     </div>
 
 OpenLogos
@@ -17,7 +17,9 @@ The OpenLogos program is based on the Logos Machine Translation System, one of t
    installing
    SAL_00_tutorial
    SAL_01_getting_started
-   SAL_02_basic_concepts
+   SAL_02a_basic_concepts
+   SAL_02b_human_sentence
+   SAL_02c_logos_model
    SAL_03_elements
    SAL_03a_nouns
    SAL_03b_noun_sets

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <!-- don't use caching -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Human Sentence Processing &mdash; OpenLogos 1.0.2 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/hacks.css" />
+    <link rel="shortcut icon" href="_static/OpenLogos_logo.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introducing the Logos Model" href="SAL_02c_logos_model.html" />
+    <link rel="prev" title="Basic Concepts Regarding SAL" href="SAL_02a_basic_concepts.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            OpenLogos
+              <img src="_static/OpenLogos_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing OpenLogos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_00_tutorial.html">SAL Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_01_getting_started.html">Getting Started with SAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_02a_basic_concepts.html">Basic Concepts Regarding SAL</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Human Sentence Processing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#some-assumptions">Some Assumptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#first-assumption">First Assumption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#second-assumption">Second Assumption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#third-assumption">Third Assumption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fourth-assumption">Fourth Assumption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fifth-assumption">Fifth Assumption</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_02c_logos_model.html">Introducing the Logos Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03_elements.html">SAL Elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03a_nouns.html">SAL Noun Code Taxonomy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03b_noun_sets.html">SAL Noun Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03c_adjective_sets.html">SAL Adjective Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_03e_verb_sets.html">SAL Verb Supersets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_04_how_is_used.html">How is SAL used</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_05_coding_tips.html">SAL Coding Tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_06_glossary.html">Glossary of SAL Mnemonics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_07_FAQ.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08_learn_SAL.html">Learning SAL Coding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08a_learning_exercise_1.html">Learning Exercise 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08b_learning_exercise_2.html">Learning Exercise 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_08c_learning_exercise_3.html">Learning Exercise 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SAL_09_test.html">Test your Knowledge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenLogos</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Human Sentence Processing</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/SAL_02b_human_sentence.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="human-sentence-processing">
+<h1>Human Sentence Processing<a class="headerlink" href="#human-sentence-processing" title="Permalink to this headline">¶</a></h1>
+<section id="some-assumptions">
+<h2>Some Assumptions<a class="headerlink" href="#some-assumptions" title="Permalink to this headline">¶</a></h2>
+<p>No one knows how the human brain processes language but certain reasonable assumptions can be made about human sentence processing.</p>
+<p>These assumptions, whether valid or not, presented a useful basis for modeling the Logos System.</p>
+<p>Among these assumptions are:</p>
+</section>
+<section id="first-assumption">
+<h2>First Assumption<a class="headerlink" href="#first-assumption" title="Permalink to this headline">¶</a></h2>
+<p>Human sentence processing is opportunistic rather than algorithmic.</p>
+<p>There is not some master control circuitry–some homunculus sitting somewhere in the brain–that “manages” human sentence processing in the manner of an algorithm (i.e. a logic-driven sequence of steps).</p>
+<ul class="simple">
+<li><p>In the Logos System, sentence processing is also non-algorithmic, i.e. it is based on declarative information about language rather than upon sequences of procedural steps.</p></li>
+<li><p>In the Logos System, the question of how such declarative information is to be applied to the input stream is solved in a  novel, symbolic quasi-neural net paradigm.  (See Logos Model/neural net architecture.)</p></li>
+<li><p>In both the brain and the Logos System, the only thing that might be said to control sentence processing is the sentence itself.</p></li>
+<li><p>Effectively, the sentence is the algorithm.</p></li>
+</ul>
+</section>
+<section id="second-assumption">
+<h2>Second Assumption<a class="headerlink" href="#second-assumption" title="Permalink to this headline">¶</a></h2>
+<p>Human sentence processing is effected by memory associations stored in human memory–i.e. by the content and organization of human memory and all its associations–as memory reacts to the input signal.</p>
+<p>The process has nothing to do with fixed sequences of logical operations.</p>
+<p>Thus, human sentence processing will vary from sentence to sentence as the memory associations vary.  For one linguistic situation, the brain may rely more upon semantic associations, for another, upon syntactic associations, for still another, upon stored chunk of hybrid linguistic data.</p>
+<p>In this latter case, associations involving the chunks have become so familiar that short cuts to them have sprung up (to satisfy the law of least effort).</p>
+<ul class="simple">
+<li><p>In the Logos System, sentence processing is also effected solely by the content and organization of associative memory.</p></li>
+<li><p>In the Logos system, by associative memory is meant the words and structures of a given language (and their associations) that have been learned through exposure to that language and assimilated into memory.</p></li>
+<li><p>Rules in the Logos System used to process sentences are comprised entirely of semantico-syntactic patterns.  These patterns capture the semantico-syntactic associations learned regarding that language.</p></li>
+<li><p>Here too, the parts and types of memory involved in processing a sentence vary from from one linguistic situation to another, in true opportunistic fashion, now veering more towards syntax, now towards semantics.</p></li>
+<li><p>In sum, in both the brain and the Logos System, associative memory itself is the processor, as this memory reacts opportunistically to the input signals.</p></li>
+</ul>
+</section>
+<section id="third-assumption">
+<h2>Third Assumption<a class="headerlink" href="#third-assumption" title="Permalink to this headline">¶</a></h2>
+<p>The brain abhors complexity and seeks wherever possible to simplify its processes, driven in this by the law of least effort.</p>
+<p>The brain achieves simplification largely through the use of abstraction.</p>
+<p>The brain cell (neuron) by its very architecture would appear to be an abstraction device, with many dendrites for input and a single axon for output.</p>
+<p>The brain clearly employs abstraction in dealing with the complexity of natural language.  No one knows how the brain represents language internally, but there are hints from language acquisition (click here for discussion).</p>
+<ul class="simple">
+<li><p>The Logos System relies upon abstraction as its chief device for coping with complexity.</p></li>
+<li><p>Abstraction is the principle upon which the SAL Representation Language of the Logos System is based.</p></li>
+<li><p>The semantico-syntactic patterns of the Logos System knowledge base are patterns at several levels of abstraction and thus enjoy the power of generality.</p></li>
+<li><p>In both the brain and the Logos System, the problem of complexity of natural language is handled by dealing with natural language at the level of semantico-syntactic abstractions.</p></li>
+</ul>
+</section>
+<section id="fourth-assumption">
+<h2>Fourth Assumption<a class="headerlink" href="#fourth-assumption" title="Permalink to this headline">¶</a></h2>
+<p>Humans acquire language by means of the general mechanism for learning, viz. the assimilation of what is unknown to what is already known.</p>
+<p>Language learning begins when an unfamiliar linguistic pattern is seen to be analogous to some already familiar linguistic pattern.</p>
+<p>Language learning dramatically advances when the brain discerns commonality in differing, already familiar linguistic patterns and thus, through the power of abstraction, begins to generalize these patterns.</p>
+<p>The language learner assimilates new, unfamiliar patterns by associating them with already familiar patterns.  This assimilation occurs when some resemblance between the unfamiliar and the already familiar is recognized.  When this resemblance-recognition is effected at a sufficiently abstract abstract level, the learning process becomes very efficient.</p>
+<p>This mechanism, in part at least, might well explain how virtually infinite language capacity may result from merely finite language exposure.</p>
+<ul class="simple">
+<li><p>The assimilation of the unfamiliar to the already familiar perfectly describes the Logos approach to sentence analysis.</p></li>
+<li><p>In effect, an unfamiliar input sentence is “learned” (decoded) by associating the various parts of the unfamiliar sentence with already familiar (stored) semantico-syntactic patterns which, at some level of abstraction, they resemble.</p></li>
+<li><p>These already familiar, stored patterns are the product of prior, finite exposure to language by Logos System developers ) who have generalized what they have seen in language (simulating presumed brain processes).</p></li>
+<li><p>The capacity to discern analogy among diverse phenomena is fundamental to this generalization process.</p></li>
+<li><p>Seeing that x (the unfamiliar) is like y (the already familiar) entails seeing them under a common (more general or abstract) classification.</p></li>
+<li><p>The SAL Representation Language, being an abstraction language, supplies the terms by which unfamiliar input patterns are likened to those already familiar in an efficient manner.</p></li>
+<li><p>The stored, semantico-syntactic (SAL) patterns of the system’s memory, being abstract, encompass virtually all actual and potential sentences of a given source language.</p></li>
+<li><p>Thus, after generalizing its language exposure as a finite set of abstract, semantico-syntactic patterns, the system’s memory is prepared to deal with (decode) an infinite variety of new, previously unseen sentences.</p></li>
+</ul>
+</section>
+<section id="fifth-assumption">
+<h2>Fifth Assumption<a class="headerlink" href="#fifth-assumption" title="Permalink to this headline">¶</a></h2>
+<p>In the brain, syntactic processing and semantic processing are integrated rather than separate, sequential processes.</p>
+<p>Evidence for this is seen in the fact that we often understand half-uttered sentences, and can often complete the sentences begun by others.</p>
+<p>This further suggests that human sentence processing must be deterministic, producing a single parse rather than a syntactic parse forest that must then be semantically pruned.</p>
+<ul class="simple">
+<li><p>In the Logos System, the SAL Representation Language integrates semantics and syntax, seeing them as the two extremes of a continuum.</p></li>
+<li><p>The integration of syntax and semantics in SAL allows syntactic processing and semantic processing to be conducted simultaneously.</p></li>
+<li><p>By applying semantics to the syntactic parse, the Logos System is able to produce a single, deterministic parse rather than a parse forest which must then be pruned by means of semantics.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="SAL_02a_basic_concepts.html" class="btn btn-neutral float-left" title="Basic Concepts Regarding SAL" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SAL_02c_logos_model.html" class="btn btn-neutral float-right" title="Introducing the Logos Model" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Anabela Barreiro.</p>
+  </div>
+
+  <div>
+      <span class="creativecommons">
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" >
+              <img src="https://raw.githubusercontent.com/openlogos/openlogos.github.io/main/.github/images/by-sa.svg"
+                   border="0" alt="Creative Commons License"/>
+          </a>
+              OpenLogos web materials are licensed under a
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                  CC BY-SA 4.0.
+              </a>
+      </span>
+  </div>
+
+  
+  <br>Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+
+</footer>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+</body>
+</html>
