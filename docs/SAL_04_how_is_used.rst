@@ -42,12 +42,12 @@ Because of the semantic symmetry of the SAL classifications shared by the first 
 
 How SAL is used to resolve ambiguity as to part of speech.  
 
-* Many Verb Particles are homographic with prepositions, and often the parser has difficulty in resolving this ambiguity.  For example:
+* Many :maroon:`Verb Particles` are homographic with prepositions, and often the parser has difficulty in resolving this ambiguity.  For example:
    
-    1)  He turned in the driveway.
-    2)  He turned in his badge.
+    1)  He turned **in** the driveway.
+    2)  He turned **in** his badge.
 
-  In (1), turned is an intransitive verb and in is a preposition.  In (2), turned is a transitive verb and in is a verb particle. The SAL code for driveway as a path in the Place Noun Superset would provide a critical clue to the intransitive, motional nature of turned in (1).
+  In (1), turned is an intransitive verb and **in** is a preposition.  In (2), turned is a transitive verb and **in** is a verb particle. The SAL code for driveway as a :red:`path` in the :maroon:`Place Noun Superset` would provide a critical clue to the intransitive, motional nature of turned in (1).
 
 .. rst-class:: center
 
@@ -55,10 +55,10 @@ How SAL is used to resolve ambiguity as to part of speech.
 
 How SAL is used to resolve ambiguity regarding attachment of prepositional phrases.  
 
-* Codes assigned to adjectives, e.g., to reflect preposition governance, are often of critical importance to parsing decisions. For example, in (1), below, the adjective tall is a non-governance type adverbial adjective, whereas in (2), adjacent is a prep governance type adjective, coded as governing the preposition "to".
+* Codes assigned to adjectives, e.g., to reflect preposition governance, are often of critical importance to parsing decisions. For example, in (1), below, the adjective tall is a :blue:`non-governance type` :red:`adverbial adjective`, whereas in (2), adjacent is a :blue:`prep governance type` adjective, coded as governing the preposition "to".
 
-        (1)  He built his garage tall to house his truck.
-        (2)  He built his garage adjacent to mine.
+        (1)  He built his garage **tall** to house his truck.
+        (2)  He built his garage **adjacent to** mine.
 
   In (1), the particle to has the value of in order to (and house is properly seen as a verb). In (2), the governance code assigned to adjacent allows the parser to see to as a preposition (and mine as a pronoun). If adjacent has not been properly coded for governance here, very likely to mine would have been seen as an adverbial infinitive clause. The only intelligence the parser has to work with in order to properly analyze (2) is the prep governance code assigned to the adjective adjacent.
 
@@ -86,30 +86,30 @@ How SAL is used to resolve ambiguity regarding the scope of adjectives and prepo
 
 How SAL is used to resolve ambiguity regarding verbs.  
 
-* Codes assigned to adverbs, e.g., to reflect durative time vs. punctative time, are often of critical importance to translation decisions. For example, the distinction between the punctative set and the durative set in the Temporal Adverb Superset are important when translating into languages whose verbs are sensitive to time aspects.  For example, in Russian, the imperfective aspect of the Russian verb must be used to express sustained action;   the perfective aspect denotes completed action or time-specific action.  (In English the durative is usually expressed by the present progressive tense;  e.g. He was/is eating.)
+* Codes assigned to adverbs, e.g., to reflect durative time vs. punctative time, are often of critical importance to translation decisions. For example, the distinction between the :red:`punctative` set and the :red:`durative` set in the :maroon:`Temporal Adverb Superset` are important when translating into languages whose verbs are sensitive to time aspects.  For example, in Russian, the imperfective aspect of the Russian verb must be used to express sustained action;   the perfective aspect denotes completed action or time-specific action.  (In English the durative is usually expressed by the present progressive tense;  e.g. He was/is eating.)
 
   It is often difficult when translating English into Russian to know which aspect of the verb to use. In such cases, the classification of the adverb may be helpful. For example, the verb to drink would take the perfective in Russian in (1), below, and the imperfective in (2). 
 
-  (1)  The doctor said I should never drink milk.
-  (2)  The doctor said I must drink the medicine immediately.
+  (1)  The doctor said I should **never** drink milk.
+  (2)  The doctor said I must drink the medicine **immediately**.
   
-  In (1), the durative adverb never indicates sustained repetitive action, expressed in Russian with the imperfective aspect.  In (2), the punctual adverb immediately calls for the perfective aspect of the Russian verb for drink.
+  In (1), the :red:`durative` adverb never indicates sustained repetitive action, expressed in Russian with the imperfective aspect.  In (2), the :red:`punctual` adverb immediately calls for the perfective aspect of the Russian verb for drink.
 
   Note how in the following sentences the adverbial SAL codes for tense (or the absence of tense) is critical to the analysis of tense-ambiguous verbs like set, re-set, put, etc..
   
-  (1)  They re-set the clock daily at noon.
-  (2)  They re-set the clock yesterday at noon.
+  (1)  They re-set the clock **daily** at noon.
+  (2)  They re-set the clock **yesterday** at noon.
   
-  In (1), the absence of a tense subset code for daily (a Frequency Superset Adverb) causes re-set to be seen as its default setting, i.e., present tense.  In (2), the past tense subset code for yesterday causes the parser to interpret re-set as past.
+  In (1), the absence of a tense subset code for daily (a :maroon:`Frequency Superset` Adverb) causes re-set to be seen as its default setting, i.e., present tense.  In (2), the :blue:`past tense subset` code for yesterday causes the parser to interpret re-set as past.
   
   Note that these adverbial codes also contribute to the interpretation of the verb's aspects (critical for translating into Russian).  
 
   Adverb codes can be helpful in resolving ambiguities regarding the BE + ADJ(ED) construction in the following types of sentences:
   
   (1) X is attached to Y
-  (2) X is very attached to Y
+  (2) X is **very** attached to Y
   
-  The parser would normally interpret is attached . . . in (1) as a passive VP, as in e.g., the picture is attached to the wall.  In (2), however, the pre-adverbial code of the adverb very would prevent a VP interpretation and would instead allow the parser to interpret is attached as BE + PREDADJ, as in John is very attached to his family. (Pre-adverbial adverbs are intensifier-type adverbs that can appear before both adverbs and adjectives.  There are six intensifier-type adverbs, each distinguished by its position relative to the morpheme that it intensifies.)
+  The parser would normally interpret is attached . . . in (1) as a passive VP, as in e.g., the picture is attached to the wall.  In (2), however, the :red:`pre-adverbial` code of the adverb **very** would prevent a VP interpretation and would instead allow the parser to interpret is attached as BE + PREDADJ, as in John is very attached to his family. (:red:`Pre-adverbial` adverbs are intensifier-type adverbs that can appear before both adverbs and adjectives.  There are six intensifier-type adverbs, each distinguished by its position relative to the morpheme that it intensifies.)
 
 .. rst-class:: center
 
@@ -153,8 +153,8 @@ Other typical uses of SAL.
   (3)  It was important for the citizens of Boston to win this series.
   (4)  The team needed the support of the citizens of Boston to win this  series.
 
-  In (1), the SAL code assigned to the adjective important [PCurgent type adjective] allows the Logos System's deterministic parser to interpret that the team won as a subordinate clausal complement to the adjective, and not as a relative clause as in (2).  This code also allows the parser to see the verb won as intransitive rather than transitive (as it is in (2)). 
-  Similarly, in (3), the PCurgent code assigned to important enables a deterministic parser to interpret the infinitive clause to win this series as complementary to the adjective and not as adverbial to the sentence as in (4).  In (4), but not in (3), the particle to would be rendered in order to in the target language.
+  In (1), the SAL code assigned to the adjective important [:blue:`PCurgent` type adjective] allows the Logos System's deterministic parser to interpret that the team won as a subordinate clausal complement to the adjective, and not as a relative clause as in (2).  This code also allows the parser to see the verb won as intransitive rather than transitive (as it is in (2)). 
+  Similarly, in (3), the :blue:`PCurgent` code assigned to important enables a deterministic parser to interpret the infinitive clause to win this series as complementary to the adjective and not as adverbial to the sentence as in (4).  In (4), but not in (3), the particle to would be rendered in order to in the target language.
 
 
 How SAL is used in RES

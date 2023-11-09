@@ -4,56 +4,56 @@ SAL Adjective Supersets
 General Explanation of SAL Adjective Taxonomy
 ---------------------------------------------
 
-.. In the following, maroon denotes adjective superset, red denotes adjective set, and blue denotes adjective subset.  
+In the following, :maroon:`maroon` denotes adjective :maroon:`superset`, :red:`red` denotes adjective :red:`set`, and :blue:`blue` denotes adjective :blue:`subset`.  
 
-Adjectives are organized in a taxonomy of supersets, sets, and subsets.
+Adjectives are organized in a taxonomy of :maroon:`supersets`, :red:`sets`, and :blue:`subsets`.
 
-Adjectives have three supersets:  descriptive, present-participial, and past-participial.
+Adjectives have three supersets:  :maroon:`descriptive`, :maroon:`present-participial`, and :maroon:`past-participial`.
 
-The descriptive superset includes a broad range of adjectives divided into the sets shown at left.  The sets are based on the syntactic relationships shared by its set members (e.g. adjectives that take clausal complements, etc.)
+The :maroon:`descriptive superset` includes a broad range of adjectives divided into the sets shown at left.  The :red:`sets` are based on the syntactic relationships shared by its set members (e.g. adjectives that take clausal complements, etc.)
 
-When coding an adjective, if the adjective can participate in more than one superset or set, it is important that the highest code be assigned according to the following priority:
+When coding an adjective, if the adjective can participate in more than one :maroon:`superset` or :red:`set`, it is important that the highest code be assigned according to the following priority:
 
-* descriptive
+* :maroon:`descriptive`
 
-    * pre-clausal
-    * pre-verbal
-    * adverbial*
-    * non-adverbial
-    * post-nominal
-    * prefixes
+    * :red:`pre-clausal`
+    * :red:`pre-verbal`
+    * :red:`adverbial`\*
+    * :red:`non-adverbial`
+    * :red:`post-nominal`
+    * :red:`prefixes`
     
-* present participial\*
-* past participial\*
+* :maroon:`present participial`\*
+* :maroon:`past participial`\*
 
 \* participial adjectives are automatically coded by TermBuilder, based on their respective verbs
 
 Descriptive Adjectives Superset
 ----------------------------------------------------
 
-Non-participial, Descriptive Adjectives are organized as a single Superset with seven  sets.  Most of these sets contain subsets.
+Non-participial, :maroon:`Descriptive Adjectives` are organized as a single :maroon:`Superset` with seven  :red:`sets`.  Most of these :red:`sets` contain :blue:`subsets`.
 
 As with most other parts of speech in SAL, adjectives are subclassified according to the syntactic relationships that they tend to have with other words.  
 
-The sets within the Descriptive Adjective Superset are: 
+The :red:`sets` within the :maroon:`Descriptive Adjective Superset` are: 
 
-* pre-clausal adjectives [PC]. Adjectives like evident, apparent introduce "that" clauses ("It was evident that . . .")
+* :red:`pre-clausal adjectives [PC]`. Adjectives like evident, apparent introduce "that" clauses ("It was evident that . . .")
 
-* preverbal adjectives [PV]. Adjectives like eager, dangerous, ready, etc. introduce "infinitive" clauses ("They were eager to go.").  Adjectives like instrumental, capable, etc. introduce other types of verbal clauses ("They were instrumental in solving . . ." -  "They were capable of solving . . .")
+* :red:`preverbal adjectives [PV]`. Adjectives like eager, dangerous, ready, etc. introduce "infinitive" clauses ("They were eager to go.").  Adjectives like instrumental, capable, etc. introduce other types of verbal clauses ("They were instrumental in solving . . ." -  "They were capable of solving . . .")
 
-* adverbial adjectives [AV]. Adjectives like slight, real, minimal, etc. have adverbial counterparts (slightly, really, minimally).  This classification allows the system to transform phrases like rapid oscillation to oscillate rapidly, a transformation often called for in certain target languages. 
+* :red:`adverbial adjectives [AV]`. Adjectives like slight, real, minimal, etc. have adverbial counterparts (slightly, really, minimally).  This classification allows the system to transform phrases like rapid oscillation to oscillate rapidly, a transformation often called for in certain target languages. 
  
- The adverbial adjective set is further broken down into adjective subsets with adverbial coloration;  e.g., manner (intrepid); time (immediate); place (local); order (previous); degree (utter).  
+ The :red:`adverbial adjective set` is further broken down into adjective :blue:`subsets` with adverbial coloration;  e.g., :blue:`manner` (intrepid); :blue:`time` (immediate); :blue:`place` (local); :blue:`order` (previous); :blue:`degree` (utter).  
 
- Adverbial adjectives may also be coded for governance of a particular preposition;  e.g. adjacent to, distant from, indifferent about.
+ :red:`Adverbial adjectives` may also be coded for :red:`governance` **of a particular preposition**;  e.g. adjacent to, distant from, indifferent about.
 
-* non-adverbial adjectives [NAV]  Adjectives in this set do NOT have adverbial counterparts and CANNOT be converted to adverbs (e.g. yellow)  The non-adverbial adjective set is distributed over two subsets:  
+* :red:`non-adverbial adjectives [NAV]`  Adjectives in this :red:`set` do NOT have adverbial counterparts and CANNOT be converted to adverbs (e.g. yellow)  The :red:`non-adverbial adjective set` is distributed over two :blue:`subsets`:  
 
-  * predicate adjective:  adjectives which functions as a predicate adjective.They fit  the pattern: NP is ADJ.  (E.g., The flower is yellow.)
-  * non-predicate adjective:  An adjective which functions only attributively.  (E.g., Atlantic, bridal, naval). They fit the pattern DET ADJ N
+  * :blue:`predicate adjective`:  adjectives which functions as a predicate adjective.They fit  the pattern: NP is ADJ.  (E.g., The flower is yellow.)
+  * :blue:`non-predicate adjective`:  An adjective which functions only attributively.  (E.g., Atlantic, bridal, naval). They fit the pattern DET ADJ N
 
-* Pure post-nominal [POST]: An adjective which can only occur in post-nominal position. (E.g., money galore).  There are only a few such adjectives in English.  These adjectives occur in the pattern NP ADJ, and usually stand for collapsed relative clauses.  E.g., The phrase The house ablaze with light can be parsed as a shortened form of The house that is ablaze with light. . . .  Note that these adjectives may be coded for prepositional governance, as in ablaze with.
-* Prefix:   Adjectives that appear exclusively in pre-nominal position.  E.g., anti-, pro-, omni-, etc.
+* :red:`Pure post-nominal [POST]`: An adjective which can only occur in post-nominal position. (E.g., money galore).  There are only a few such adjectives in English.  These adjectives occur in the pattern NP ADJ, and usually stand for collapsed relative clauses.  E.g., The phrase The house ablaze with light can be parsed as a shortened form of The house that is ablaze with light. . . .  Note that these adjectives may be coded for prepositional governance, as in ablaze with.
+* :red:`Prefix`:   Adjectives that appear exclusively in pre-nominal position.  E.g., anti-, pro-, omni-, etc.
 
 **Caution:**  Many adjectives fit in more than one category (e.g., lucky fits in most of the above categories).  In such cases, it is essential to choose the highest category according to the order of priority shown above. 
 

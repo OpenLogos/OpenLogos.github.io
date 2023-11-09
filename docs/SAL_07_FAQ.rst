@@ -11,8 +11,8 @@ Frequently Asked Questions
 
       See :ref:`noun-coding-priorities`.
 
-Concrete Noun Superset
-----------------------
+:maroon:`Concrete Noun Superset`
+---------------------------------
 
 * What is the difference between "agents" and "functionals"?  
     
@@ -34,16 +34,16 @@ Concrete Noun Superset
    A noun phrase the first word of which is a mass noun but which does not function as a mass noun because of the head word which is not mass.  
    See :ref:`concretization-of-mass-nouns`.
 
-Mass Noun Superset
--------------------
+:maroon:`Mass Noun Superset`
+----------------------------------------------
 
 * What is the difference between "concrete nouns" and "mass nouns"?  
 
     Mass nouns, unlike count nouns, occur in the singular after quantifiers like any, enough, little, some, more, etc; e.g., some wine, enough sand, more gold. Unlike mass nouns, count nouns following one of these quantifiers require a plural form.
     See :ref:`mass-noun-superset`.
 
-Animate Superset
-----------------
+:maroon:`Animate Superset`
+----------------------------------------------
 
 * Are "proper product names" like Microsoft to be coded as "human collective" or as "concrete product names"?
 
@@ -55,24 +55,24 @@ Animate Superset
     This is because the designations of some languages simultaneously denote the people who speak them. Examples: Albanian, Armenian, Bulgarian, Chinese, English, German, Japanese, Macedonian, Norwegian, Russian, Spanish. On the other hand, words like British, Canadian, Argentinean, European do not describe languages and should be coded people/place under professions/designations. 
     See :ref:`people-language`.
 
-Place Superset
--------------------
+:maroon:`Place Superset`
+----------------------------------------------
 
 * What is the principle for assigning the "remote agentive" code?  
 
     This code may overlay the subset of any noun which is NOT already a member of some subset and which functions as a strong agentive, e.g. business office.  
     See :ref:`remote-agentive-subset`
 
-Information Superset
----------------------
+:maroon:`Information Superset`
+----------------------------------------------
 
 * What is the difference between "instructional data" and "recorded data"?
 
     The instructional data set includes nouns that designate policy, directions, orders, commands, etc. Words in this set tend to have an agentive character. On the other hand, terms like web page, web site should be coded as recorded data. 
     See :ref:`instructional-legal`.
 
-Abstract Superset
--------------------
+:maroon:`Abstract Superset`
+----------------------------------------------
 
 * What are "strong verbals"?
 
@@ -99,8 +99,8 @@ Abstract Superset
     Time events comprise abstract nouns that denote events or happenings in time. Words like miracle, phenomenon do not satisfy the fixed/focused time conditions and should be coded as strong verbals.
     See :ref:`time-events`.
 
-Aspective Superset
--------------------
+:maroon:`Aspective Superset`
+----------------------------------------------
 
 * When it is appropriate to use the "aspective" code and when it is not?  
 
