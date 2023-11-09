@@ -32,7 +32,7 @@ In principle, from a single SAL representation of a sentence, any number of diff
 
 One can map easily from NL to SAL.  In effect such mapping is precisely what a user does when he or she assigns a SAL code to a new entry in a TermBuilder session.
 
-TermBuilder assists the user in this coding/mapping with a variety of options. See the SAL Coding Tips section below. TODO
+TermBuilder assists the user in this coding/mapping with a variety of options. See the SAL Coding Tips section. 
 
 
 SAL is a Taxonomy
@@ -52,7 +52,7 @@ For example, the word highchair can be represented on a semantico-syntactic cont
 
 **SAL is an ontology.**  This means that reality can be accounted for in SAL classifications.  In the case of nouns, the number of these classifications is roughly 100, which properly suggests that as a representation of reality, SAL is coarse-grained.
 
-SAL attempts to implement certain assumptions about human language processing, chiefly with regard to the use of abstraction. Note that SAL is termed a semantico-syntactic abstraction language.  (more) TODO
+SAL attempts to implement certain assumptions about human language processing, chiefly with regard to the use of abstraction. Note that SAL is termed a semantico-syntactic abstraction language.  
 
 
 What motivated SAL?
