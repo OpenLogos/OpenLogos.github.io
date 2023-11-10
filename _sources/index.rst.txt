@@ -29,8 +29,8 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   installing
-   SAL_00_tutorial
+   SAL_00a_installing
+   SAL_00b_tutorial
    SAL_01_getting_started
    SAL_02a_basic_concepts
    SAL_02b_human_sentence
