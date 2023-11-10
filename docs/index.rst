@@ -23,11 +23,9 @@ Languages
 Currently, OpenLogos translates from German and English into French, Italian, Spanish and Portuguese. In the long term, the goal of OpenLogos developers is to support bidirectional translation among these languages. 
 
 
-Contents
----------
-
 .. toctree::
    :maxdepth: 1
+   :hidden:
 
    SAL_00a_installing
    SAL_00b_tutorial

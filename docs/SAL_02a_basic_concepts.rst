@@ -99,11 +99,11 @@ There are different SAL dialects
 
 SAL is not a pure interlingua.  Each source language requires its own dialect of SAL to represent it.  This is so in order to capture the idiosyncrasies of each natural language.  Nevertheless, there is a great deal of commonality among the dialects of SAL, reflecting the underlying commonality among languages universally.  (In the case of nouns, this commonality is 100%.)
 
-The SAL Taxonomy
-------------------------------------------------
-
-.. For a graphic view of the SAL taxonomy, click on SAL Taxonomy. 
-
-For a detailed presentation of the SAL taxonomy, see SAL Elements.  TODO            
+.. The SAL Taxonomy
+.. ------------------------------------------------
+..
+.. .. For a graphic view of the SAL taxonomy, click on SAL Taxonomy. 
+..
+.. For a detailed presentation of the SAL taxonomy, see SAL Elements.  
 
 
